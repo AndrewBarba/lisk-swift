@@ -1,0 +1,16 @@
+#### CocoaPods
+Pods/
+*.generated.swift
+
+#### Fastlane
+fastlane/report.xml
+fastlane/README.md
+
+#### macOS
+.DS_Store
+
+#### Xcode
+xcuserdata/
+*.xcworkspace
+*.zip
+*.ipa
