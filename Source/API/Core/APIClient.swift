@@ -71,9 +71,6 @@ public struct APIClient {
             "nethash": nethash.nethash,
             "broadhash": nethash.broadhash
         ]
-
-        print(baseURL)
-        print(headers)
     }
 
     // MARK: - Public

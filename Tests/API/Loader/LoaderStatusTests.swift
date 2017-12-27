@@ -17,7 +17,6 @@ class LoaderStatusTests: LiskTestCase {
         XCTAssert(status.success)
         XCTAssert(status.loaded)
         XCTAssert(status.now > 0)
-        print(status)
     }
 
     func testMainPeerStatus() {
@@ -26,6 +25,5 @@ class LoaderStatusTests: LiskTestCase {
         XCTAssert(status.success)
         XCTAssert(status.loaded)
         XCTAssert(status.now > 0)
-        print(status)
     }
 }

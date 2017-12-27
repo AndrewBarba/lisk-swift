@@ -7,7 +7,20 @@
 		<key>Lisk.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>38809C4D1FDEE3AF00295938</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38809C561FDEE3AF00295938</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
