@@ -6,7 +6,9 @@ Lisk Swift
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Twitter](https://img.shields.io/badge/twitter-@andrew_barba-blue.svg?style=flat)](http://twitter.com/andrew_barba)
 
-Lisk SDK written in Swift 4. API compatible with [Lisk 1.0.0](https://docs.lisk.io/docs)
+Lisk Swift is a Swift 4 library for Lisk - the cryptocurrency and blockchain application platform. It allows developers to create offline transactions and broadcast them onto the network. It also allows developers to interact with the core Lisk API, for retrieval of collections and single records of data located on the Lisk blockchain. Its main benefit is that it does not require a locally installed Lisk node, and instead utilizes the existing peers on the network. It can be used on any environment that runs Swift 4, including iOS, tvOS, macOS, watchOS.
+
+Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 
 > This project is under heavy development. It aims to follow the Lisk 1.0.0 API which is also under heavy development
 
