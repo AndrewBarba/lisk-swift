@@ -10,13 +10,20 @@
 		03D2E3715DB7F9001DC0FB6E /* Pods_LiskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4499AD1508EDAF7AC8DAB8BB /* Pods_LiskTests.framework */; };
 		2A9884EC17DFEF44A3581D8E /* Pods_Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8E4AB1075C5D79AB2E4BC0 /* Pods_Lisk.framework */; };
 		38809C581FDEE3AF00295938 /* Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38809C4E1FDEE3AF00295938 /* Lisk.framework */; };
-		38809C5D1FDEE3AF00295938 /* LiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38809C5C1FDEE3AF00295938 /* LiskTests.swift */; };
+		38809C5D1FDEE3AF00295938 /* LoaderStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38809C5C1FDEE3AF00295938 /* LoaderStatusTests.swift */; };
 		38809C5F1FDEE3AF00295938 /* Lisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 38809C511FDEE3AF00295938 /* Lisk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		388D04E81FF32F5A00E89940 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04E71FF32F5A00E89940 /* Constants.swift */; };
 		388D04EB1FF336AD00E89940 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04EA1FF336AD00E89940 /* APIClient.swift */; };
 		388D04ED1FF336C300E89940 /* APIOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04EC1FF336C300E89940 /* APIOptions.swift */; };
 		388D04EF1FF3379200E89940 /* APINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04EE1FF3379200E89940 /* APINode.swift */; };
 		388D04F11FF33E1B00E89940 /* APINethash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04F01FF33E1B00E89940 /* APINethash.swift */; };
+		38FFD7A31FF4122300D39D40 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFD7A21FF4122300D39D40 /* APIResponse.swift */; };
+		38FFD7A51FF4162200D39D40 /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFD7A41FF4162200D39D40 /* APIResponseError.swift */; };
+		38FFD7AA1FF4180400D39D40 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFD7A91FF4180400D39D40 /* Loader.swift */; };
+		38FFD7AD1FF4192D00D39D40 /* LoaderStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFD7AC1FF4192D00D39D40 /* LoaderStatusResponse.swift */; };
+		38FFD7B11FF41CA500D39D40 /* LoaderStatusSyncResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFD7B01FF41CA500D39D40 /* LoaderStatusSyncResponse.swift */; };
+		38FFD7B31FF41D0100D39D40 /* LoaderStatusPingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFD7B21FF41D0100D39D40 /* LoaderStatusPingResponse.swift */; };
+		38FFD7B51FF41D7A00D39D40 /* LiskTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FFD7B41FF41D7A00D39D40 /* LiskTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +43,20 @@
 		38809C511FDEE3AF00295938 /* Lisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lisk.h; sourceTree = "<group>"; };
 		38809C521FDEE3AF00295938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38809C571FDEE3AF00295938 /* LiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38809C5C1FDEE3AF00295938 /* LiskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTests.swift; sourceTree = "<group>"; };
+		38809C5C1FDEE3AF00295938 /* LoaderStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusTests.swift; sourceTree = "<group>"; };
 		38809C5E1FDEE3AF00295938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		388D04E71FF32F5A00E89940 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		388D04EA1FF336AD00E89940 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		388D04EC1FF336C300E89940 /* APIOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOptions.swift; sourceTree = "<group>"; };
 		388D04EE1FF3379200E89940 /* APINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINode.swift; sourceTree = "<group>"; };
 		388D04F01FF33E1B00E89940 /* APINethash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINethash.swift; sourceTree = "<group>"; };
+		38FFD7A21FF4122300D39D40 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		38FFD7A41FF4162200D39D40 /* APIResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseError.swift; sourceTree = "<group>"; };
+		38FFD7A91FF4180400D39D40 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		38FFD7AC1FF4192D00D39D40 /* LoaderStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusResponse.swift; sourceTree = "<group>"; };
+		38FFD7B01FF41CA500D39D40 /* LoaderStatusSyncResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusSyncResponse.swift; sourceTree = "<group>"; };
+		38FFD7B21FF41D0100D39D40 /* LoaderStatusPingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusPingResponse.swift; sourceTree = "<group>"; };
+		38FFD7B41FF41D7A00D39D40 /* LiskTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTestCase.swift; sourceTree = "<group>"; };
 		3E2DE27A6B2B92BB96D41799 /* Pods-LiskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiskTests/Pods-LiskTests.release.xcconfig"; sourceTree = "<group>"; };
 		4499AD1508EDAF7AC8DAB8BB /* Pods_LiskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8E4AB1075C5D79AB2E4BC0 /* Pods_Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,7 +118,8 @@
 		38809C5B1FDEE3AF00295938 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				38809C5C1FDEE3AF00295938 /* LiskTests.swift */,
+				38FFD7B41FF41D7A00D39D40 /* LiskTestCase.swift */,
+				38FFD7AE1FF419CE00D39D40 /* API */,
 				38809C5E1FDEE3AF00295938 /* Info.plist */,
 			);
 			path = Tests;
@@ -113,12 +128,50 @@
 		388D04E91FF3365000E89940 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				38FFD7AB1FF4181E00D39D40 /* Core */,
+				38FFD7A81FF417CC00D39D40 /* Loader */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		38FFD7A81FF417CC00D39D40 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				38FFD7A91FF4180400D39D40 /* Loader.swift */,
+				38FFD7AC1FF4192D00D39D40 /* LoaderStatusResponse.swift */,
+				38FFD7B01FF41CA500D39D40 /* LoaderStatusSyncResponse.swift */,
+				38FFD7B21FF41D0100D39D40 /* LoaderStatusPingResponse.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		38FFD7AB1FF4181E00D39D40 /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				388D04EA1FF336AD00E89940 /* APIClient.swift */,
 				388D04F01FF33E1B00E89940 /* APINethash.swift */,
 				388D04EE1FF3379200E89940 /* APINode.swift */,
 				388D04EC1FF336C300E89940 /* APIOptions.swift */,
+				38FFD7A21FF4122300D39D40 /* APIResponse.swift */,
+				38FFD7A41FF4162200D39D40 /* APIResponseError.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		38FFD7AE1FF419CE00D39D40 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				38FFD7AF1FF419D400D39D40 /* Loader */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		38FFD7AF1FF419D400D39D40 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				38809C5C1FDEE3AF00295938 /* LoaderStatusTests.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		4DF01071EF1DB149BD833BFF /* Frameworks */ = {
@@ -160,6 +213,7 @@
 			buildConfigurationList = 38809C621FDEE3AF00295938 /* Build configuration list for PBXNativeTarget "Lisk" */;
 			buildPhases = (
 				6891E5131F96617A663A81ED /* [CP] Check Pods Manifest.lock */,
+				38FFD7A61FF416DB00D39D40 /* Swift Lint */,
 				38809C491FDEE3AF00295938 /* Sources */,
 				38809C4A1FDEE3AF00295938 /* Frameworks */,
 				38809C4B1FDEE3AF00295938 /* Headers */,
@@ -253,6 +307,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		38FFD7A61FF416DB00D39D40 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		59554611611B95E57F43CBAC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,10 +417,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				388D04EF1FF3379200E89940 /* APINode.swift in Sources */,
+				38FFD7A51FF4162200D39D40 /* APIResponseError.swift in Sources */,
+				38FFD7B11FF41CA500D39D40 /* LoaderStatusSyncResponse.swift in Sources */,
 				388D04E81FF32F5A00E89940 /* Constants.swift in Sources */,
 				388D04ED1FF336C300E89940 /* APIOptions.swift in Sources */,
 				388D04F11FF33E1B00E89940 /* APINethash.swift in Sources */,
+				38FFD7B31FF41D0100D39D40 /* LoaderStatusPingResponse.swift in Sources */,
+				38FFD7AA1FF4180400D39D40 /* Loader.swift in Sources */,
 				388D04EB1FF336AD00E89940 /* APIClient.swift in Sources */,
+				38FFD7AD1FF4192D00D39D40 /* LoaderStatusResponse.swift in Sources */,
+				38FFD7A31FF4122300D39D40 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,7 +434,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38809C5D1FDEE3AF00295938 /* LiskTests.swift in Sources */,
+				38FFD7B51FF41D7A00D39D40 /* LiskTestCase.swift in Sources */,
+				38809C5D1FDEE3AF00295938 /* LoaderStatusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

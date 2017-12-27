@@ -1,0 +1,10 @@
+included:
+  - Source
+opt_in_rules:
+  - attributes
+  - closure_end_indentation
+  - empty_count
+  - explicit_top_level_acl
+  - force_unwrapping
+disabled_rules:
+  - line_length

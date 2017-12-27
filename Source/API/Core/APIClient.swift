@@ -9,13 +9,10 @@
 import Foundation
 
 /// Represents an HTTP response
-public enum Response {
-    case success(data: Data, json: [String: Any])
-    case error(error: Error, response: HTTPURLResponse?)
+public enum Response<T: APIResponse> {
+    case success(response: T)
+    case error(response: APIResponseError)
 }
-
-/// Type to handle network request completion
-public typealias RequestCompletionHandler = (Response) -> Void
 
 /// Type to represent request body/url options
 public typealias RequestOptions = [String: Any]
@@ -28,12 +25,17 @@ public enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
-public class APIClient {
+public struct APIClient {
 
     // MARK: - Static
 
+    /// Mutable. Default client for all services
+    public static var shared = APIClient()
+
+    /// Client that connects to Mainnet
     public static let mainnet = APIClient()
 
+    /// Client that connects to Testnet
     public static let testnet = APIClient(options: .init(testnet: true))
 
     // MARK: - Init
@@ -57,36 +59,52 @@ public class APIClient {
 
         let urlPath = "\(scheme)://\(hostname):\(port)/api"
 
+        // swiftlint:disable:next force_unwrapping
         self.baseURL = URL(string: urlPath)!
 
         self.headers = [
             "Content-Type": nethash.contentType,
-            "os": nethash.os,
+            "os": nethash.clientOS,
             "version": nethash.version,
             "minVersion": nethash.minVersion,
             "port": nethash.port,
             "nethash": nethash.nethash,
             "broadhash": nethash.broadhash
         ]
+
+        print(baseURL)
+        print(headers)
     }
 
     // MARK: - Public
 
-    /// Perform GET request to Fritz API
+    /// Perform GET request
     @discardableResult
-    public func get(path: String, options: RequestOptions? = nil, completionHandler: RequestCompletionHandler? = nil) -> (URLRequest, URLSessionDataTask) {
-        return request(.get, path: path, options: options)
+    public func get<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+        return request(.get, path: path, options: options, completionHandler: completionHandler)
     }
 
-    /// Perform GET request to Fritz API
+    /// Perform POST request
     @discardableResult
-    public func post(path: String, options: RequestOptions? = nil, completionHandler: RequestCompletionHandler? = nil) -> (URLRequest, URLSessionDataTask) {
-        return request(.post, path: path, options: options)
+    public func post<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+        return request(.post, path: path, options: options, completionHandler: completionHandler)
     }
 
-    /// Perform POST request to Fritz API
+    /// Perform PUT request
     @discardableResult
-    public func request(_ httpMethod: HTTPMethod, path: String, options: RequestOptions? = nil, completionHandler: RequestCompletionHandler? = nil) -> (URLRequest, URLSessionDataTask) {
+    public func put<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+        return request(.put, path: path, options: options, completionHandler: completionHandler)
+    }
+
+    /// Perform POST request
+    @discardableResult
+    public func delete<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+        return request(.delete, path: path, options: options, completionHandler: completionHandler)
+    }
+
+    /// Perform request
+    @discardableResult
+    public func request<R>(_ httpMethod: HTTPMethod, path: String, options: RequestOptions?, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         let request = urlRequest(httpMethod, path: path, options: options)
         let task = dataTask(request, completionHandler: completionHandler)
         return (request, task)
@@ -104,10 +122,9 @@ public class APIClient {
     private let urlSession = URLSession(configuration: .ephemeral)
 
     /// Create a json data task
-    private func dataTask(_ request: URLRequest, completionHandler: RequestCompletionHandler? = nil) -> URLSessionDataTask {
-        let task = urlSession.dataTask(with: request) { data, response, error in
-            guard let completionHandler = completionHandler else { return }
-            let response = self.processRequestCompletion(data, response: response, error: error)
+    private func dataTask<R>(_ request: URLRequest, completionHandler: @escaping (Response<R>) -> Void) -> URLSessionDataTask {
+        let task = urlSession.dataTask(with: request) { data, _, _ in
+            let response: Response<R> = self.processRequestCompletion(data)
             completionHandler(response)
         }
         task.resume()
@@ -156,26 +173,21 @@ public class APIClient {
     }
 
     /// Process a response
-    private func processRequestCompletion(_ data: Data?, response: URLResponse?, error: Swift.Error?) -> Response {
-        if let error = error {
-            return .error(error: error, response: response as? HTTPURLResponse)
+    private func processRequestCompletion<R>(_ data: Data?) -> Response<R> {
+        guard let data = data else {
+            return .error(response: defaultErrorResponse())
         }
 
-        guard
-            let data = data,
-            let object = try? JSONSerialization.jsonObject(with: data, options: []),
-            let json = object as? [String: Any]
-            else {
-                let userInfo = ["message": "Unknown error"]
-                let error = NSError(domain: NSURLErrorDomain, code: NSURLErrorBadServerResponse, userInfo: userInfo)
-                return .error(error: error, response: response as? HTTPURLResponse)
-            }
-
-        guard let success = json["success"] as? Bool, success else {
-            let error = NSError(domain: NSURLErrorDomain, code: NSURLErrorBadServerResponse, userInfo: json)
-            return .error(error: error, response: response as? HTTPURLResponse)
+        guard let result = try? JSONDecoder().decode(R.self, from: data), result.success else {
+            let error = try? JSONDecoder().decode(APIResponseError.self, from: data)
+            return .error(response: error ?? defaultErrorResponse())
         }
 
-        return .success(data: data, json: json)
+        return .success(response: result)
+    }
+
+    /// Default error response
+    private func defaultErrorResponse() -> APIResponseError {
+        return APIResponseError(error: "Unknown Error")
     }
 }

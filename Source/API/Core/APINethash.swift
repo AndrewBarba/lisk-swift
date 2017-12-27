@@ -16,7 +16,7 @@ public struct APINethash {
 
     public let contentType = "application/json"
 
-    public let os = "lisk-api-swift"
+    public let clientOS = "lisk-api-swift"
 
     public let minVersion = ">=0.5.0"
 
