@@ -8,8 +8,10 @@
 
 import Foundation
 
+/// Represents a Lisk node with API enabled
 public struct APINode {
 
+    /// Hostname or IP address of this node
     public let hostname: String
 
     public init(hostname: String) {
@@ -19,6 +21,7 @@ public struct APINode {
 
 extension APINode {
 
+    /// Mainnet nodes
     public static let mainnet: [APINode] = [
         .init(hostname: "node01.lisk.io"),
         .init(hostname: "node02.lisk.io"),
@@ -30,6 +33,7 @@ extension APINode {
         .init(hostname: "node08.lisk.io")
     ]
 
+    /// Testnet nodes
     public static let testnet: [APINode] = [
         .init(hostname: "testnet.lisk.io")
     ]
@@ -37,6 +41,7 @@ extension APINode {
 
 extension APINode {
 
+    /// Selects a random node from a list of nodes
     public static func random(from nodes: [APINode] = APINode.mainnet) -> APINode {
         let index = Int(arc4random_uniform(UInt32(nodes.count)))
         return nodes[index]

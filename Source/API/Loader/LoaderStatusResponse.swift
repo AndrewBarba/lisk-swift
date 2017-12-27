@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// https://docs.lisk.io/docs/lisk-api-080-loader#section-get-loading-status
 public struct LoaderStatusResponse: APIResponse {
 
     public let success: Bool

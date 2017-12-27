@@ -25,6 +25,7 @@ public enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
+/// Client to send requests to a Lisk node
 public struct APIClient {
 
     // MARK: - Static

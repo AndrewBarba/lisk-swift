@@ -8,7 +8,9 @@
 
 import Foundation
 
+/// Protocol describing an response
 public protocol APIResponse: Decodable {
 
+    /// All api responses have a success boolean
     var success: Bool { get }
 }
