@@ -12,6 +12,11 @@
 		38809C581FDEE3AF00295938 /* Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38809C4E1FDEE3AF00295938 /* Lisk.framework */; };
 		38809C5D1FDEE3AF00295938 /* LiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38809C5C1FDEE3AF00295938 /* LiskTests.swift */; };
 		38809C5F1FDEE3AF00295938 /* Lisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 38809C511FDEE3AF00295938 /* Lisk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		388D04E81FF32F5A00E89940 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04E71FF32F5A00E89940 /* Constants.swift */; };
+		388D04EB1FF336AD00E89940 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04EA1FF336AD00E89940 /* APIClient.swift */; };
+		388D04ED1FF336C300E89940 /* APIOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04EC1FF336C300E89940 /* APIOptions.swift */; };
+		388D04EF1FF3379200E89940 /* APINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04EE1FF3379200E89940 /* APINode.swift */; };
+		388D04F11FF33E1B00E89940 /* APINethash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388D04F01FF33E1B00E89940 /* APINethash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,11 @@
 		38809C571FDEE3AF00295938 /* LiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38809C5C1FDEE3AF00295938 /* LiskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTests.swift; sourceTree = "<group>"; };
 		38809C5E1FDEE3AF00295938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		388D04E71FF32F5A00E89940 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		388D04EA1FF336AD00E89940 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		388D04EC1FF336C300E89940 /* APIOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOptions.swift; sourceTree = "<group>"; };
+		388D04EE1FF3379200E89940 /* APINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINode.swift; sourceTree = "<group>"; };
+		388D04F01FF33E1B00E89940 /* APINethash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINethash.swift; sourceTree = "<group>"; };
 		3E2DE27A6B2B92BB96D41799 /* Pods-LiskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LiskTests/Pods-LiskTests.release.xcconfig"; sourceTree = "<group>"; };
 		4499AD1508EDAF7AC8DAB8BB /* Pods_LiskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8E4AB1075C5D79AB2E4BC0 /* Pods_Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				38809C511FDEE3AF00295938 /* Lisk.h */,
+				388D04E91FF3365000E89940 /* API */,
+				388D04E71FF32F5A00E89940 /* Constants.swift */,
 				38809C521FDEE3AF00295938 /* Info.plist */,
 			);
 			path = Source;
@@ -96,6 +108,17 @@
 				38809C5E1FDEE3AF00295938 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		388D04E91FF3365000E89940 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				388D04EA1FF336AD00E89940 /* APIClient.swift */,
+				388D04F01FF33E1B00E89940 /* APINethash.swift */,
+				388D04EE1FF3379200E89940 /* APINode.swift */,
+				388D04EC1FF336C300E89940 /* APIOptions.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		4DF01071EF1DB149BD833BFF /* Frameworks */ = {
@@ -185,6 +208,7 @@
 				TargetAttributes = {
 					38809C4D1FDEE3AF00295938 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					38809C561FDEE3AF00295938 = {
@@ -269,19 +293,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LiskTests/Pods-LiskTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bluebird/Bluebird.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Lisk/Lisk.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bluebird.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lisk.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -328,6 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				388D04EF1FF3379200E89940 /* APINode.swift in Sources */,
+				388D04E81FF32F5A00E89940 /* Constants.swift in Sources */,
+				388D04ED1FF336C300E89940 /* APIOptions.swift in Sources */,
+				388D04F11FF33E1B00E89940 /* APINethash.swift in Sources */,
+				388D04EB1FF336AD00E89940 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +493,7 @@
 			baseConfigurationReference = E063ADEBCF6DC5DCD5E1B7EF /* Pods-Lisk.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -482,6 +508,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abarba.me.Lisk;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -492,6 +519,7 @@
 			baseConfigurationReference = 22FA894E7082FB8CA4FB6FED /* Pods-Lisk.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -515,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20F8C91F6DA557716345D03C /* Pods-LiskTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EVJS956X67;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -530,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E2DE27A6B2B92BB96D41799 /* Pods-LiskTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EVJS956X67;
 				INFOPLIST_FILE = Tests/Info.plist;

@@ -1,37 +1,24 @@
 PODS:
-  - Alamofire (4.6.0)
   - Bluebird (2.0.1)
   - KeychainAccess (3.1.0)
   - Lisk (1.0.0):
-    - Alamofire (~> 4.0)
     - Bluebird (~> 2.0)
     - KeychainAccess (~> 3.1)
-    - RealmSwift (~> 3.0)
-  - Realm (3.0.2):
-    - Realm/Headers (= 3.0.2)
-  - Realm/Headers (3.0.2)
-  - RealmSwift (3.0.2):
-    - Realm (= 3.0.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.0)
   - Bluebird (~> 2.0)
   - KeychainAccess (~> 3.1)
   - Lisk (from `./`)
-  - RealmSwift (~> 3.0)
 
 EXTERNAL SOURCES:
   Lisk:
     :path: ./
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Bluebird: 0b8a99118a1a1898f9cab4440ce05731b0d3d996
   KeychainAccess: 94c5540b32eabf7bc32bfb976a268e8ea05fd6da
-  Lisk: 235b7a5aa5cf44f9cf7b0297c753759f80b2f8d7
-  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
-  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  Lisk: 9b4a4fa3b67f880244865754af3ca8b07ed04293
 
-PODFILE CHECKSUM: ed5caff49a053e9e84f1e9ba13ea50fe7e464ef3
+PODFILE CHECKSUM: 9667ae0352bcde7e0fd4f0c8a74ac4acd5ed5b44
 
 COCOAPODS: 1.3.1

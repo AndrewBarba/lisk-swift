@@ -17,8 +17,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '9.0'
   s.watchos.deployment_target = '2.0'
 
-  s.dependency 'Alamofire', '~> 4.0'
   s.dependency 'Bluebird', '~> 2.0'
   s.dependency 'KeychainAccess', '~> 3.1'
-  s.dependency 'RealmSwift', '~> 3.0'
 end
