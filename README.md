@@ -15,13 +15,17 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 ## Features
 
 - [x] Swift 4.0
-- [x] lisk-js 1.0.0 compatible
 - [x] Unit Tests
 - [x] Documentation
 
+## Modules
+
+- [Loader](https://andrewbarba.github.io/lisk-swift/Structs/Loader.html)
+- [APIClient](https://andrewbarba.github.io/lisk-swift/Structs/APIClient.html)
+
 ## Documentation
 
-Generated with Jazzy: [https://andrewbarba.github.io/lisk-swift/](https://andrewbarba.github.io/lisk-swift/)
+[https://andrewbarba.github.io/lisk-swift/](https://andrewbarba.github.io/lisk-swift/)
 
 ## Requirements
 
