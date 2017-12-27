@@ -6,21 +6,20 @@ Lisk Swift
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Twitter](https://img.shields.io/badge/twitter-@andrew_barba-blue.svg?style=flat)](http://twitter.com/andrew_barba)
 
-Lisk SDK written in Swift 4
+Lisk SDK written in Swift 4. API compatible with [Lisk 1.0.0](https://docs.lisk.io/docs)
 
 > This project is under heavy development. It aims to follow the Lisk 1.0.0 API which is also under heavy development
 
 ## Features
 
 - [x] Swift 4.0
-- [x] Performance
-- [x] Lightweight
+- [x] lisk-js 1.0.0 compatible
 - [x] Unit Tests
-- [x] 100% Documented
+- [x] Documentation
 
 ## Documentation
 
-Full documentation can be found on [CocoaDocs](http://cocoadocs.org/docsets/Lisk/)
+Generated with Jazzy: [https://andrewbarba.github.io/lisk-swift/](https://andrewbarba.github.io/lisk-swift/)
 
 ## Requirements
 
