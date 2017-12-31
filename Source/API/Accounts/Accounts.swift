@@ -27,9 +27,7 @@ extension Accounts {
     /// Retrieve the balance of a Lisk address
     /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-balance
     public func balance(address: String, completionHandler: @escaping (Response<BalanceResponse>) -> Void) {
-        let options: RequestOptions = [
-            "address": address
-        ]
+        let options = ["address": address]
         client.get(path: "accounts/getBalance", options: options, completionHandler: completionHandler)
     }
 }
@@ -41,9 +39,31 @@ extension Accounts {
     /// Retrieve the public key of a Lisk address
     /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-public-key
     public func publicKey(address: String, completionHandler: @escaping (Response<PublicKeyResponse>) -> Void) {
-        let options: RequestOptions = [
-            "address": address
-        ]
+        let options = ["address": address]
         client.get(path: "accounts/getPublicKey", options: options, completionHandler: completionHandler)
+    }
+}
+
+// MARK: - Account
+
+extension Accounts {
+
+    /// Retrieve the account info for an address
+    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-information-from-address
+    public func account(address: String, completionHandler: @escaping (Response<AccountResponse>) -> Void) {
+        let options = ["address": address]
+        client.get(path: "accounts", options: options, completionHandler: completionHandler)
+    }
+}
+
+// MARK: - Delegates
+
+extension Accounts {
+
+    /// Retrieve the delegates info for an address
+    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-delegates
+    public func delegates(address: String, completionHandler: @escaping (Response<DelegateResponse>) -> Void) {
+        let options = ["address": address]
+        client.get(path: "accounts/delegates", options: options, completionHandler: completionHandler)
     }
 }

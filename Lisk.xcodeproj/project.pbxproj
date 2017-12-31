@@ -12,6 +12,13 @@
 		38673F9A1FF96DB700D0E79D /* AccountsBalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F981FF96D9E00D0E79D /* AccountsBalanceTests.swift */; };
 		38673F9C1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F9B1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift */; };
 		38673F9F1FF9716700D0E79D /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F9D1FF9716100D0E79D /* AccountsPublicKeyTests.swift */; };
+		38673FA31FF9747800D0E79D /* AccountsAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673FA21FF9747800D0E79D /* AccountsAccountResponse.swift */; };
+		38673FA61FF974FC00D0E79D /* AccountsAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673FA51FF974FC00D0E79D /* AccountsAccountModel.swift */; };
+		38673FA81FF9758800D0E79D /* AccountsAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673FA71FF9758800D0E79D /* AccountsAccountTests.swift */; };
+		38673FAA1FF9797100D0E79D /* AccountsDelegateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673FA91FF9797100D0E79D /* AccountsDelegateResponse.swift */; };
+		38673FAD1FF979D200D0E79D /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673FAC1FF979D200D0E79D /* Delegates.swift */; };
+		38673FB01FF979FD00D0E79D /* DelegatesDelegateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673FAF1FF979FD00D0E79D /* DelegatesDelegateModel.swift */; };
+		38673FB31FF97ABE00D0E79D /* AccountsDelegatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673FB11FF97ABB00D0E79D /* AccountsDelegatesTests.swift */; };
 		38809C581FDEE3AF00295938 /* Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38809C4E1FDEE3AF00295938 /* Lisk.framework */; };
 		38809C5D1FDEE3AF00295938 /* LoaderStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38809C5C1FDEE3AF00295938 /* LoaderStatusTests.swift */; };
 		38809C5F1FDEE3AF00295938 /* Lisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 38809C511FDEE3AF00295938 /* Lisk.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +54,13 @@
 		38673F981FF96D9E00D0E79D /* AccountsBalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsBalanceTests.swift; sourceTree = "<group>"; };
 		38673F9B1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPublicKeyResponse.swift; sourceTree = "<group>"; };
 		38673F9D1FF9716100D0E79D /* AccountsPublicKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPublicKeyTests.swift; sourceTree = "<group>"; };
+		38673FA21FF9747800D0E79D /* AccountsAccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsAccountResponse.swift; sourceTree = "<group>"; };
+		38673FA51FF974FC00D0E79D /* AccountsAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsAccountModel.swift; sourceTree = "<group>"; };
+		38673FA71FF9758800D0E79D /* AccountsAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsAccountTests.swift; sourceTree = "<group>"; };
+		38673FA91FF9797100D0E79D /* AccountsDelegateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsDelegateResponse.swift; sourceTree = "<group>"; };
+		38673FAC1FF979D200D0E79D /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		38673FAF1FF979FD00D0E79D /* DelegatesDelegateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesDelegateModel.swift; sourceTree = "<group>"; };
+		38673FB11FF97ABB00D0E79D /* AccountsDelegatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsDelegatesTests.swift; sourceTree = "<group>"; };
 		38809C4E1FDEE3AF00295938 /* Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38809C511FDEE3AF00295938 /* Lisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lisk.h; sourceTree = "<group>"; };
 		38809C521FDEE3AF00295938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,9 +105,9 @@
 		38673F921FF96B3800D0E79D /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				38673FA41FF974E100D0E79D /* Models */,
+				38673FA01FF9743F00D0E79D /* Responses */,
 				38673F931FF96B4800D0E79D /* Accounts.swift */,
-				38673F951FF96B8300D0E79D /* AccountsBalanceResponse.swift */,
-				38673F9B1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -101,10 +115,58 @@
 		38673F971FF96D7D00D0E79D /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				38673FA71FF9758800D0E79D /* AccountsAccountTests.swift */,
 				38673F981FF96D9E00D0E79D /* AccountsBalanceTests.swift */,
+				38673FB11FF97ABB00D0E79D /* AccountsDelegatesTests.swift */,
 				38673F9D1FF9716100D0E79D /* AccountsPublicKeyTests.swift */,
 			);
 			path = Accounts;
+			sourceTree = "<group>";
+		};
+		38673FA01FF9743F00D0E79D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				38673FA21FF9747800D0E79D /* AccountsAccountResponse.swift */,
+				38673F951FF96B8300D0E79D /* AccountsBalanceResponse.swift */,
+				38673FA91FF9797100D0E79D /* AccountsDelegateResponse.swift */,
+				38673F9B1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		38673FA11FF9744D00D0E79D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				38FFD7AC1FF4192D00D39D40 /* LoaderStatusResponse.swift */,
+				38FFD7B01FF41CA500D39D40 /* LoaderStatusSyncResponse.swift */,
+				38FFD7B21FF41D0100D39D40 /* LoaderStatusPingResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		38673FA41FF974E100D0E79D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38673FA51FF974FC00D0E79D /* AccountsAccountModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38673FAB1FF979C400D0E79D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				38673FAE1FF979F100D0E79D /* Models */,
+				38673FAC1FF979D200D0E79D /* Delegates.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		38673FAE1FF979F100D0E79D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				38673FAF1FF979FD00D0E79D /* DelegatesDelegateModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		38809C441FDEE3AF00295938 = {
@@ -151,6 +213,7 @@
 			children = (
 				38673F921FF96B3800D0E79D /* Accounts */,
 				38FFD7AB1FF4181E00D39D40 /* Core */,
+				38673FAB1FF979C400D0E79D /* Delegates */,
 				38FFD7A81FF417CC00D39D40 /* Loader */,
 			);
 			path = API;
@@ -159,10 +222,8 @@
 		38FFD7A81FF417CC00D39D40 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
+				38673FA11FF9744D00D0E79D /* Responses */,
 				38FFD7A91FF4180400D39D40 /* Loader.swift */,
-				38FFD7AC1FF4192D00D39D40 /* LoaderStatusResponse.swift */,
-				38FFD7B01FF41CA500D39D40 /* LoaderStatusSyncResponse.swift */,
-				38FFD7B21FF41D0100D39D40 /* LoaderStatusPingResponse.swift */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -328,9 +389,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38673FB01FF979FD00D0E79D /* DelegatesDelegateModel.swift in Sources */,
 				388D04EF1FF3379200E89940 /* APINode.swift in Sources */,
 				38FFD7A51FF4162200D39D40 /* APIResponseError.swift in Sources */,
 				38FFD7B11FF41CA500D39D40 /* LoaderStatusSyncResponse.swift in Sources */,
+				38673FA61FF974FC00D0E79D /* AccountsAccountModel.swift in Sources */,
 				388D04E81FF32F5A00E89940 /* Constants.swift in Sources */,
 				388D04ED1FF336C300E89940 /* APIOptions.swift in Sources */,
 				38673F941FF96B4800D0E79D /* Accounts.swift in Sources */,
@@ -338,9 +401,12 @@
 				38FFD7B31FF41D0100D39D40 /* LoaderStatusPingResponse.swift in Sources */,
 				38FFD7AA1FF4180400D39D40 /* Loader.swift in Sources */,
 				38673F9C1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift in Sources */,
+				38673FA31FF9747800D0E79D /* AccountsAccountResponse.swift in Sources */,
 				38673F961FF96B8300D0E79D /* AccountsBalanceResponse.swift in Sources */,
 				388D04EB1FF336AD00E89940 /* APIClient.swift in Sources */,
 				38FFD7AD1FF4192D00D39D40 /* LoaderStatusResponse.swift in Sources */,
+				38673FAA1FF9797100D0E79D /* AccountsDelegateResponse.swift in Sources */,
+				38673FAD1FF979D200D0E79D /* Delegates.swift in Sources */,
 				38FFD7A31FF4122300D39D40 /* APIResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,8 +415,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38673FB31FF97ABE00D0E79D /* AccountsDelegatesTests.swift in Sources */,
 				38FFD7B71FF42C7500D39D40 /* LoaderStatusSyncTests.swift in Sources */,
 				38FFD7B51FF41D7A00D39D40 /* LiskTestCase.swift in Sources */,
+				38673FA81FF9758800D0E79D /* AccountsAccountTests.swift in Sources */,
 				38FFD7B91FF42D2200D39D40 /* LoaderStatusPingTests.swift in Sources */,
 				38673F9A1FF96DB700D0E79D /* AccountsBalanceTests.swift in Sources */,
 				38673F9F1FF9716700D0E79D /* AccountsPublicKeyTests.swift in Sources */,
