@@ -26,8 +26,8 @@ extension Loader {
 
     /// Retrieve the status of a Lisk Node
     /// https://docs.lisk.io/docs/lisk-api-080-loader#section-get-loading-status
-    public func status(_ completionHandler: @escaping (Response<LoaderStatusResponse>) -> Void) {
-        self.client.get(path: "loader/status", completionHandler: completionHandler)
+    public func status(completionHandler: @escaping (Response<StatusResponse>) -> Void) {
+        client.get(path: "loader/status", completionHandler: completionHandler)
     }
 }
 
@@ -37,8 +37,8 @@ extension Loader {
 
     /// Retrieve the sync status of a Lisk Node
     /// https://docs.lisk.io/docs/lisk-api-080-loader#section-get-synchronization-status
-    public func syncStatus(_ completionHandler: @escaping (Response<LoaderStatusSyncResponse>) -> Void) {
-        self.client.get(path: "loader/status/sync", completionHandler: completionHandler)
+    public func syncStatus(completionHandler: @escaping (Response<StatusSyncResponse>) -> Void) {
+        client.get(path: "loader/status/sync", completionHandler: completionHandler)
     }
 }
 
@@ -48,7 +48,7 @@ extension Loader {
 
     /// Retrieve the ping status of a Lisk Node
     /// https://docs.lisk.io/docs/lisk-api-080-loader#section-get-block-receipt-status
-    public func pingStatus(_ completionHandler: @escaping (Response<LoaderStatusPingResponse>) -> Void) {
-        self.client.get(path: "loader/status/ping", completionHandler: completionHandler)
+    public func pingStatus(completionHandler: @escaping (Response<StatusPingResponse>) -> Void) {
+        client.get(path: "loader/status/ping", completionHandler: completionHandler)
     }
 }

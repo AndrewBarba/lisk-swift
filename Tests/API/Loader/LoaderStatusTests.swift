@@ -13,17 +13,17 @@ class LoaderStatusTests: LiskTestCase {
     
     func testMainnetStatus() {
         let loader = Loader(client: mainNetClient)
-        let status = tryRequest { loader.status($0) }
-        XCTAssert(status.success)
-        XCTAssert(status.loaded)
-        XCTAssert(status.now > 0)
+        let response = tryRequest { loader.status(completionHandler: $0) }
+        XCTAssert(response.success)
+        XCTAssert(response.loaded)
+        XCTAssert(response.now > 0)
     }
 
     func testMainPeerStatus() {
         let loader = Loader(client: mainPeerClient)
-        let status = tryRequest { loader.status($0) }
-        XCTAssert(status.success)
-        XCTAssert(status.loaded)
-        XCTAssert(status.now > 0)
+        let response = tryRequest { loader.status(completionHandler: $0) }
+        XCTAssert(response.success)
+        XCTAssert(response.loaded)
+        XCTAssert(response.now > 0)
     }
 }

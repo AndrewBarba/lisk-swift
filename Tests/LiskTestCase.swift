@@ -17,6 +17,10 @@ class LiskTestCase: XCTestCase {
 
     let mainPeerClient = APIClient(options: .init(ssl: false, node: .init(hostname: "lisk0.abarba.me")))
 
+    let mainNetAddress = "14987768355736502769L"
+
+    let mainNetPublicKey = "f33f878dc7e7177f60f3dcfef842b1cc3c947c3910eee6e8ecd33b9e1a7f38d7"
+
     @discardableResult
     func tryRequest<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> R {
         let expectation = XCTestExpectation()
@@ -28,16 +32,28 @@ class LiskTestCase: XCTestCase {
             case .success(let r):
                 result = r
             case .error(let error):
-                print(error)
-                result = nil
+                XCTFail(error.error)
             }
             expectation.fulfill()
         }
-
         wait(for: [expectation], timeout: 10)
-
-        XCTAssertNotNil(result)
-
         return result!
+    }
+
+    @discardableResult
+    func tryRequestError<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> APIResponseError {
+        let expectation = XCTestExpectation()
+        var error: APIResponseError?
+        block() { response in
+            switch response {
+            case .success:
+                XCTFail("Expected an error response, request was succeeded")
+            case .error(let _error):
+                error = _error
+            }
+            expectation.fulfill()
+        }
+        wait(for: [expectation], timeout: 10)
+        return error!
     }
 }

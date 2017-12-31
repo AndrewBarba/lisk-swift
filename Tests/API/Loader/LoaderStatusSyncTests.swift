@@ -13,15 +13,15 @@ class LoaderStatusSyncTests: LiskTestCase {
 
     func testMainnetSyncStatus() {
         let loader = Loader(client: mainNetClient)
-        let sync = tryRequest { loader.syncStatus($0) }
-        XCTAssert(sync.success)
-        XCTAssertFalse(sync.syncing)
+        let response = tryRequest { loader.syncStatus(completionHandler: $0) }
+        XCTAssert(response.success)
+        XCTAssertFalse(response.syncing)
     }
 
     func testMainPeerSyncStatus() {
         let loader = Loader(client: mainPeerClient)
-        let sync = tryRequest { loader.syncStatus($0) }
-        XCTAssert(sync.success)
-        XCTAssertFalse(sync.syncing)
+        let response = tryRequest { loader.syncStatus(completionHandler: $0) }
+        XCTAssert(response.success)
+        XCTAssertFalse(response.syncing)
     }
 }

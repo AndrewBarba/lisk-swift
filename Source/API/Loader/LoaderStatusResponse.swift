@@ -9,13 +9,16 @@
 import Foundation
 
 /// https://docs.lisk.io/docs/lisk-api-080-loader#section-get-loading-status
-public struct LoaderStatusResponse: APIResponse {
+extension Loader {
 
-    public let success: Bool
+    public struct StatusResponse: APIResponse {
 
-    public let loaded: Bool
+        public let success: Bool
 
-    public let now: UInt64
+        public let loaded: Bool
 
-    public let blocksCount: UInt64
+        public let now: UInt64
+
+        public let blocksCount: UInt64
+    }
 }

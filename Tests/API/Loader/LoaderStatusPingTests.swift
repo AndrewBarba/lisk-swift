@@ -13,13 +13,13 @@ class LoaderStatusPingTests: LiskTestCase {
 
     func testMainnetPingStatus() {
         let loader = Loader(client: mainNetClient)
-        let ping = tryRequest { loader.pingStatus($0) }
-        XCTAssert(ping.success)
+        let response = tryRequest { loader.pingStatus(completionHandler: $0) }
+        XCTAssert(response.success)
     }
 
     func testMainPeerPingStatus() {
         let loader = Loader(client: mainPeerClient)
-        let ping = tryRequest { loader.pingStatus($0) }
-        XCTAssert(ping.success)
+        let response = tryRequest { loader.pingStatus(completionHandler: $0) }
+        XCTAssert(response.success)
     }
 }

@@ -9,7 +9,10 @@
 import Foundation
 
 /// https://docs.lisk.io/docs/lisk-api-080-loader#section-get-block-receipt-status
-public struct LoaderStatusPingResponse: APIResponse {
+extension Loader {
 
-    public let success: Bool
+    public struct StatusPingResponse: APIResponse {
+
+        public let success: Bool
+    }
 }

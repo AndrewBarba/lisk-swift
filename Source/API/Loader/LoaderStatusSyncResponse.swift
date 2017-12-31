@@ -9,17 +9,20 @@
 import Foundation
 
 /// https://docs.lisk.io/docs/lisk-api-080-loader#section-get-synchronization-status
-public struct LoaderStatusSyncResponse: APIResponse {
+extension Loader {
 
-    public let success: Bool
+    public struct StatusSyncResponse: APIResponse {
 
-    public let syncing: Bool
+        public let success: Bool
 
-    public let blocks: UInt64
+        public let syncing: Bool
 
-    public let height: UInt64
+        public let blocks: UInt64
 
-    public let broadhash: String
+        public let height: UInt64
 
-    public let consensus: UInt64
+        public let broadhash: String
+
+        public let consensus: UInt64
+    }
 }

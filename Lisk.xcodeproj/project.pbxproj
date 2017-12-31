@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38673F941FF96B4800D0E79D /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F931FF96B4800D0E79D /* Accounts.swift */; };
+		38673F961FF96B8300D0E79D /* AccountsBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F951FF96B8300D0E79D /* AccountsBalanceResponse.swift */; };
+		38673F9A1FF96DB700D0E79D /* AccountsBalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F981FF96D9E00D0E79D /* AccountsBalanceTests.swift */; };
+		38673F9C1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F9B1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift */; };
+		38673F9F1FF9716700D0E79D /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38673F9D1FF9716100D0E79D /* AccountsPublicKeyTests.swift */; };
 		38809C581FDEE3AF00295938 /* Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38809C4E1FDEE3AF00295938 /* Lisk.framework */; };
 		38809C5D1FDEE3AF00295938 /* LoaderStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38809C5C1FDEE3AF00295938 /* LoaderStatusTests.swift */; };
 		38809C5F1FDEE3AF00295938 /* Lisk.h in Headers */ = {isa = PBXBuildFile; fileRef = 38809C511FDEE3AF00295938 /* Lisk.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38673F931FF96B4800D0E79D /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		38673F951FF96B8300D0E79D /* AccountsBalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsBalanceResponse.swift; sourceTree = "<group>"; };
+		38673F981FF96D9E00D0E79D /* AccountsBalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsBalanceTests.swift; sourceTree = "<group>"; };
+		38673F9B1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPublicKeyResponse.swift; sourceTree = "<group>"; };
+		38673F9D1FF9716100D0E79D /* AccountsPublicKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPublicKeyTests.swift; sourceTree = "<group>"; };
 		38809C4E1FDEE3AF00295938 /* Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38809C511FDEE3AF00295938 /* Lisk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Lisk.h; sourceTree = "<group>"; };
 		38809C521FDEE3AF00295938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +88,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38673F921FF96B3800D0E79D /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				38673F931FF96B4800D0E79D /* Accounts.swift */,
+				38673F951FF96B8300D0E79D /* AccountsBalanceResponse.swift */,
+				38673F9B1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		38673F971FF96D7D00D0E79D /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				38673F981FF96D9E00D0E79D /* AccountsBalanceTests.swift */,
+				38673F9D1FF9716100D0E79D /* AccountsPublicKeyTests.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
 		38809C441FDEE3AF00295938 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +149,7 @@
 		388D04E91FF3365000E89940 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				38673F921FF96B3800D0E79D /* Accounts */,
 				38FFD7AB1FF4181E00D39D40 /* Core */,
 				38FFD7A81FF417CC00D39D40 /* Loader */,
 			);
@@ -153,6 +183,7 @@
 		38FFD7AE1FF419CE00D39D40 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				38673F971FF96D7D00D0E79D /* Accounts */,
 				38FFD7AF1FF419D400D39D40 /* Loader */,
 			);
 			path = API;
@@ -302,9 +333,12 @@
 				38FFD7B11FF41CA500D39D40 /* LoaderStatusSyncResponse.swift in Sources */,
 				388D04E81FF32F5A00E89940 /* Constants.swift in Sources */,
 				388D04ED1FF336C300E89940 /* APIOptions.swift in Sources */,
+				38673F941FF96B4800D0E79D /* Accounts.swift in Sources */,
 				388D04F11FF33E1B00E89940 /* APINethash.swift in Sources */,
 				38FFD7B31FF41D0100D39D40 /* LoaderStatusPingResponse.swift in Sources */,
 				38FFD7AA1FF4180400D39D40 /* Loader.swift in Sources */,
+				38673F9C1FF970CC00D0E79D /* AccountsPublicKeyResponse.swift in Sources */,
+				38673F961FF96B8300D0E79D /* AccountsBalanceResponse.swift in Sources */,
 				388D04EB1FF336AD00E89940 /* APIClient.swift in Sources */,
 				38FFD7AD1FF4192D00D39D40 /* LoaderStatusResponse.swift in Sources */,
 				38FFD7A31FF4122300D39D40 /* APIResponse.swift in Sources */,
@@ -318,6 +352,8 @@
 				38FFD7B71FF42C7500D39D40 /* LoaderStatusSyncTests.swift in Sources */,
 				38FFD7B51FF41D7A00D39D40 /* LiskTestCase.swift in Sources */,
 				38FFD7B91FF42D2200D39D40 /* LoaderStatusPingTests.swift in Sources */,
+				38673F9A1FF96DB700D0E79D /* AccountsBalanceTests.swift in Sources */,
+				38673F9F1FF9716700D0E79D /* AccountsPublicKeyTests.swift in Sources */,
 				38809C5D1FDEE3AF00295938 /* LoaderStatusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
