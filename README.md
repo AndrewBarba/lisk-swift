@@ -20,6 +20,8 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 
 ## Modules
 
+- [Accounts](https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html)
+- [Delegates](https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html)
 - [Loader](https://andrewbarba.github.io/lisk-swift/Structs/Loader.html)
 - [APIClient](https://andrewbarba.github.io/lisk-swift/Structs/APIClient.html)
 
