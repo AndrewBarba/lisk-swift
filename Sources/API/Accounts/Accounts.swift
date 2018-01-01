@@ -20,6 +20,25 @@ public struct Accounts {
     }
 }
 
+// MARK: - Open
+
+extension Accounts {
+
+    /// Opens a new/existing Lisk account via secret passphrase
+    /// https://docs.lisk.io/v1.4/docs/lisk-api-080-accounts#section-get-account-information
+    public func open(secret: String, completionHandler: @escaping (Response<AccountResponse>) -> Void) {
+        do {
+            let crypto = Crypto()
+            let (publicKey, _) = try crypto.keys(fromSecret: secret)
+            let address = crypto.address(fromPublicKey: publicKey)
+            self.account(address: address, completionHandler: completionHandler)
+        } catch {
+            let response = APIResponseError(error: "Invalid secret key")
+            completionHandler(.error(response: response))
+        }
+    }
+}
+
 // MARK: - Balance
 
 extension Accounts {

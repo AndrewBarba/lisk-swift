@@ -21,6 +21,12 @@ class LiskTestCase: XCTestCase {
 
     let mainNetPublicKey = "f33f878dc7e7177f60f3dcfef842b1cc3c947c3910eee6e8ecd33b9e1a7f38d7"
 
+    let mainNetExampleSecret = "song ordinary prosper bridge habit blanket cheap report option never slim carry"
+
+    let mainNetExampleAddress = "5549607903333983622L"
+
+    let mainNetExamplePublicKey = "1ee2381045434c0b9a964cbe7f853e1d2a72de0d979881e661e5278ea6c40a48"
+
     @discardableResult
     func tryRequest<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> R {
         let expectation = XCTestExpectation()

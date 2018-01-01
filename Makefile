@@ -1,5 +1,9 @@
 .PHONY: docs
 
+development:
+	swift build
+	swift package generate-xcodeproj
+
 docs:
 	jazzy \
 		--clean \

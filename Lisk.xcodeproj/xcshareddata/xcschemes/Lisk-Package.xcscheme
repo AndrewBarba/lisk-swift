@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0920"
+   LastUpgradeVersion = "9999"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,65 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38809C4D1FDEE3AF00295938"
+               BlueprintIdentifier = "Lisk::Lisk"
                BuildableName = "Lisk.framework"
                BlueprintName = "Lisk"
+               ReferencedContainer = "container:Lisk.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Ed25519::Ed25519"
+               BuildableName = "Ed25519.framework"
+               BlueprintName = "Ed25519"
+               ReferencedContainer = "container:Lisk.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Ed25519::CEd25519"
+               BuildableName = "CEd25519.framework"
+               BlueprintName = "CEd25519"
+               ReferencedContainer = "container:Lisk.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CryptoSwift::CryptoSwift"
+               BuildableName = "CryptoSwift.framework"
+               BlueprintName = "CryptoSwift"
+               ReferencedContainer = "container:Lisk.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "Bluebird::Bluebird"
+               BuildableName = "Bluebird.framework"
+               BlueprintName = "Bluebird"
                ReferencedContainer = "container:Lisk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,29 +83,19 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38809C561FDEE3AF00295938"
+               BlueprintIdentifier = "Lisk::LiskTests"
                BuildableName = "LiskTests.xctest"
                BlueprintName = "LiskTests"
                ReferencedContainer = "container:Lisk.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38809C4D1FDEE3AF00295938"
-            BuildableName = "Lisk.framework"
-            BlueprintName = "Lisk"
-            ReferencedContainer = "container:Lisk.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -67,7 +113,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38809C4D1FDEE3AF00295938"
+            BlueprintIdentifier = "Lisk::Lisk"
             BuildableName = "Lisk.framework"
             BlueprintName = "Lisk"
             ReferencedContainer = "container:Lisk.xcodeproj">
@@ -82,15 +128,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38809C4D1FDEE3AF00295938"
-            BuildableName = "Lisk.framework"
-            BlueprintName = "Lisk"
-            ReferencedContainer = "container:Lisk.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
