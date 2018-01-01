@@ -1,6 +1,6 @@
 .PHONY: docs
 
-development:
+deps:
 	swift build
 	swift package generate-xcodeproj
 
