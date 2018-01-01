@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 /// Represents an HTTP response
 public enum Response<T: APIResponse> {
     case success(response: T)
