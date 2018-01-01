@@ -23,6 +23,7 @@
 /* Begin PBXBuildFile section */
 		38434E511FFA85CE00AA3540 /* AccountsOpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38434E501FFA85CE00AA3540 /* AccountsOpenTests.swift */; };
 		38434E541FFA9B9200AA3540 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38434E521FFA8BBE00AA3540 /* Crypto.swift */; };
+		38434E571FFACC4000AA3540 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38434E551FFACBCE00AA3540 /* SHA256.swift */; };
 		OBJ_173 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_179 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* Package.swift */; };
 		OBJ_185 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* Package.swift */; };
@@ -245,6 +246,7 @@
 /* Begin PBXFileReference section */
 		38434E501FFA85CE00AA3540 /* AccountsOpenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsOpenTests.swift; sourceTree = "<group>"; };
 		38434E521FFA8BBE00AA3540 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		38434E551FFACBCE00AA3540 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
 		"Bluebird::Bluebird::Product" /* Bluebird.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bluebird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CryptoSwift::CryptoSwift::Product" /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Ed25519::CEd25519::Product" /* CEd25519.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CEd25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -443,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				38434E521FFA8BBE00AA3540 /* Crypto.swift */,
+				38434E551FFACBCE00AA3540 /* SHA256.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -1065,6 +1068,7 @@
 				OBJ_230 /* AccountsPublicKeyResponse.swift in Sources */,
 				OBJ_231 /* APIClient.swift in Sources */,
 				OBJ_232 /* APINethash.swift in Sources */,
+				38434E571FFACC4000AA3540 /* SHA256.swift in Sources */,
 				OBJ_233 /* APINode.swift in Sources */,
 				OBJ_234 /* APIOptions.swift in Sources */,
 				OBJ_235 /* APIResponse.swift in Sources */,
