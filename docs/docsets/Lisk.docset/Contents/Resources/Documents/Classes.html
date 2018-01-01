@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lisk  Reference</title>
+    <title>Classes  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,7 +10,7 @@
     
   </head>
   <body>
-    <a title="Lisk  Reference"></a>
+    <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">Lisk Docs</a> (56% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="index.html">Lisk Reference</a>
         <img id="carat" src="img/carat.png" />
-        Lisk  Reference
+        Classes  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -138,63 +138,44 @@
       <article class="main-content">
         <section>
           <section class="section">
-            
-            <h1 id='lisk-swift' class='heading'>Lisk Swift</h1>
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
 
-<p><a href="https://www.bitrise.io/app/b15eedbea467ee22"><img src="https://www.bitrise.io/app/b15eedbea467ee22/status.svg?token=RkzlwvQLLXXn5w1J1z2tpQ&branch=master" alt="Build Status"></a>
-<a href="https://img.shields.io/cocoapods/v/Lisk.svg"><img src="https://img.shields.io/cocoapods/v/Lisk.svg" alt="CocoaPods Compatible"></a>
-<a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible"></a>
-<a href="http://twitter.com/andrew_barba"><img src="https://img.shields.io/badge/twitter-@andrew_barba-blue.svg?style=flat" alt="Twitter"></a></p>
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk6SHA256C"></a>
+                    <a name="//apple_ref/swift/Class/SHA256" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk6SHA256C">SHA256</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SHA-256 implementation from Secure Hash Algorithm 2 (SHA-2) set of
+cryptographic hash functions (FIPS PUB 180-2).</p>
 
-<p>Lisk Swift is a Swift 4 library for Lisk - the cryptocurrency and blockchain application platform. It allows developers to create offline transactions and broadcast them onto the network. It also allows developers to interact with the core Lisk API, for retrieval of collections and single records of data located on the Lisk blockchain. Its main benefit is that it does not require a locally installed Lisk node, and instead utilizes the existing peers on the network. It can be used on any environment that runs Swift 4, including iOS, tvOS, macOS, watchOS.</p>
+                        <a href="Classes/SHA256.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SHA256</span></code></pre>
 
-<p>Lisk Swift is heavily inspired by <a href="https://github.com/LiskHQ/lisk-js">Lisk JS</a></p>
-
-<blockquote>
-<p>This project is under heavy development. It aims to follow the Lisk 1.0.0 API which is also under heavy development</p>
-</blockquote>
-<h2 id='features' class='heading'>Features</h2>
-
-<ul>
-<li>[x] Swift 4.0</li>
-<li>[x] Unit Tests</li>
-<li>[x] Documentation</li>
-</ul>
-<h2 id='modules' class='heading'>Modules</h2>
-
-<ul>
-<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html">Accounts</a></li>
-<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html">Delegates</a></li>
-<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Loader.html">Loader</a></li>
-<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/APIClient.html">APIClient</a></li>
-</ul>
-<h2 id='documentation' class='heading'>Documentation</h2>
-
-<p><a href="https://andrewbarba.github.io/lisk-swift/">https://andrewbarba.github.io/lisk-swift/</a></p>
-<h2 id='requirements' class='heading'>Requirements</h2>
-
-<ul>
-<li>iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+</li>
-<li>Xcode 9.0+</li>
-<li>Swift 4.0+</li>
-</ul>
-<h2 id='installation' class='heading'>Installation</h2>
-<h3 id='cocoapods' class='heading'>CocoaPods</h3>
-
-<blockquote>
-<p>CocoaPods 1.1.0+ is required to build lisk-swift</p>
-</blockquote>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Lisk'</span><span class="p">,</span> <span class="s1">'~&gt; 1.0.0-beta'</span>
-</code></pre>
-<h3 id='carthage' class='heading'>Carthage</h3>
-<pre class="highlight plaintext"><code>github "AndrewBarba/lisk-swift" ~&gt; 1.0.0-beta
-</code></pre>
-<h2 id='thank-you' class='heading'>Thank You</h2>
-
-<p>To show support for continued development feel free to vote for my delegate: <a href="https://explorer.lisk.io/delegate/14987768355736502769L">andrew</a></p>
-
-<p>Or donate LSK to <code>14987768355736502769L</code></p>
-
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
         <section id="footer">
