@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Lisk'
-  s.version          = '1.0.0-beta1'
-  s.summary          = 'Lisk SDK for Swift 4'
+  s.version          = '1.0.0-beta2'
+  s.summary          = 'Swift 4 library for Lisk - the cryptocurrency and blockchain application platform'
   s.homepage         = 'https://github.com/AndrewBarba/lisk-swift'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Andrew Barba' => 'abarba.77@gmail.com' }
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '10.0'
   s.watchos.deployment_target = '3.0'
 
-  s.source_files = 'Source/**/*.{h,swift}'
-  s.public_header_files = 'Source/**/*.h'
+  s.source_files = 'Sources/**/*.{h,swift}'
+  s.public_header_files = 'Sources/**/*.h'
 end

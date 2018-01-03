@@ -22,7 +22,7 @@ public struct Crypto {
 
     /// Extract Lisk address from a public key
     public func address(fromPublicKey publicKey: String) -> String {
-        let bytes = SHA256(publicKey.hexBytes).digest()[0..<8].reversed()
+        let bytes = SHA256(publicKey.hexBytes()).digest()[0..<8].reversed()
         let data = Data(bytes: Array(bytes))
         let value = Int(bigEndian: data.withUnsafeBytes { $0.pointee })
         return "\(value)L"
@@ -31,20 +31,13 @@ public struct Crypto {
 
 extension String {
 
-    fileprivate var hexBytes: [UInt8] {
-        var bytes = [UInt8]()
-        bytes.reserveCapacity(count/2)
-        var index = startIndex
-        for _ in 0..<count/2 {
-            let nextIndex = self.index(index, offsetBy: 2)
-            if let b = UInt8(self[index..<nextIndex], radix: 16) {
-                bytes.append(b)
-            } else {
-                return []
-            }
-            index = nextIndex
+    fileprivate func hexBytes() -> [UInt8] {
+        return (0..<count/2).reduce([]) { res, i in
+            let indexStart = index(startIndex, offsetBy: i * 2)
+            let indexEnd = index(indexStart, offsetBy: 2)
+            let substring = self[indexStart..<indexEnd]
+            return res + [UInt8(substring, radix: 16) ?? 0]
         }
-        return bytes
     }
 }
 
