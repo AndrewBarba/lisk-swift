@@ -14,6 +14,9 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 
 ## Features
 
+- [x] Local Signing for maximum security
+- [x] Targets Lisk 1.0.0 API
+- [x] Directly based on lisk-js
 - [x] Swift 4.0
 - [x] Unit Tests
 - [x] Documentation
