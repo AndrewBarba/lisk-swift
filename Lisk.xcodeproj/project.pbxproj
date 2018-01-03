@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9A1FFC82490008C527 /* Transactions.swift */; };
+		3874AB9E1FFC82C50008C527 /* TransactionsTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9D1FFC82C50008C527 /* TransactionsTransactionResponse.swift */; };
+		3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA01FFC831B0008C527 /* TransactionModel.swift */; };
 		OBJ_100 /* AccountsDelegatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AccountsDelegatesTests.swift */; };
 		OBJ_101 /* AccountsOpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AccountsOpenTests.swift */; };
 		OBJ_102 /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* AccountsPublicKeyTests.swift */; };
@@ -129,6 +132,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3874AB9A1FFC82490008C527 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		3874AB9D1FFC82C50008C527 /* TransactionsTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTransactionResponse.swift; sourceTree = "<group>"; };
+		3874ABA01FFC831B0008C527 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		"Ed25519::CEd25519::Product" /* CEd25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CEd25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Ed25519::Ed25519::Product" /* Ed25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ed25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Lisk::Lisk::Product" /* Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +229,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3874AB991FFC82260008C527 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				3874AB9F1FFC830E0008C527 /* Models */,
+				3874AB9C1FFC82B20008C527 /* Responses */,
+				3874AB9A1FFC82490008C527 /* Transactions.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		3874AB9C1FFC82B20008C527 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				3874AB9D1FFC82C50008C527 /* TransactionsTransactionResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		3874AB9F1FFC830E0008C527 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3874ABA01FFC831B0008C527 /* TransactionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		OBJ_11 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,7 +372,7 @@
 			path = Loader;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -350,7 +382,6 @@
 				OBJ_53 /* Dependencies */,
 				OBJ_76 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_53 /* Dependencies */ = {
@@ -415,8 +446,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* API */,
 				OBJ_28 /* Constants.swift */,
+				OBJ_8 /* API */,
 				OBJ_29 /* Core */,
 				OBJ_36 /* Crypto */,
 			);
@@ -440,6 +471,7 @@
 				OBJ_9 /* Accounts */,
 				OBJ_18 /* Delegates */,
 				OBJ_22 /* Loader */,
+				3874AB991FFC82260008C527 /* Transactions */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -570,7 +602,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */,
 				OBJ_121 /* Accounts.swift in Sources */,
 				OBJ_122 /* AccountsAccountModel.swift in Sources */,
 				OBJ_123 /* AccountsAccountResponse.swift in Sources */,
@@ -607,11 +640,13 @@
 				OBJ_134 /* APIClient.swift in Sources */,
 				OBJ_135 /* APINethash.swift in Sources */,
 				OBJ_136 /* APINode.swift in Sources */,
+				3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */,
 				OBJ_137 /* APIOptions.swift in Sources */,
 				OBJ_138 /* APIResponse.swift in Sources */,
 				OBJ_139 /* APIResponseError.swift in Sources */,
 				OBJ_140 /* Crypto.swift in Sources */,
 				OBJ_141 /* SHA256.swift in Sources */,
+				3874AB9E1FFC82C50008C527 /* TransactionsTransactionResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
