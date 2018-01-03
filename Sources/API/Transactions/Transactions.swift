@@ -23,10 +23,31 @@ public struct Transactions {
 
 extension Transactions {
 
-    /// Broadcasts a locally signed transaction to the network
-    public func broadcast(signedTransaction: Any, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+    /// [WIP] Broadcasts a locally signed transaction to the network
+    public func broadcast(signedTransaction: RequestOptions, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
         let options = ["transaction": signedTransaction]
         client.post(path: "transactions", options: options, completionHandler: completionHandler)
+    }
+}
+
+// MARK: - Send
+
+extension Transactions {
+
+    /// [WIP] Transfer LSK to a Lisk address
+    /// - Note: To send 1.2 LSK, pass amount as 1.2, it will be converted appropriately
+    public func transfer(amount: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+        let transaction: RequestOptions = [
+            "type": 0,
+            "amount": "\(UInt64(amount * Constants.fixedPoint))",
+            "fee": "\(Constants.Fee.transfer)",
+            "recipientId": recipient,
+            "recipientPublicKey": NSNull(),
+            "senderPublicKey": try! Crypto().keys(fromSecret: secret).publicKey,
+            "timestamp": 0,
+            "asset": [:]
+        ]
+        broadcast(signedTransaction: transaction, completionHandler: completionHandler)
     }
 }
 
