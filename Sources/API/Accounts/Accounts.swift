@@ -28,9 +28,8 @@ extension Accounts {
     /// https://docs.lisk.io/v1.4/docs/lisk-api-080-accounts#section-get-account-information
     public func open(secret: String, completionHandler: @escaping (Response<AccountResponse>) -> Void) {
         do {
-            let crypto = Crypto()
-            let (publicKey, _) = try crypto.keys(fromSecret: secret)
-            let address = crypto.address(fromPublicKey: publicKey)
+            let (publicKey, _) = try Crypto.keys(fromSecret: secret)
+            let address = Crypto.address(fromPublicKey: publicKey)
             self.account(address: address, completionHandler: completionHandler)
         } catch {
             let response = APIResponseError(error: "Invalid secret key")

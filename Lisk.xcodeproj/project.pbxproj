@@ -26,10 +26,9 @@
 		3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA01FFC831B0008C527 /* TransactionModel.swift */; };
 		3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */; };
 		3874ABA61FFC8EEE0008C527 /* TransactionsListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */; };
-		3883A8BB200289C000460A9B /* TransactionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BA200289C000460A9B /* TransactionHelpers.swift */; };
-		3883A8BE2002929800460A9B /* TransactionsHelpersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BD2002929800460A9B /* TransactionsHelpersTest.swift */; };
 		3883A8C120029A9700460A9B /* BytePacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BF20029A4000460A9B /* BytePacker.swift */; };
-		3883A8C320029BE500460A9B /* TransactionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C220029BE500460A9B /* TransactionBuilder.swift */; };
+		3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C220029BE500460A9B /* LocalTransaction.swift */; };
+		3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */; };
 		OBJ_100 /* AccountsDelegatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AccountsDelegatesTests.swift */; };
 		OBJ_101 /* AccountsOpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AccountsOpenTests.swift */; };
 		OBJ_102 /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* AccountsPublicKeyTests.swift */; };
@@ -143,10 +142,9 @@
 		3874ABA01FFC831B0008C527 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 		3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsGetTests.swift; sourceTree = "<group>"; };
 		3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListTest.swift; sourceTree = "<group>"; };
-		3883A8BA200289C000460A9B /* TransactionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHelpers.swift; sourceTree = "<group>"; };
-		3883A8BD2002929800460A9B /* TransactionsHelpersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsHelpersTest.swift; sourceTree = "<group>"; };
+		3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSigningTest.swift; sourceTree = "<group>"; };
 		3883A8BF20029A4000460A9B /* BytePacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytePacker.swift; sourceTree = "<group>"; };
-		3883A8C220029BE500460A9B /* TransactionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBuilder.swift; sourceTree = "<group>"; };
+		3883A8C220029BE500460A9B /* LocalTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransaction.swift; sourceTree = "<group>"; };
 		"Ed25519::CEd25519::Product" /* CEd25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CEd25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Ed25519::Ed25519::Product" /* Ed25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ed25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Lisk::Lisk::Product" /* Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,8 +245,7 @@
 				3874AB9F1FFC830E0008C527 /* Models */,
 				3874AB9C1FFC82B20008C527 /* Responses */,
 				3874AB9A1FFC82490008C527 /* Transactions.swift */,
-				3883A8BA200289C000460A9B /* TransactionHelpers.swift */,
-				3883A8C220029BE500460A9B /* TransactionBuilder.swift */,
+				3883A8C220029BE500460A9B /* LocalTransaction.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";
@@ -273,7 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */,
-				3883A8BD2002929800460A9B /* TransactionsHelpersTest.swift */,
+				3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */,
 				3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */,
 			);
 			path = Transactions;
@@ -650,7 +647,6 @@
 			buildActionMask = 0;
 			files = (
 				3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */,
-				3883A8BB200289C000460A9B /* TransactionHelpers.swift in Sources */,
 				OBJ_121 /* Accounts.swift in Sources */,
 				OBJ_122 /* AccountsAccountModel.swift in Sources */,
 				OBJ_123 /* AccountsAccountResponse.swift in Sources */,
@@ -669,7 +665,7 @@
 				OBJ_135 /* APINethash.swift in Sources */,
 				OBJ_136 /* APINode.swift in Sources */,
 				3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */,
-				3883A8C320029BE500460A9B /* TransactionBuilder.swift in Sources */,
+				3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */,
 				OBJ_137 /* APIOptions.swift in Sources */,
 				OBJ_138 /* APIResponse.swift in Sources */,
 				OBJ_139 /* APIResponseError.swift in Sources */,
@@ -732,7 +728,7 @@
 				OBJ_99 /* AccountsBalanceTests.swift in Sources */,
 				OBJ_100 /* AccountsDelegatesTests.swift in Sources */,
 				3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */,
-				3883A8BE2002929800460A9B /* TransactionsHelpersTest.swift in Sources */,
+				3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */,
 				OBJ_101 /* AccountsOpenTests.swift in Sources */,
 				OBJ_102 /* AccountsPublicKeyTests.swift in Sources */,
 				OBJ_103 /* LoaderStatusPingTests.swift in Sources */,

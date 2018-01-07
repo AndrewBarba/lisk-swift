@@ -7,6 +7,18 @@
 
 import Foundation
 
+/// Type of transactions supported on Lisk network
+public enum TransactionType: UInt8, Encodable {
+    case transfer = 0
+    case registerSecondPassphrase = 1
+    case registerDelegate = 2
+    case castVotes = 3
+    case registerMultisignature = 4
+    case createDapp = 5
+    case transferIntoDapp = 6
+    case transferOutOfDapp = 7
+}
+
 /// Loader - https://docs.lisk.io/docs/lisk-api-080-transactions
 public struct Transactions {
 
@@ -24,7 +36,11 @@ public struct Transactions {
 extension Transactions {
 
     /// Broadcasts a locally signed transaction to the network
-    public func broadcast(signedTransaction: TransactionBuilder, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+    public func broadcast(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+        guard signedTransaction.isSigned else {
+            let response = APIResponseError(error: "Invalid Transaction - Transaction has not been signed")
+            return completionHandler(.error(response: response))
+        }
         let options = ["transaction": signedTransaction.requestOptions]
         client.post(path: "transactions", options: options, completionHandler: completionHandler)
     }
@@ -35,10 +51,11 @@ extension Transactions {
 extension Transactions {
 
     /// Transfer LSK to a Lisk address using Local Signing
-    public func transfer(amount: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+    public func transfer(lsk: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
         do {
-            let transaction = try TransactionHelpers.prepare(type: 0, amount: amount, to: recipient, secret: secret, secondSecret: secondSecret)
-            broadcast(signedTransaction: transaction, completionHandler: completionHandler)
+            let transaction = LocalTransaction(.transfer, lsk: lsk, recipientId: recipient)
+            let signedTransaction = try transaction.signed(secret: secret, secondSecret: secondSecret)
+            broadcast(signedTransaction: signedTransaction, completionHandler: completionHandler)
         } catch {
             let response = APIResponseError(error: error.localizedDescription)
             completionHandler(.error(response: response))
