@@ -38,4 +38,15 @@ class TransactionsSigningTests: LiskTestCase {
         XCTAssertEqual(transaction.signSignature, "e1b31c2e4b0c84d2fcd88f99ebaa0e4eba779e699501b6c9aa127869b8a5f1cb56942c661298fed76e6e25a457ebacc99ab63c3862b26d8c9b00d728fb022b08")
         XCTAssertEqual(transaction.id, "6691152579858420672")
     }
+
+    func testSignRequestOptions() {
+        var transaction = LocalTransaction(.transfer, lsk: 1.12, recipientId: mainNetAddress, timestamp: 10)
+        try? transaction.sign(secret: mainNetExampleSecret)
+
+        let options = transaction.requestOptions
+
+        // Check bytes
+        XCTAssertEqual(options["signature"] as? String, "35d721d1524c48d32bfaf3b33fd826968d3c99d682e661cfbc666e1cd1fac48d1e58903d6e7a84fd34bcd0b2874f720aa453bc7027442adf0c29443650725106")
+        XCTAssertEqual(options["id"] as? String, "730261182562463085")
+    }
 }
