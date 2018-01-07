@@ -17,15 +17,15 @@ public struct Constants {
     public static let fixedPoint: Double = pow(10, 8)
 
     public struct Fee {
-        public static let transfer: Double = 0.1 * fixedPoint
-        public static let data: Double = 0.1 * fixedPoint
-        public static let inTransfer: Double = 0.1 * fixedPoint
-        public static let outTransfer: Double = 0.1 * fixedPoint
-        public static let signature: Double = 5 * fixedPoint
-        public static let delegate: Double = 25 * fixedPoint
-        public static let vote: Double = 1 * fixedPoint
-        public static let multisignature: Double = 5 * fixedPoint
-        public static let dapp: Double = 25 * fixedPoint
+        public static let transfer = UInt64(0.1 * fixedPoint)
+        public static let data = UInt64(0.1 * fixedPoint)
+        public static let inTransfer = UInt64(0.1 * fixedPoint)
+        public static let outTransfer = UInt64(0.1 * fixedPoint)
+        public static let signature = UInt64(5 * fixedPoint)
+        public static let delegate = UInt64(25 * fixedPoint)
+        public static let vote = UInt64(1 * fixedPoint)
+        public static let multisignature = UInt64(5 * fixedPoint)
+        public static let dapp = UInt64(25 * fixedPoint)
     }
 
     public struct Time {

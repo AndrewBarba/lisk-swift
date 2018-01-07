@@ -24,8 +24,8 @@ public struct Transactions {
 extension Transactions {
 
     /// [WIP] Broadcasts a locally signed transaction to the network
-    public func broadcast(signedTransaction: RequestOptions, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
-        let options = ["transaction": signedTransaction]
+    public func broadcast(signedTransaction: TransactionBuilder, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+        let options = ["transaction": signedTransaction.requestOptions]
         client.post(path: "transactions", options: options, completionHandler: completionHandler)
     }
 }
@@ -36,18 +36,18 @@ extension Transactions {
 
     /// [WIP] Transfer LSK to a Lisk address
     /// - Note: To send 1.2 LSK, pass amount as 1.2, it will be converted appropriately
+    /// 1. getTransactionBytes()
+    /// 2. crypto.hash() - sha256
+    /// 3. crypto.signData()
+    /// 4. set obj.signSignature
     public func transfer(amount: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
-        let transaction: RequestOptions = [
-            "type": 0,
-            "amount": "\(UInt64(amount * Constants.fixedPoint))",
-            "fee": "\(Constants.Fee.transfer)",
-            "recipientId": recipient,
-            "recipientPublicKey": NSNull(),
-            "senderPublicKey": try! Crypto().keys(fromSecret: secret).publicKey,
-            "timestamp": 0,
-            "asset": [:]
-        ]
-        broadcast(signedTransaction: transaction, completionHandler: completionHandler)
+        do {
+            let transaction = try TransactionHelpers.prepare(type: 0, amount: amount, to: recipient, secret: secret, secondSecret: secondSecret)
+            broadcast(signedTransaction: transaction, completionHandler: completionHandler)
+        } catch {
+            let response = APIResponseError(error: error.localizedDescription)
+            completionHandler(.error(response: response))
+        }
     }
 }
 

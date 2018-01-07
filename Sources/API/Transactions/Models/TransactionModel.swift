@@ -19,7 +19,7 @@ extension Transactions {
 
         public let type: UInt8
 
-        public let timestamp: UInt64
+        public let timestamp: UInt32
 
         public let senderPublicKey: String
 
