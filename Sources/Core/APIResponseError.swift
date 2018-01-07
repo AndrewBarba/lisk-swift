@@ -17,5 +17,24 @@ public struct APIResponseError: APIResponse {
     }
 
     /// Error message
-    public let error: String
+    public let message: String
+
+    /// Private coding keys
+    enum CodingKeys: String, CodingKey {
+        case error = "error"
+        case message = "message"
+    }
+
+    public init(message: String) {
+        self.message = message
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        do {
+            message = try container.decode(String.self, forKey: .error)
+        } catch {
+            message = try container.decode(String.self, forKey: .message)
+        }
+    }
 }

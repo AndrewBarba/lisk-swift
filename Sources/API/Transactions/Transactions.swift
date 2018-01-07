@@ -38,11 +38,12 @@ extension Transactions {
     /// Broadcasts a locally signed transaction to the network
     public func broadcast(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
         guard signedTransaction.isSigned else {
-            let response = APIResponseError(error: "Invalid Transaction - Transaction has not been signed")
+            let response = APIResponseError(message: "Invalid Transaction - Transaction has not been signed")
             return completionHandler(.error(response: response))
         }
         let options = ["transaction": signedTransaction.requestOptions]
-        client.post(path: "transactions", options: options, completionHandler: completionHandler)
+        let path = client.baseURL.absoluteString.replacingOccurrences(of: "/api", with: "/peer")
+        client.post(path: "\(path)/transactions", options: options, completionHandler: completionHandler)
     }
 }
 
@@ -55,9 +56,10 @@ extension Transactions {
         do {
             let transaction = LocalTransaction(.transfer, lsk: lsk, recipientId: recipient)
             let signedTransaction = try transaction.signed(secret: secret, secondSecret: secondSecret)
+            print(signedTransaction.id!)
             broadcast(signedTransaction: signedTransaction, completionHandler: completionHandler)
         } catch {
-            let response = APIResponseError(error: error.localizedDescription)
+            let response = APIResponseError(message: error.localizedDescription)
             completionHandler(.error(response: response))
         }
     }

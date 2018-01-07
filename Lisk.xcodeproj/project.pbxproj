@@ -29,6 +29,7 @@
 		3883A8C120029A9700460A9B /* BytePacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BF20029A4000460A9B /* BytePacker.swift */; };
 		3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C220029BE500460A9B /* LocalTransaction.swift */; };
 		3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */; };
+		3883A8C82002DC4E00460A9B /* TransactionsTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */; };
 		OBJ_100 /* AccountsDelegatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* AccountsDelegatesTests.swift */; };
 		OBJ_101 /* AccountsOpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AccountsOpenTests.swift */; };
 		OBJ_102 /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* AccountsPublicKeyTests.swift */; };
@@ -145,6 +146,7 @@
 		3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSigningTest.swift; sourceTree = "<group>"; };
 		3883A8BF20029A4000460A9B /* BytePacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytePacker.swift; sourceTree = "<group>"; };
 		3883A8C220029BE500460A9B /* LocalTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransaction.swift; sourceTree = "<group>"; };
+		3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTransferTests.swift; sourceTree = "<group>"; };
 		"Ed25519::CEd25519::Product" /* CEd25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CEd25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Ed25519::Ed25519::Product" /* Ed25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ed25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Lisk::Lisk::Product" /* Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +271,7 @@
 		3874ABA21FFC8E550008C527 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
+				3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */,
 				3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */,
 				3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */,
 				3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */,
@@ -731,6 +734,7 @@
 				3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */,
 				OBJ_101 /* AccountsOpenTests.swift in Sources */,
 				OBJ_102 /* AccountsPublicKeyTests.swift in Sources */,
+				3883A8C82002DC4E00460A9B /* TransactionsTransferTests.swift in Sources */,
 				OBJ_103 /* LoaderStatusPingTests.swift in Sources */,
 				OBJ_104 /* LoaderStatusSyncTests.swift in Sources */,
 				OBJ_105 /* LoaderStatusTests.swift in Sources */,

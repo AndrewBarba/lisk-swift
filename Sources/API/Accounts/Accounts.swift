@@ -32,7 +32,7 @@ extension Accounts {
             let address = Crypto.address(fromPublicKey: publicKey)
             self.account(address: address, completionHandler: completionHandler)
         } catch {
-            let response = APIResponseError(error: "Invalid secret key")
+            let response = APIResponseError(message: "Invalid secret key")
             completionHandler(.error(response: response))
         }
     }

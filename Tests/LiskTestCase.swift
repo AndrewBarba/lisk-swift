@@ -38,7 +38,7 @@ class LiskTestCase: XCTestCase {
             case .success(let r):
                 result = r
             case .error(let error):
-                XCTFail(error.error)
+                XCTFail(error.message)
             }
             expectation.fulfill()
         }

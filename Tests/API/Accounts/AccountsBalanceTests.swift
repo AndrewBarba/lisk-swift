@@ -23,6 +23,6 @@ class AccountsBalanceTests: LiskTestCase {
         let accounts = Accounts(client: mainNetClient)
         let response = tryRequestError { accounts.balance(address: address, completionHandler: $0) }
         XCTAssertFalse(response.success)
-        XCTAssertEqual(response.error, "Object didn't pass validation for format address: \(address)")
+        XCTAssertEqual(response.message, "Object didn't pass validation for format address: \(address)")
     }
 }
