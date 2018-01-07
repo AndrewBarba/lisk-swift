@@ -23,7 +23,7 @@ public struct Transactions {
 
 extension Transactions {
 
-    /// [WIP] Broadcasts a locally signed transaction to the network
+    /// Broadcasts a locally signed transaction to the network
     public func broadcast(signedTransaction: TransactionBuilder, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
         let options = ["transaction": signedTransaction.requestOptions]
         client.post(path: "transactions", options: options, completionHandler: completionHandler)
@@ -34,12 +34,7 @@ extension Transactions {
 
 extension Transactions {
 
-    /// [WIP] Transfer LSK to a Lisk address
-    /// - Note: To send 1.2 LSK, pass amount as 1.2, it will be converted appropriately
-    /// 1. getTransactionBytes()
-    /// 2. crypto.hash() - sha256
-    /// 3. crypto.signData()
-    /// 4. set obj.signSignature
+    /// Transfer LSK to a Lisk address using Local Signing
     public func transfer(amount: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
         do {
             let transaction = try TransactionHelpers.prepare(type: 0, amount: amount, to: recipient, secret: secret, secondSecret: secondSecret)
