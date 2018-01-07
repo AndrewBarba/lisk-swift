@@ -43,7 +43,8 @@ internal struct TransactionHelpers {
     }
 
     static func signTransaction(_ transaction: TransactionBuilder, keyPair: KeyPair) -> String {
-        let signature = keyPair.sign(transaction.bytes)
+        let hash = SHA256(transaction.bytes).digest()
+        let signature = keyPair.sign(hash)
         return signature.hexString()
     }
 
@@ -54,36 +55,3 @@ internal struct TransactionHelpers {
         return "\(value)"
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
