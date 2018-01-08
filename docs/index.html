@@ -42,6 +42,12 @@
                 <a href="Enums/HTTPMethod.html">HTTPMethod</a>
               </li>
               <li class="nav-group-task">
+                <a href="Enums/OrderByDirection.html">OrderByDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PropertyJoin.html">PropertyJoin</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Enums/Response.html">Response</a>
               </li>
               <li class="nav-group-task">
@@ -54,6 +60,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="Protocols/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/APIService.html">APIService</a>
               </li>
             </ul>
           </li>
@@ -115,6 +124,21 @@
                 <a href="Structs/Delegates/DelegateModel.html">– DelegateModel</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/Delegates/CountResponse.html">– CountResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Delegates/VoterModel.html">– VoterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Delegates/VotersResponse.html">– VotersResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Delegates/DelegateResponse.html">– DelegateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Delegates/DelegatesResponse.html">– DelegatesResponse</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/Loader.html">Loader</a>
               </li>
               <li class="nav-group-task">
@@ -130,6 +154,9 @@
                 <a href="Structs/LocalTransaction.html">LocalTransaction</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/OrderBy.html">OrderBy</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/Transactions.html">Transactions</a>
               </li>
               <li class="nav-group-task">
@@ -137,15 +164,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Transactions/BroadcastResponse.html">– BroadcastResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Transactions/OrderBy.html">– OrderBy</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Transactions/OrderByDirection.html">– OrderByDirection</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Transactions/PropertyJoin.html">– PropertyJoin</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Transactions/TransactionResponse.html">– TransactionResponse</a>
@@ -199,11 +217,58 @@
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html">Accounts</a></li>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html">Delegates</a></li>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Loader.html">Loader</a></li>
-<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/APIClient.html">APIClient</a></li>
+<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Transactions.html">Transactions</a></li>
 </ul>
 <h2 id='documentation' class='heading'>Documentation</h2>
 
 <p><a href="https://andrewbarba.github.io/lisk-swift/">https://andrewbarba.github.io/lisk-swift/</a></p>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='import-framework' class='heading'>Import Framework</h3>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">Lisk</span>
+</code></pre>
+<h3 id='send-lsk' class='heading'>Send LSK</h3>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">address</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">secret</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="c1">// Send LSK on the Mainnet</span>
+<span class="kt">Transactions</span><span class="p">()</span><span class="o">.</span><span class="nf">transfer</span><span class="p">(</span><span class="nv">lsk</span><span class="p">:</span> <span class="mf">1.12</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">address</span><span class="p">,</span> <span class="nv">secret</span><span class="p">:</span> <span class="n">secret</span><span class="p">)</span> <span class="p">{</span> <span class="n">response</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">response</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">result</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">transactionId</span><span class="p">)</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">error</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='send-lsk-on-testnet' class='heading'>Send LSK on Testnet</h4>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">address</span> <span class="o">=</span> <span class="o">...</span>
+<span class="k">let</span> <span class="nv">secret</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="c1">// Send LSK on the Testnet</span>
+<span class="kt">Transactions</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="o">.</span><span class="n">testnet</span><span class="p">)</span><span class="o">.</span><span class="nf">transfer</span><span class="p">(</span><span class="nv">lsk</span><span class="p">:</span> <span class="mf">1.12</span><span class="p">,</span> <span class="nv">to</span><span class="p">:</span> <span class="n">address</span><span class="p">,</span> <span class="nv">secret</span><span class="p">:</span> <span class="n">secret</span><span class="p">)</span> <span class="p">{</span> <span class="n">response</span> <span class="k">in</span>
+    <span class="k">switch</span> <span class="n">response</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">success</span><span class="p">(</span><span class="k">let</span> <span class="nv">result</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">transactionId</span><span class="p">)</span>
+    <span class="k">case</span> <span class="o">.</span><span class="nf">error</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+        <span class="nf">print</span><span class="p">(</span><span class="n">error</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h3 id='testnet' class='heading'>Testnet</h3>
+
+<p>By default, all modules are initialized with an <code><a href="Structs/APIClient.html">APIClient</a></code> pointing to the Lisk Mainnet. You can optionally pass in a specific client to any modules constructor:</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">mainTransactions</span> <span class="o">=</span> <span class="kt">Transactions</span><span class="p">()</span>
+<span class="k">let</span> <span class="nv">testTransactions</span> <span class="o">=</span> <span class="kt">Transactions</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="o">.</span><span class="n">testnet</span><span class="p">)</span>
+</code></pre>
+
+<p>To default all modules to a specific client you can set the shared client:</p>
+<pre class="highlight swift"><code><span class="kt">APIClient</span><span class="o">.</span><span class="n">shared</span> <span class="o">=</span> <span class="o">.</span><span class="n">testnet</span>
+</code></pre>
+
+<p>And then all modules initialized will default to Testnet:</p>
+<pre class="highlight swift"><code><span class="c1">// This will connect to Testnet</span>
+<span class="k">let</span> <span class="nv">transactions</span> <span class="o">=</span> <span class="kt">Transactions</span><span class="p">()</span>
+</code></pre>
 <h2 id='requirements' class='heading'>Requirements</h2>
 
 <ul>

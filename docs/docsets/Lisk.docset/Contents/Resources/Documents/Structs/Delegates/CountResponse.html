@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>OrderBy Structure Reference</title>
+    <title>CountResponse Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Struct/OrderBy" class="dashAnchor"></a>
-    <a title="OrderBy Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/CountResponse" class="dashAnchor"></a>
+    <a title="CountResponse Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../../index.html">Lisk Docs</a> (56% documented)</p>
@@ -22,7 +22,7 @@
       <p id="breadcrumbs">
         <a href="../../index.html">Lisk Reference</a>
         <img id="carat" src="../../img/carat.png" />
-        OrderBy Structure Reference
+        CountResponse Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -43,6 +43,12 @@
                 <a href="../../Enums/HTTPMethod.html">HTTPMethod</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Enums/OrderByDirection.html">OrderByDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/PropertyJoin.html">PropertyJoin</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Enums/Response.html">Response</a>
               </li>
               <li class="nav-group-task">
@@ -55,6 +61,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a href="../../Protocols/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/APIService.html">APIService</a>
               </li>
             </ul>
           </li>
@@ -116,6 +125,21 @@
                 <a href="../../Structs/Delegates/DelegateModel.html">– DelegateModel</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Structs/Delegates/CountResponse.html">– CountResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Delegates/VoterModel.html">– VoterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Delegates/VotersResponse.html">– VotersResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Delegates/DelegateResponse.html">– DelegateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Delegates/DelegatesResponse.html">– DelegatesResponse</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Structs/Loader.html">Loader</a>
               </li>
               <li class="nav-group-task">
@@ -131,6 +155,9 @@
                 <a href="../../Structs/LocalTransaction.html">LocalTransaction</a>
               </li>
               <li class="nav-group-task">
+                <a href="../../Structs/OrderBy.html">OrderBy</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../../Structs/Transactions.html">Transactions</a>
               </li>
               <li class="nav-group-task">
@@ -138,15 +165,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/Transactions/BroadcastResponse.html">– BroadcastResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/Transactions/OrderBy.html">– OrderBy</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/Transactions/OrderByDirection.html">– OrderByDirection</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../../Structs/Transactions/PropertyJoin.html">– PropertyJoin</a>
               </li>
               <li class="nav-group-task">
                 <a href="../../Structs/Transactions/TransactionResponse.html">– TransactionResponse</a>
@@ -169,14 +187,14 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>OrderBy</h1>
+            <h1>CountResponse</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">OrderBy</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CountResponse</span><span class="p">:</span> <span class="kt"><a href="../../Protocols/APIResponse.html">APIResponse</a></span></code></pre>
 
                 </div>
               </div>
-            <p>Combination of column and sort direction</p>
+            <p>Undocumented</p>
 
           </section>
           <section class="section task-group-section">
@@ -185,9 +203,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Lisk12TransactionsV7OrderByV6columnSSv"></a>
-                    <a name="//apple_ref/swift/Property/column" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Lisk12TransactionsV7OrderByV6columnSSv">column</a>
+                    <a name="/s:4Lisk11APIResponseP7successSbv"></a>
+                    <a name="//apple_ref/swift/Property/success" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk11APIResponseP7successSbv">success</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -195,14 +213,13 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
-
+                        
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">column</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -212,9 +229,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:4Lisk12TransactionsV7OrderByV9directionAC0cD9DirectionOv"></a>
-                    <a name="//apple_ref/swift/Property/direction" class="dashAnchor"></a>
-                    <a class="token" href="#/s:4Lisk12TransactionsV7OrderByV9directionAC0cD9DirectionOv">direction</a>
+                    <a name="/s:4Lisk9DelegatesV13CountResponseV5counts6UInt64Vv"></a>
+                    <a name="//apple_ref/swift/Property/count" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk9DelegatesV13CountResponseV5counts6UInt64Vv">count</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -229,7 +246,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">direction</span><span class="p">:</span> <span class="kt"><a href="../../Structs/Transactions/OrderByDirection.html">OrderByDirection</a></span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">count</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
 
                         </div>
                       </div>
