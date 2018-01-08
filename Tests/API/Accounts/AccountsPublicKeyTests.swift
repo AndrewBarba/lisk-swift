@@ -13,8 +13,8 @@ class AccountsPublicKeyTests: LiskTestCase {
 
     func testMainnetPublicKey() {
         let accounts = Accounts(client: mainNetClient)
-        let response = tryRequest { accounts.publicKey(address: mainNetAddress, completionHandler: $0) }
+        let response = tryRequest { accounts.publicKey(address: andrewAddress, completionHandler: $0) }
         XCTAssert(response.success)
-        XCTAssertEqual(response.publicKey, mainNetPublicKey)
+        XCTAssertEqual(response.publicKey, andrewPublicKey)
     }
 }

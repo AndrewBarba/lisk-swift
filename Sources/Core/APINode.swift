@@ -35,7 +35,7 @@ extension APINode {
 
     /// Testnet nodes
     public static let testnet: [APINode] = [
-        .init(hostname: "testnet.lisk.io")
+        .init(hostname: "testnet-wallet.lisknode.io")
     ]
 }
 

@@ -36,7 +36,7 @@ public struct Transactions {
 extension Transactions {
 
     /// Broadcasts a locally signed transaction to the network
-    public func broadcast(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+    public func broadcast(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
         guard signedTransaction.isSigned else {
             let response = APIResponseError(message: "Invalid Transaction - Transaction has not been signed")
             return completionHandler(.error(response: response))
@@ -52,11 +52,10 @@ extension Transactions {
 extension Transactions {
 
     /// Transfer LSK to a Lisk address using Local Signing
-    public func transfer(lsk: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
+    public func transfer(lsk: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
         do {
             let transaction = LocalTransaction(.transfer, lsk: lsk, recipientId: recipient)
             let signedTransaction = try transaction.signed(secret: secret, secondSecret: secondSecret)
-            print(signedTransaction)
             broadcast(signedTransaction: signedTransaction, completionHandler: completionHandler)
         } catch {
             let response = APIResponseError(message: error.localizedDescription)

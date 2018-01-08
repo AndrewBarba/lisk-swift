@@ -13,7 +13,7 @@ class AccountsDelegatesTests: LiskTestCase {
 
     func testMainnetAccount() {
         let accounts = Accounts(client: mainNetClient)
-        let response = tryRequest { accounts.delegates(address: mainNetAddress, completionHandler: $0) }
+        let response = tryRequest { accounts.delegates(address: andrewAddress, completionHandler: $0) }
         XCTAssert(response.success)
         XCTAssertGreaterThan(response.delegates.count, 0)
     }

@@ -19,14 +19,14 @@ class TransactionsListTests: LiskTestCase {
 
     func testMainnetListSender() {
         let transactions = Transactions(client: mainNetClient)
-        let response = tryRequest { transactions.transactions(sender: mainNetAddress, completionHandler: $0) }
+        let response = tryRequest { transactions.transactions(sender: andrewAddress, completionHandler: $0) }
         XCTAssert(response.success)
         XCTAssertGreaterThan(response.transactions.count, 0)
     }
 
     func testMainnetListRecipient() {
         let transactions = Transactions(client: mainNetClient)
-        let response = tryRequest { transactions.transactions(recipient: mainNetAddress, completionHandler: $0) }
+        let response = tryRequest { transactions.transactions(recipient: andrewAddress, completionHandler: $0) }
         XCTAssert(response.success)
         XCTAssertGreaterThan(response.transactions.count, 0)
     }

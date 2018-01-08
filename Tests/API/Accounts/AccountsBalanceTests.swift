@@ -13,7 +13,7 @@ class AccountsBalanceTests: LiskTestCase {
 
     func testMainnetBalance() {
         let accounts = Accounts(client: mainNetClient)
-        let response = tryRequest { accounts.balance(address: mainNetAddress, completionHandler: $0) }
+        let response = tryRequest { accounts.balance(address: andrewAddress, completionHandler: $0) }
         XCTAssert(response.success)
         XCTAssert(Double(response.balance)! > 0)
     }

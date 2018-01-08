@@ -12,7 +12,7 @@ import Foundation
 /// https://github.com/LiskHQ/lisk-js/blob/1.0.0/src/constants.js
 public struct Constants {
 
-    public static let version = "1.0.0"
+    public static let version = "0.9.11"
 
     public static let fixedPoint: Double = pow(10, 8)
 

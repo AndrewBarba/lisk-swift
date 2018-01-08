@@ -13,9 +13,9 @@ class AccountsAccountTests: LiskTestCase {
 
     func testMainnetAccount() {
         let accounts = Accounts(client: mainNetClient)
-        let response = tryRequest { accounts.account(address: mainNetAddress, completionHandler: $0) }
+        let response = tryRequest { accounts.account(address: andrewAddress, completionHandler: $0) }
         XCTAssert(response.success)
-        XCTAssertEqual(response.account.address, mainNetAddress)
-        XCTAssertEqual(response.account.publicKey, mainNetPublicKey)
+        XCTAssertEqual(response.account.address, andrewAddress)
+        XCTAssertEqual(response.account.publicKey, andrewPublicKey)
     }
 }
