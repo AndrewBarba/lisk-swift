@@ -112,7 +112,7 @@ public struct APIClient {
     // MARK: - Private
 
     /// Base url of all requests
-    private let baseURL: URL
+    internal let baseURL: URL
 
     /// Headers to send on every request
     private let headers: [String: String]
@@ -133,7 +133,7 @@ public struct APIClient {
     /// Builds a URL request based on a given HTTP method and options
     private func urlRequest(_ httpMethod: HTTPMethod, path: String, options: RequestOptions? = nil) -> URLRequest {
         // Build api url
-        let url = baseURL.appendingPathComponent(path)
+        let url = path.contains("://") ? URL(string: path)! : baseURL.appendingPathComponent(path)
 
         // Build request object
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData)
@@ -187,6 +187,6 @@ public struct APIClient {
 
     /// Default error response
     private func defaultErrorResponse() -> APIResponseError {
-        return APIResponseError(error: "Unknown Error")
+        return APIResponseError(message: "Unknown Error")
     }
 }

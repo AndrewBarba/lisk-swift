@@ -1,0 +1,40 @@
+//
+//  TransactionModel.swift
+//  Lisk
+//
+//  Created by Andrew Barba on 1/2/18.
+//
+
+import Foundation
+
+extension Transactions {
+
+    public struct TransactionModel: Decodable {
+
+        public let id: String
+
+        public let height: UInt64
+
+        public let blockId: String
+
+        public let type: UInt8
+
+        public let timestamp: UInt32
+
+        public let senderPublicKey: String
+
+        public let senderId: String
+
+        public let recipientId: String?
+
+        public let recipientPublicKey: String?
+
+        public let amount: UInt64
+
+        public let fee: UInt64
+
+        public let signature: String
+
+        public let confirmations: UInt64
+    }
+}
