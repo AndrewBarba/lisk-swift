@@ -45,7 +45,7 @@ public struct Crypto {
         guard bytes.count >= 8 else { return "" }
         let leadingBytes = bytes[0..<8].reversed()
         let data = Data(bytes: Array(leadingBytes))
-        let value = Int(bigEndian: data.withUnsafeBytes { $0.pointee })
+        let value = UInt64(bigEndian: data.withUnsafeBytes { $0.pointee })
         return "\(value)"
     }
 }

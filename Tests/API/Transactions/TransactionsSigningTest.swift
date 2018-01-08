@@ -14,7 +14,6 @@ class TransactionsSigningTests: LiskTestCase {
         var transaction = LocalTransaction(.transfer, lsk: 1.12, recipientId: mainNetAddress, timestamp: 10)
         try? transaction.sign(secret: mainNetExampleSecret)
 
-        // Check bytes
         XCTAssertEqual(transaction.typeBytes, [0])
         XCTAssertEqual(transaction.timestampBytes, [10, 0, 0, 0])
         XCTAssertEqual(transaction.senderPublicKeyBytes, [30, 226, 56, 16, 69, 67, 76, 11, 154, 150, 76, 190, 127, 133, 62, 29, 42, 114, 222, 13, 151, 152, 129, 230, 97, 229, 39, 142, 166, 196, 10, 72])
@@ -24,11 +23,19 @@ class TransactionsSigningTests: LiskTestCase {
         XCTAssertEqual(transaction.id, "730261182562463085")
     }
 
+    func testSignWithRealmTimestamp() {
+        var transaction = LocalTransaction(.transfer, lsk: 1, recipientId: mainNetAddress, timestamp: 51262230)
+        try? transaction.sign(secret: mainNetExampleSecret)
+
+        // Check bytes
+        XCTAssertEqual(transaction.signature, "5bcfbd0ed92df0fbb96dab8dd844b06f82aab05b89f3ac2e53b4ffc632ad96ca0a6dd9b158d754ccde08dac50a831a21bcfc16029e80710a9faf78ac94f0ec01")
+        XCTAssertEqual(transaction.id, "18174990303747105268")
+    }
+
     func testSecondSign() {
         var transaction = LocalTransaction(.transfer, lsk: 1.12, recipientId: mainNetAddress, timestamp: 10)
         try? transaction.sign(secret: mainNetExampleSecret, secondSecret: mainNetExampleSecret)
 
-        // Check bytes
         XCTAssertEqual(transaction.typeBytes, [0])
         XCTAssertEqual(transaction.timestampBytes, [10, 0, 0, 0])
         XCTAssertEqual(transaction.senderPublicKeyBytes, [30, 226, 56, 16, 69, 67, 76, 11, 154, 150, 76, 190, 127, 133, 62, 29, 42, 114, 222, 13, 151, 152, 129, 230, 97, 229, 39, 142, 166, 196, 10, 72])
@@ -45,7 +52,6 @@ class TransactionsSigningTests: LiskTestCase {
 
         let options = transaction.requestOptions
 
-        // Check bytes
         XCTAssertEqual(options["signature"] as? String, "35d721d1524c48d32bfaf3b33fd826968d3c99d682e661cfbc666e1cd1fac48d1e58903d6e7a84fd34bcd0b2874f720aa453bc7027442adf0c29443650725106")
         XCTAssertEqual(options["id"] as? String, "730261182562463085")
     }

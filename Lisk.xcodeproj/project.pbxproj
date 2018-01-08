@@ -271,10 +271,10 @@
 		3874ABA21FFC8E550008C527 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
-				3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */,
 				3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */,
-				3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */,
 				3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */,
+				3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */,
+				3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */,
 			);
 			path = Transactions;
 			sourceTree = "<group>";

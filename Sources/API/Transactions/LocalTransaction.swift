@@ -156,7 +156,9 @@ extension LocalTransaction {
     }
 
     var recipientIdBytes: [UInt8] {
-        guard let value = recipientId?.filter({ Int("\($0)") != nil }), let number = UInt64(value) else { return [] }
+        guard
+            let value = recipientId?.replacingOccurrences(of: "L", with: ""),
+            let number = UInt64(value) else { return [] }
         return BytePacker.pack(number, byteOrder: .bigEndian)
     }
 

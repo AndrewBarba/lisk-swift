@@ -56,7 +56,7 @@ extension Transactions {
         do {
             let transaction = LocalTransaction(.transfer, lsk: lsk, recipientId: recipient)
             let signedTransaction = try transaction.signed(secret: secret, secondSecret: secondSecret)
-            print(signedTransaction.id!)
+            print(signedTransaction)
             broadcast(signedTransaction: signedTransaction, completionHandler: completionHandler)
         } catch {
             let response = APIResponseError(message: error.localizedDescription)
