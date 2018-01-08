@@ -24,8 +24,6 @@ extension Delegates {
 
         public let missedblocks: UInt64
 
-        public let rate: UInt64
-
         public let rank: UInt64
 
         public let approval: Double

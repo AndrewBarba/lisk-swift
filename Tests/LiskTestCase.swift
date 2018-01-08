@@ -17,6 +17,7 @@ class LiskTestCase: XCTestCase {
 
     let mainPeerClient = APIClient(options: .init(ssl: false, node: .init(hostname: "lisk0.abarba.me")))
 
+    let andrewUsername = "andrew"
     let andrewAddress = "14987768355736502769L"
     let andrewPublicKey = "f33f878dc7e7177f60f3dcfef842b1cc3c947c3910eee6e8ecd33b9e1a7f38d7"
 

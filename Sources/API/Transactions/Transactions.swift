@@ -20,7 +20,7 @@ public enum TransactionType: UInt8, Encodable {
 }
 
 /// Loader - https://docs.lisk.io/docs/lisk-api-080-transactions
-public struct Transactions {
+public struct Transactions: APIService {
 
     /// Client used to send requests
     public let client: APIClient
@@ -90,25 +90,6 @@ extension Transactions {
 // MARK: - List
 
 extension Transactions {
-
-    /// Combination of column and sort direction
-    public struct OrderBy {
-        public let column: String
-        public let direction: OrderByDirection
-    }
-
-    /// Transactions sort order
-    public enum OrderByDirection: String {
-        case ascending = "asc"
-        case descending = "desc"
-    }
-
-    /// Property join type
-    public enum PropertyJoin: String {
-        case or = ""
-        case and = "AND:"
-    }
-
 
     /// List transaction objects
     ///

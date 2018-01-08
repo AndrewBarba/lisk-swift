@@ -9,7 +9,7 @@
 import Foundation
 
 /// Accounts - https://docs.lisk.io/docs/lisk-api-080-accounts
-public struct Accounts {
+public struct Accounts: APIService {
 
     /// Client used to send requests
     public let client: APIClient

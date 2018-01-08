@@ -21,6 +21,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		381C95D92003E44E0002FBC4 /* DelegatesDelegateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95D82003E44E0002FBC4 /* DelegatesDelegateResponse.swift */; };
+		381C95DB2003E6060002FBC4 /* DelegatesCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95DA2003E6060002FBC4 /* DelegatesCountResponse.swift */; };
+		381C95DD2003E6D50002FBC4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95DC2003E6D50002FBC4 /* APIService.swift */; };
+		381C95DF2003EAA40002FBC4 /* DelegatesVoterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95DE2003EAA40002FBC4 /* DelegatesVoterModel.swift */; };
+		381C95E12003EADC0002FBC4 /* DelegatesVotersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E02003EADC0002FBC4 /* DelegatesVotersResponse.swift */; };
+		381C95E42003EC460002FBC4 /* DelegatesCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E32003EC460002FBC4 /* DelegatesCountTests.swift */; };
+		381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */; };
+		381C95E82003EDB70002FBC4 /* DelegatesVotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */; };
+		381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E92003EE440002FBC4 /* DelegatesListTests.swift */; };
 		3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9A1FFC82490008C527 /* Transactions.swift */; };
 		3874AB9E1FFC82C50008C527 /* TransactionsTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9D1FFC82C50008C527 /* TransactionsTransactionResponse.swift */; };
 		3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA01FFC831B0008C527 /* TransactionModel.swift */; };
@@ -139,6 +148,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		381C95D82003E44E0002FBC4 /* DelegatesDelegateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesDelegateResponse.swift; sourceTree = "<group>"; };
+		381C95DA2003E6060002FBC4 /* DelegatesCountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesCountResponse.swift; sourceTree = "<group>"; };
+		381C95DC2003E6D50002FBC4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		381C95DE2003EAA40002FBC4 /* DelegatesVoterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesVoterModel.swift; sourceTree = "<group>"; };
+		381C95E02003EADC0002FBC4 /* DelegatesVotersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesVotersResponse.swift; sourceTree = "<group>"; };
+		381C95E32003EC460002FBC4 /* DelegatesCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesCountTests.swift; sourceTree = "<group>"; };
+		381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesGetTests.swift; sourceTree = "<group>"; };
+		381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesVotesTests.swift; sourceTree = "<group>"; };
+		381C95E92003EE440002FBC4 /* DelegatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesListTests.swift; sourceTree = "<group>"; };
 		3874AB9A1FFC82490008C527 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		3874AB9D1FFC82C50008C527 /* TransactionsTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTransactionResponse.swift; sourceTree = "<group>"; };
 		3874ABA01FFC831B0008C527 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
@@ -243,6 +261,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		381C95D72003E4360002FBC4 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				381C95DA2003E6060002FBC4 /* DelegatesCountResponse.swift */,
+				381C95D82003E44E0002FBC4 /* DelegatesDelegateResponse.swift */,
+				381C95E02003EADC0002FBC4 /* DelegatesVotersResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		381C95E22003EC300002FBC4 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				381C95E32003EC460002FBC4 /* DelegatesCountTests.swift */,
+				381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */,
+				381C95E92003EE440002FBC4 /* DelegatesListTests.swift */,
+				381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		3874AB991FFC82260008C527 /* Transactions */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,8 +343,9 @@
 		OBJ_18 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* Delegates.swift */,
 				OBJ_20 /* Models */,
+				381C95D72003E4360002FBC4 /* Responses */,
+				OBJ_19 /* Delegates.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -314,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_21 /* DelegatesDelegateModel.swift */,
+				381C95DE2003EAA40002FBC4 /* DelegatesVoterModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,8 +362,8 @@
 		OBJ_22 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* Loader.swift */,
 				OBJ_24 /* Responses */,
+				OBJ_23 /* Loader.swift */,
 			);
 			path = Loader;
 			sourceTree = "<group>";
@@ -346,6 +387,7 @@
 				OBJ_33 /* APIOptions.swift */,
 				OBJ_34 /* APIResponse.swift */,
 				OBJ_35 /* APIResponseError.swift */,
+				381C95DC2003E6D50002FBC4 /* APIService.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -373,6 +415,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_41 /* Accounts */,
+				381C95E22003EC300002FBC4 /* Delegates */,
 				OBJ_47 /* Loader */,
 				3874ABA21FFC8E550008C527 /* Transactions */,
 			);
@@ -508,9 +551,9 @@
 		OBJ_9 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* Accounts.swift */,
 				OBJ_11 /* Models */,
 				OBJ_13 /* Responses */,
+				OBJ_10 /* Accounts.swift */,
 			);
 			path = Accounts;
 			sourceTree = "<group>";
@@ -664,16 +707,21 @@
 				OBJ_129 /* Loader.swift in Sources */,
 				3883A8C120029A9700460A9B /* BytePacker.swift in Sources */,
 				OBJ_130 /* LoaderStatusPingResponse.swift in Sources */,
+				381C95DB2003E6060002FBC4 /* DelegatesCountResponse.swift in Sources */,
 				OBJ_131 /* LoaderStatusResponse.swift in Sources */,
 				OBJ_132 /* LoaderStatusSyncResponse.swift in Sources */,
 				OBJ_133 /* Constants.swift in Sources */,
+				381C95DD2003E6D50002FBC4 /* APIService.swift in Sources */,
 				OBJ_134 /* APIClient.swift in Sources */,
 				OBJ_135 /* APINethash.swift in Sources */,
 				3883A8CA2003BED900460A9B /* TransactionsBroadcastResponse.swift in Sources */,
 				OBJ_136 /* APINode.swift in Sources */,
+				381C95DF2003EAA40002FBC4 /* DelegatesVoterModel.swift in Sources */,
 				3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */,
 				3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */,
+				381C95E12003EADC0002FBC4 /* DelegatesVotersResponse.swift in Sources */,
 				OBJ_137 /* APIOptions.swift in Sources */,
+				381C95D92003E44E0002FBC4 /* DelegatesDelegateResponse.swift in Sources */,
 				OBJ_138 /* APIResponse.swift in Sources */,
 				OBJ_139 /* APIResponseError.swift in Sources */,
 				OBJ_140 /* Crypto.swift in Sources */,
@@ -736,14 +784,18 @@
 				OBJ_100 /* AccountsDelegatesTests.swift in Sources */,
 				3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */,
 				3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */,
+				381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */,
 				OBJ_101 /* AccountsOpenTests.swift in Sources */,
+				381C95E82003EDB70002FBC4 /* DelegatesVotesTests.swift in Sources */,
 				OBJ_102 /* AccountsPublicKeyTests.swift in Sources */,
 				3883A8C82002DC4E00460A9B /* TransactionsTransferTests.swift in Sources */,
 				OBJ_103 /* LoaderStatusPingTests.swift in Sources */,
 				OBJ_104 /* LoaderStatusSyncTests.swift in Sources */,
+				381C95E42003EC460002FBC4 /* DelegatesCountTests.swift in Sources */,
 				OBJ_105 /* LoaderStatusTests.swift in Sources */,
 				3874ABA61FFC8EEE0008C527 /* TransactionsListTest.swift in Sources */,
 				OBJ_106 /* LiskTestCase.swift in Sources */,
+				381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

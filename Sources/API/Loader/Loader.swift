@@ -9,7 +9,7 @@
 import Foundation
 
 /// Loader - https://docs.lisk.io/docs/lisk-api-080-loader
-public struct Loader {
+public struct Loader: APIService {
 
     /// Client used to send requests
     public let client: APIClient
