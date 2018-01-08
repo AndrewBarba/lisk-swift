@@ -74,6 +74,28 @@ Transactions(client: .testnet).transfer(lsk: 1.12, to: address, secret: secret) 
 }
 ```
 
+### Testnet
+
+By default, all modules are initialized with an `APIClient` pointing to the Lisk Mainnet. You can optionally pass in a specific client to any modules constructor:
+
+```swift
+let mainTransactions = Transactions()
+let testTransactions = Transactions(client: .testnet)
+```
+
+To default all modules to a specific client you can set the shared client:
+
+```
+APIClient.shared = .testnet
+```
+
+And then all modules initialized will default to Testnet:
+
+```swift
+// This will connect to Testnet
+let transactions = Transactions()
+```
+
 ## Requirements
 
 - iOS 10.0+ / macOS 10.12+ / tvOS 10.0+ / watchOS 3.0+
