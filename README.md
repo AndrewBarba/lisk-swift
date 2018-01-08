@@ -85,7 +85,7 @@ let testTransactions = Transactions(client: .testnet)
 
 To default all modules to a specific client you can set the shared client:
 
-```
+```swift
 APIClient.shared = .testnet
 ```
 
