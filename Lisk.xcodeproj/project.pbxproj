@@ -30,6 +30,13 @@
 		381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */; };
 		381C95E82003EDB70002FBC4 /* DelegatesVotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */; };
 		381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E92003EE440002FBC4 /* DelegatesListTests.swift */; };
+		381C95ED2003F4580002FBC4 /* Peers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95EC2003F4580002FBC4 /* Peers.swift */; };
+		381C95F02003F4A10002FBC4 /* PeersPeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95EF2003F4A10002FBC4 /* PeersPeerModel.swift */; };
+		381C95F32003F5CF0002FBC4 /* PeersPeerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F22003F5CF0002FBC4 /* PeersPeerResponse.swift */; };
+		381C95F52003F6090002FBC4 /* PeersVersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F42003F6090002FBC4 /* PeersVersionResponse.swift */; };
+		381C95F82003FA860002FBC4 /* PeersVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F72003FA860002FBC4 /* PeersVersionTests.swift */; };
+		381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F92003FACE0002FBC4 /* PeersGetTests.swift */; };
+		381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */; };
 		3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9A1FFC82490008C527 /* Transactions.swift */; };
 		3874AB9E1FFC82C50008C527 /* TransactionsTransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9D1FFC82C50008C527 /* TransactionsTransactionResponse.swift */; };
 		3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA01FFC831B0008C527 /* TransactionModel.swift */; };
@@ -157,6 +164,13 @@
 		381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesGetTests.swift; sourceTree = "<group>"; };
 		381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesVotesTests.swift; sourceTree = "<group>"; };
 		381C95E92003EE440002FBC4 /* DelegatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesListTests.swift; sourceTree = "<group>"; };
+		381C95EC2003F4580002FBC4 /* Peers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peers.swift; sourceTree = "<group>"; };
+		381C95EF2003F4A10002FBC4 /* PeersPeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersPeerModel.swift; sourceTree = "<group>"; };
+		381C95F22003F5CF0002FBC4 /* PeersPeerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersPeerResponse.swift; sourceTree = "<group>"; };
+		381C95F42003F6090002FBC4 /* PeersVersionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersVersionResponse.swift; sourceTree = "<group>"; };
+		381C95F72003FA860002FBC4 /* PeersVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersVersionTests.swift; sourceTree = "<group>"; };
+		381C95F92003FACE0002FBC4 /* PeersGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersGetTests.swift; sourceTree = "<group>"; };
+		381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersListTests.swift; sourceTree = "<group>"; };
 		3874AB9A1FFC82490008C527 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		3874AB9D1FFC82C50008C527 /* TransactionsTransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTransactionResponse.swift; sourceTree = "<group>"; };
 		3874ABA01FFC831B0008C527 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
@@ -280,6 +294,43 @@
 				381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		381C95EB2003F4430002FBC4 /* Peers */ = {
+			isa = PBXGroup;
+			children = (
+				381C95EE2003F4940002FBC4 /* Models */,
+				381C95F12003F5C10002FBC4 /* Responses */,
+				381C95EC2003F4580002FBC4 /* Peers.swift */,
+			);
+			path = Peers;
+			sourceTree = "<group>";
+		};
+		381C95EE2003F4940002FBC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				381C95EF2003F4A10002FBC4 /* PeersPeerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		381C95F12003F5C10002FBC4 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				381C95F22003F5CF0002FBC4 /* PeersPeerResponse.swift */,
+				381C95F42003F6090002FBC4 /* PeersVersionResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		381C95F62003FA700002FBC4 /* Peers */ = {
+			isa = PBXGroup;
+			children = (
+				381C95F92003FACE0002FBC4 /* PeersGetTests.swift */,
+				381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */,
+				381C95F72003FA860002FBC4 /* PeersVersionTests.swift */,
+			);
+			path = Peers;
 			sourceTree = "<group>";
 		};
 		3874AB991FFC82260008C527 /* Transactions */ = {
@@ -417,6 +468,7 @@
 				OBJ_41 /* Accounts */,
 				381C95E22003EC300002FBC4 /* Delegates */,
 				OBJ_47 /* Loader */,
+				381C95F62003FA700002FBC4 /* Peers */,
 				3874ABA21FFC8E550008C527 /* Transactions */,
 			);
 			path = API;
@@ -543,6 +595,7 @@
 				OBJ_9 /* Accounts */,
 				OBJ_18 /* Delegates */,
 				OBJ_22 /* Loader */,
+				381C95EB2003F4430002FBC4 /* Peers */,
 				3874AB991FFC82260008C527 /* Transactions */,
 			);
 			path = API;
@@ -697,6 +750,7 @@
 			files = (
 				3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */,
 				OBJ_121 /* Accounts.swift in Sources */,
+				381C95ED2003F4580002FBC4 /* Peers.swift in Sources */,
 				OBJ_122 /* AccountsAccountModel.swift in Sources */,
 				OBJ_123 /* AccountsAccountResponse.swift in Sources */,
 				OBJ_124 /* AccountsBalanceResponse.swift in Sources */,
@@ -705,11 +759,14 @@
 				OBJ_127 /* Delegates.swift in Sources */,
 				OBJ_128 /* DelegatesDelegateModel.swift in Sources */,
 				OBJ_129 /* Loader.swift in Sources */,
+				381C95F02003F4A10002FBC4 /* PeersPeerModel.swift in Sources */,
 				3883A8C120029A9700460A9B /* BytePacker.swift in Sources */,
 				OBJ_130 /* LoaderStatusPingResponse.swift in Sources */,
 				381C95DB2003E6060002FBC4 /* DelegatesCountResponse.swift in Sources */,
 				OBJ_131 /* LoaderStatusResponse.swift in Sources */,
 				OBJ_132 /* LoaderStatusSyncResponse.swift in Sources */,
+				381C95F52003F6090002FBC4 /* PeersVersionResponse.swift in Sources */,
+				381C95F32003F5CF0002FBC4 /* PeersPeerResponse.swift in Sources */,
 				OBJ_133 /* Constants.swift in Sources */,
 				381C95DD2003E6D50002FBC4 /* APIService.swift in Sources */,
 				OBJ_134 /* APIClient.swift in Sources */,
@@ -783,6 +840,8 @@
 				OBJ_99 /* AccountsBalanceTests.swift in Sources */,
 				OBJ_100 /* AccountsDelegatesTests.swift in Sources */,
 				3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */,
+				381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */,
+				381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */,
 				3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */,
 				381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */,
 				OBJ_101 /* AccountsOpenTests.swift in Sources */,
@@ -795,6 +854,7 @@
 				OBJ_105 /* LoaderStatusTests.swift in Sources */,
 				3874ABA61FFC8EEE0008C527 /* TransactionsListTest.swift in Sources */,
 				OBJ_106 /* LiskTestCase.swift in Sources */,
+				381C95F82003FA860002FBC4 /* PeersVersionTests.swift in Sources */,
 				381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -26,6 +26,7 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 - [Accounts](https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html)
 - [Delegates](https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html)
 - [Loader](https://andrewbarba.github.io/lisk-swift/Structs/Loader.html)
+- [Peers](https://andrewbarba.github.io/lisk-swift/Structs/Peers.html)
 - [Transactions](https://andrewbarba.github.io/lisk-swift/Structs/Transactions.html)
 
 ## Documentation
