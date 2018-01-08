@@ -21,7 +21,7 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 - [x] Unit Tests
 - [x] Documentation
 
-## Modules
+## API
 
 - [Accounts](https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html)
 - [Delegates](https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html)

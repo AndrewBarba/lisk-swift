@@ -5,6 +5,11 @@ Change Log
 
 ---
 
+## [1.0.0-beta4](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta4)
+
+1. Delegates API
+2. Peers API
+
 ## [1.0.0-beta3](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta3)
 
 1. Locally sign and broadcast transactions
