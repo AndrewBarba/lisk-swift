@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Peers Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Peers" class="dashAnchor"></a>
+    <a title="Peers Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Lisk Docs</a> (55% documented)</p>
+        <p class="header-right"><a href="https://github.com/AndrewBarba/lisk-swift"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Lisk Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Peers Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SHA256.html">SHA256</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OrderByDirection.html">OrderByDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/PropertyJoin.html">PropertyJoin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Response.html">Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TransactionType.html">TransactionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APIResponse.html">APIResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/APIService.html">APIService</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIClient.html">APIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APINethash.html">APINethash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APINode.html">APINode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIOptions.html">APIOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIResponseError.html">APIResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Accounts.html">Accounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Accounts/AccountModel.html">– AccountModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Accounts/AccountResponse.html">– AccountResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Accounts/BalanceResponse.html">– BalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Accounts/DelegateResponse.html">– DelegateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Accounts/PublicKeyResponse.html">– PublicKeyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Time.html">– Time</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Port.html">– Port</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Crypto.html">Crypto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delegates.html">Delegates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delegates/DelegateModel.html">– DelegateModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delegates/CountResponse.html">– CountResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delegates/VoterModel.html">– VoterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delegates/VotersResponse.html">– VotersResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delegates/DelegateResponse.html">– DelegateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Delegates/DelegatesResponse.html">– DelegatesResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Loader.html">Loader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Loader/StatusPingResponse.html">– StatusPingResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Loader/StatusResponse.html">– StatusResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Loader/StatusSyncResponse.html">– StatusSyncResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/LocalTransaction.html">LocalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OrderBy.html">OrderBy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Peers.html">Peers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Peers/PeerModel.html">– PeerModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Peers/VersionResponse.html">– VersionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Peers/PeerResponse.html">– PeerResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Peers/PeersResponse.html">– PeersResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Transactions.html">Transactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Transactions/TransactionModel.html">– TransactionModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Transactions/BroadcastResponse.html">– BroadcastResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Transactions/TransactionResponse.html">– TransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Transactions/TransactionsResponse.html">– TransactionsResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:4Lisk14RequestOptionsa">RequestOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Peers</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Peers</span><span class="p">:</span> <span class="kt"><a href="../Protocols/APIService.html">APIService</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Peers - <a href="https://docs.lisk.io/docs/lisk-api-080-peers">https://docs.lisk.io/docs/lisk-api-080-peers</a></p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV6clientAA9APIClientVv"></a>
+                    <a name="//apple_ref/swift/Property/client" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV6clientAA9APIClientVv">client</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Client used to send requests</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Structs/APIClient.html">APIClient</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersVAcA9APIClientV6client_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(client:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersVAcA9APIClientV6client_tcfc">init(client:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Init</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Structs/APIClient.html">APIClient</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">shared</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV4peerySS2ip_Si4portyAA8ResponseOyAC04PeerF0VGc17completionHandlertF"></a>
+                    <a name="//apple_ref/swift/Method/peer(ip:port:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV4peerySS2ip_Si4portyAA8ResponseOyAC04PeerF0VGc17completionHandlertF">peer(ip:port:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get a peer by ip and port</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">peer</span><span class="p">(</span><span class="nv">ip</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/Response.html">Response</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Peers/PeerResponse.html">PeerResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV5peersyAC9PeerModelV5StateOSg5state_SSSg7versionAK2osSuSg5limitAN6offsetAA7OrderByVSg05orderM0AA12PropertyJoinO4joinyAA8ResponseOyAC0bR0VGc17completionHandlertF"></a>
+                    <a name="//apple_ref/swift/Method/peers(state:version:os:limit:offset:orderBy:join:completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV5peersyAC9PeerModelV5StateOSg5state_SSSg7versionAK2osSuSg5limitAN6offsetAA7OrderByVSg05orderM0AA12PropertyJoinO4joinyAA8ResponseOyAC0bR0VGc17completionHandlertF">peers(state:version:os:limit:offset:orderBy:join:completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List peers</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">peers</span><span class="p">(</span><span class="nv">state</span><span class="p">:</span> <span class="kt"><a href="../Structs/Peers/PeerModel.html">PeerModel</a></span><span class="o">.</span><span class="kt">State</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">os</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">limit</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">offset</span><span class="p">:</span> <span class="kt">UInt</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">orderBy</span><span class="p">:</span> <span class="kt"><a href="../Structs/OrderBy.html">OrderBy</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">join</span><span class="p">:</span> <span class="kt"><a href="../Enums/PropertyJoin.html">PropertyJoin</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">or</span><span class="p">,</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/Response.html">Response</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Peers/PeersResponse.html">PeersResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>state</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>state of peer</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>version</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>version of peer</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>os</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>os of peer</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>limit</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>limit number of returned transactions</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>offset</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>used for paging, offset by certain number of transactions</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orderBy</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>sort results by a column and direction</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>join</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>defaults to &lsquo;or&rsquo;, specify &lsquo;and&rsquo; for an AND join of passed in parameters</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV7versionyyAA8ResponseOyAC07VersionD0VGc17completionHandler_tF"></a>
+                    <a name="//apple_ref/swift/Method/version(completionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV7versionyyAA8ResponseOyAC07VersionD0VGc17completionHandler_tF">version(completionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns current nodes version and build</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">version</span><span class="p">(</span><span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/Response.html">Response</a></span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Peers/VersionResponse.html">VersionResponse</a></span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV9PeerModelV"></a>
+                    <a name="//apple_ref/swift/Struct/PeerModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV9PeerModelV">PeerModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Peers/PeerModel.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PeerModel</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV15VersionResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/VersionResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV15VersionResponseV">VersionResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Peers/VersionResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">VersionResponse</span><span class="p">:</span> <span class="kt"><a href="../Protocols/APIResponse.html">APIResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV12PeerResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/PeerResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV12PeerResponseV">PeerResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Peers/PeerResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PeerResponse</span><span class="p">:</span> <span class="kt"><a href="../Protocols/APIResponse.html">APIResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk5PeersV0B8ResponseV"></a>
+                    <a name="//apple_ref/swift/Struct/PeersResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk5PeersV0B8ResponseV">PeersResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="../Structs/Peers/PeersResponse.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PeersResponse</span><span class="p">:</span> <span class="kt"><a href="../Protocols/APIResponse.html">APIResponse</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://abarba.me" target="_blank" rel="external">Andrew Barba</a>. All rights reserved. (Last updated: 2018-01-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
