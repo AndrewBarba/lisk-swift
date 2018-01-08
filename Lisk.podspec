@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = 'Lisk'
-  s.version          = '1.0.0-beta2'
+  s.version          = '1.0.0-beta3'
   s.summary          = 'Swift 4 library for Lisk - the cryptocurrency and blockchain application platform'
   s.homepage         = 'https://github.com/AndrewBarba/lisk-swift'
-  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
+  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE.md' }
   s.author           = { 'Andrew Barba' => 'abarba.77@gmail.com' }
   s.source           = { :git => 'https://github.com/AndrewBarba/lisk-swift.git', :tag => s.version.to_s }
 
@@ -17,4 +17,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Sources/**/*.{h,swift}'
   s.public_header_files = 'Sources/**/*.h'
+
+  s.dependency 'Ed25519', '~> 0.2.0'
 end

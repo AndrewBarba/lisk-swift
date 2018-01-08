@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta3](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta3)
+
+1. Locally sign and broadcast transactions
+
 ## [1.0.0-beta2](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta2)
 
 1. Crypto module to extract public/private keys from a secret

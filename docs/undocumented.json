@@ -267,6 +267,244 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 12,
+      "symbol": "Transactions.TransactionModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 14,
+      "symbol": "Transactions.TransactionModel.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 16,
+      "symbol": "Transactions.TransactionModel.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 18,
+      "symbol": "Transactions.TransactionModel.blockId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 20,
+      "symbol": "Transactions.TransactionModel.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 22,
+      "symbol": "Transactions.TransactionModel.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 24,
+      "symbol": "Transactions.TransactionModel.senderPublicKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 26,
+      "symbol": "Transactions.TransactionModel.senderId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 28,
+      "symbol": "Transactions.TransactionModel.recipientId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 30,
+      "symbol": "Transactions.TransactionModel.recipientPublicKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 32,
+      "symbol": "Transactions.TransactionModel.amount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 34,
+      "symbol": "Transactions.TransactionModel.fee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 36,
+      "symbol": "Transactions.TransactionModel.signature",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
+      "line": 38,
+      "symbol": "Transactions.TransactionModel.confirmations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsBroadcastResponse.swift",
+      "line": 12,
+      "symbol": "Transactions.BroadcastResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsBroadcastResponse.swift",
+      "line": 16,
+      "symbol": "Transactions.BroadcastResponse.transactionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "line": 13,
+      "symbol": "Transactions.TransactionResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "line": 17,
+      "symbol": "Transactions.TransactionResponse.transaction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "line": 20,
+      "symbol": "Transactions.TransactionsResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "line": 24,
+      "symbol": "Transactions.TransactionsResponse.transactions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 12,
+      "symbol": "TransactionType.transfer",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 13,
+      "symbol": "TransactionType.registerSecondPassphrase",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 14,
+      "symbol": "TransactionType.registerDelegate",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 15,
+      "symbol": "TransactionType.castVotes",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 16,
+      "symbol": "TransactionType.registerMultisignature",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 17,
+      "symbol": "TransactionType.createDapp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 18,
+      "symbol": "TransactionType.transferIntoDapp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 19,
+      "symbol": "TransactionType.transferOutOfDapp",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 96,
+      "symbol": "Transactions.OrderBy.column",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 97,
+      "symbol": "Transactions.OrderBy.direction",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 102,
+      "symbol": "Transactions.OrderByDirection.ascending",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 103,
+      "symbol": "Transactions.OrderByDirection.descending",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 108,
+      "symbol": "Transactions.PropertyJoin.or",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Transactions.swift",
+      "line": 109,
+      "symbol": "Transactions.PropertyJoin.and",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/Constants.swift",
       "line": 15,
       "symbol": "Constants.version",
@@ -466,6 +704,13 @@
       "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/Core/APIOptions.swift",
       "line": 35,
       "symbol": "APIOptions.init(testnet:ssl:randomNode:node:port:nethash:bannedNodes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/Core/APIResponseError.swift",
+      "line": 28,
+      "symbol": "APIResponseError.init(message:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TransactionModel Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/TransactionModel" class="dashAnchor"></a>
+    <a title="TransactionModel Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">Lisk Docs</a> (56% documented)</p>
+        <p class="header-right"><a href="https://github.com/AndrewBarba/lisk-swift"><img src="../../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">Lisk Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        TransactionModel Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/SHA256.html">SHA256</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/Response.html">Response</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Enums/TransactionType.html">TransactionType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/APIResponse.html">APIResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Structs/APIClient.html">APIClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/APINethash.html">APINethash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/APINode.html">APINode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/APIOptions.html">APIOptions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/APIResponseError.html">APIResponseError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Accounts.html">Accounts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Accounts/AccountModel.html">– AccountModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Accounts/AccountResponse.html">– AccountResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Accounts/BalanceResponse.html">– BalanceResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Accounts/DelegateResponse.html">– DelegateResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Accounts/PublicKeyResponse.html">– PublicKeyResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Constants/Fee.html">– Fee</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Constants/Time.html">– Time</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Constants/Port.html">– Port</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Crypto.html">Crypto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Delegates.html">Delegates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Delegates/DelegateModel.html">– DelegateModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Loader.html">Loader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Loader/StatusPingResponse.html">– StatusPingResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Loader/StatusResponse.html">– StatusResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Loader/StatusSyncResponse.html">– StatusSyncResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/LocalTransaction.html">LocalTransaction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions.html">Transactions</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions/TransactionModel.html">– TransactionModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions/BroadcastResponse.html">– BroadcastResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions/OrderBy.html">– OrderBy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions/OrderByDirection.html">– OrderByDirection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions/PropertyJoin.html">– PropertyJoin</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions/TransactionResponse.html">– TransactionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Structs/Transactions/TransactionsResponse.html">– TransactionsResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Typealiases.html#/s:4Lisk14RequestOptionsa">RequestOptions</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>TransactionModel</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransactionModel</span><span class="p">:</span> <span class="kt">Decodable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV2idSSv"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV2idSSv">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV6heights6UInt64Vv"></a>
+                    <a name="//apple_ref/swift/Property/height" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV6heights6UInt64Vv">height</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">height</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV7blockIdSSv"></a>
+                    <a name="//apple_ref/swift/Property/blockId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV7blockIdSSv">blockId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">blockId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV4types5UInt8Vv"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV4types5UInt8Vv">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">UInt8</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV9timestamps6UInt32Vv"></a>
+                    <a name="//apple_ref/swift/Property/timestamp" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV9timestamps6UInt32Vv">timestamp</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">timestamp</span><span class="p">:</span> <span class="kt">UInt32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV15senderPublicKeySSv"></a>
+                    <a name="//apple_ref/swift/Property/senderPublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV15senderPublicKeySSv">senderPublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">senderPublicKey</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV8senderIdSSv"></a>
+                    <a name="//apple_ref/swift/Property/senderId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV8senderIdSSv">senderId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">senderId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV11recipientIdSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/recipientId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV11recipientIdSSSgv">recipientId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">recipientId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV18recipientPublicKeySSSgv"></a>
+                    <a name="//apple_ref/swift/Property/recipientPublicKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV18recipientPublicKeySSSgv">recipientPublicKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">recipientPublicKey</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV6amounts6UInt64Vv"></a>
+                    <a name="//apple_ref/swift/Property/amount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV6amounts6UInt64Vv">amount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV3fees6UInt64Vv"></a>
+                    <a name="//apple_ref/swift/Property/fee" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV3fees6UInt64Vv">fee</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fee</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV9signatureSSv"></a>
+                    <a name="//apple_ref/swift/Property/signature" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV9signatureSSv">signature</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:4Lisk12TransactionsV16TransactionModelV13confirmationss6UInt64Vv"></a>
+                    <a name="//apple_ref/swift/Property/confirmations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:4Lisk12TransactionsV16TransactionModelV13confirmationss6UInt64Vv">confirmations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">confirmations</span><span class="p">:</span> <span class="kt">UInt64</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://abarba.me" target="_blank" rel="external">Andrew Barba</a>. All rights reserved. (Last updated: 2018-01-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
