@@ -26,11 +26,53 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 - [Accounts](https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html)
 - [Delegates](https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html)
 - [Loader](https://andrewbarba.github.io/lisk-swift/Structs/Loader.html)
-- [APIClient](https://andrewbarba.github.io/lisk-swift/Structs/APIClient.html)
+- [Transactions](https://andrewbarba.github.io/lisk-swift/Structs/Transactions.html)
 
 ## Documentation
 
 [https://andrewbarba.github.io/lisk-swift/](https://andrewbarba.github.io/lisk-swift/)
+
+## Usage
+
+### Import Framework
+
+```swift
+import Lisk
+```
+
+### Send LSK
+
+```swift
+let address = ...
+let secret = ...
+
+// Send LSK on the Mainnet
+Transactions().transfer(lsk: 1.12, to: address, secret: secret) { response in
+    switch response {
+    case .success(let result):
+        print(result.transactionId)
+    case .error(let error):
+        print(error.message)
+    }
+}
+```
+
+#### Send LSK on Testnet
+
+```swift
+let address = ...
+let secret = ...
+
+// Send LSK on the Testnet
+Transactions(client: .testnet).transfer(lsk: 1.12, to: address, secret: secret) { response in
+    switch response {
+    case .success(let result):
+        print(result.transactionId)
+    case .error(let error):
+        print(error.message)
+    }
+}
+```
 
 ## Requirements
 
