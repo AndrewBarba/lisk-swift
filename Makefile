@@ -1,5 +1,9 @@
 .PHONY: docs
 
+clean:
+	rm -rf Lisk.xcodeproj/xcuserdata
+	rm -rf Lisk.xcodeproj/project.xcworkspace/xcuserdata
+
 deps:
 	swift build
 	swift package generate-xcodeproj

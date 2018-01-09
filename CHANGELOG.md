@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta5](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta4)
+
+1. Blocks API
+
 ## [1.0.0-beta4](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta4)
 
 1. Delegates API
