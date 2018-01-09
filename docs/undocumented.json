@@ -1,273 +1,588 @@
 {
   "warnings": [
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountsAccountModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountModel.swift",
       "line": 13,
       "symbol": "Accounts.AccountModel",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountsAccountModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountModel.swift",
       "line": 15,
       "symbol": "Accounts.AccountModel.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountsAccountModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountModel.swift",
       "line": 17,
       "symbol": "Accounts.AccountModel.balance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountsAccountModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountModel.swift",
       "line": 19,
       "symbol": "Accounts.AccountModel.unconfirmedBalance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountsAccountModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountModel.swift",
       "line": 21,
       "symbol": "Accounts.AccountModel.publicKey",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountsAccountModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountModel.swift",
       "line": 23,
       "symbol": "Accounts.AccountModel.unconfirmedSignature",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountsAccountModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Models/AccountModel.swift",
       "line": 25,
       "symbol": "Accounts.AccountModel.secondSignature",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsAccountResponse.swift",
-      "line": 14,
-      "symbol": "Accounts.AccountResponse",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsAccountResponse.swift",
-      "line": 18,
-      "symbol": "Accounts.AccountResponse.account",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsBalanceResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountBalanceResponse.swift",
       "line": 14,
       "symbol": "Accounts.BalanceResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsBalanceResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountBalanceResponse.swift",
       "line": 18,
       "symbol": "Accounts.BalanceResponse.balance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsBalanceResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountBalanceResponse.swift",
       "line": 20,
       "symbol": "Accounts.BalanceResponse.unconfirmedBalance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsDelegateResponse.swift",
-      "line": 14,
-      "symbol": "Accounts.DelegateResponse",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsDelegateResponse.swift",
-      "line": 18,
-      "symbol": "Accounts.DelegateResponse.delegates",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsPublicKeyResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountPublicKeyResponse.swift",
       "line": 14,
       "symbol": "Accounts.PublicKeyResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountsPublicKeyResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountPublicKeyResponse.swift",
       "line": 18,
       "symbol": "Accounts.PublicKeyResponse.publicKey",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountResponse.swift",
+      "line": 14,
+      "symbol": "Accounts.AccountResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Accounts/Responses/AccountResponse.swift",
+      "line": 18,
+      "symbol": "Accounts.AccountResponse.account",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 12,
+      "symbol": "Blocks.BlockModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 14,
+      "symbol": "Blocks.BlockModel.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 16,
+      "symbol": "Blocks.BlockModel.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 18,
+      "symbol": "Blocks.BlockModel.timestamp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 20,
+      "symbol": "Blocks.BlockModel.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 22,
+      "symbol": "Blocks.BlockModel.previousBlock",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 24,
+      "symbol": "Blocks.BlockModel.numberOfTransactions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 26,
+      "symbol": "Blocks.BlockModel.totalAmount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 28,
+      "symbol": "Blocks.BlockModel.totalFee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 30,
+      "symbol": "Blocks.BlockModel.reward",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 32,
+      "symbol": "Blocks.BlockModel.payloadHash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 34,
+      "symbol": "Blocks.BlockModel.generatorPublicKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 36,
+      "symbol": "Blocks.BlockModel.generatorId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 38,
+      "symbol": "Blocks.BlockModel.blockSignature",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 40,
+      "symbol": "Blocks.BlockModel.confirmations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/BlockModel.swift",
+      "line": 42,
+      "symbol": "Blocks.BlockModel.totalForged",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/FeesModel.swift",
+      "line": 12,
+      "symbol": "Blocks.FeesModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/FeesModel.swift",
+      "line": 14,
+      "symbol": "Blocks.FeesModel.send",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/FeesModel.swift",
+      "line": 16,
+      "symbol": "Blocks.FeesModel.vote",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/FeesModel.swift",
+      "line": 18,
+      "symbol": "Blocks.FeesModel.secondsignature",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/FeesModel.swift",
+      "line": 20,
+      "symbol": "Blocks.FeesModel.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/FeesModel.swift",
+      "line": 22,
+      "symbol": "Blocks.FeesModel.multisignature",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Models/FeesModel.swift",
+      "line": 24,
+      "symbol": "Blocks.FeesModel.dapp",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockFeeResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.FeeResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockFeeResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.FeeResponse.fee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockFeesResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.FeesResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockFeesResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.FeesResponse.fees",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockHeightResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.HeightResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockHeightResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.HeightResponse.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockMilestoneResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.MilestoneResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockMilestoneResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.MilestoneResponse.milestone",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockNethashResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.NethashResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockNethashResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.NethashResponse.nethash",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.BlockResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.BlockResponse.block",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockResponse.swift",
+      "line": 19,
+      "symbol": "Blocks.BlocksResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockResponse.swift",
+      "line": 23,
+      "symbol": "Blocks.BlocksResponse.blocks",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockRewardResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.RewardResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockRewardResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.RewardResponse.reward",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockStatusResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.StatusResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockStatusResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.StatusResponse.height",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockStatusResponse.swift",
+      "line": 18,
+      "symbol": "Blocks.StatusResponse.fee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockStatusResponse.swift",
+      "line": 20,
+      "symbol": "Blocks.StatusResponse.milestone",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockStatusResponse.swift",
+      "line": 22,
+      "symbol": "Blocks.StatusResponse.reward",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockStatusResponse.swift",
+      "line": 24,
+      "symbol": "Blocks.StatusResponse.supply",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockSupplyResponse.swift",
+      "line": 12,
+      "symbol": "Blocks.SupplyResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Blocks/Responses/BlockSupplyResponse.swift",
+      "line": 16,
+      "symbol": "Blocks.SupplyResponse.supply",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 13,
       "symbol": "Delegates.DelegateModel",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 15,
       "symbol": "Delegates.DelegateModel.username",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 17,
       "symbol": "Delegates.DelegateModel.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 19,
       "symbol": "Delegates.DelegateModel.publicKey",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 21,
       "symbol": "Delegates.DelegateModel.vote",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 23,
       "symbol": "Delegates.DelegateModel.producedblocks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 25,
       "symbol": "Delegates.DelegateModel.missedblocks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 27,
       "symbol": "Delegates.DelegateModel.rank",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 29,
       "symbol": "Delegates.DelegateModel.approval",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesDelegateModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegateModel.swift",
       "line": 31,
       "symbol": "Delegates.DelegateModel.productivity",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesVoterModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/VoterModel.swift",
       "line": 12,
       "symbol": "Delegates.VoterModel",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesVoterModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/VoterModel.swift",
       "line": 14,
       "symbol": "Delegates.VoterModel.username",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesVoterModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/VoterModel.swift",
       "line": 16,
       "symbol": "Delegates.VoterModel.address",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesVoterModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/VoterModel.swift",
       "line": 18,
       "symbol": "Delegates.VoterModel.publicKey",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/DelegatesVoterModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Models/VoterModel.swift",
       "line": 20,
       "symbol": "Delegates.VoterModel.balance",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesCountResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateCountResponse.swift",
       "line": 13,
       "symbol": "Delegates.CountResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesCountResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateCountResponse.swift",
       "line": 17,
       "symbol": "Delegates.CountResponse.count",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesDelegateResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateResponse.swift",
       "line": 13,
       "symbol": "Delegates.DelegateResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesDelegateResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateResponse.swift",
       "line": 17,
       "symbol": "Delegates.DelegateResponse.delegate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesDelegateResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateResponse.swift",
       "line": 20,
       "symbol": "Delegates.DelegatesResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesDelegateResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateResponse.swift",
       "line": 24,
       "symbol": "Delegates.DelegatesResponse.delegates",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesVotersResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateVotersResponse.swift",
       "line": 13,
       "symbol": "Delegates.VotersResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegatesVotersResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Delegates/Responses/DelegateVotersResponse.swift",
       "line": 17,
       "symbol": "Delegates.VotersResponse.accounts",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -351,147 +666,147 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 12,
       "symbol": "Peers.PeerModel",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 14,
       "symbol": "Peers.PeerModel.State",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 15,
       "symbol": "Peers.PeerModel.State.banned",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 16,
       "symbol": "Peers.PeerModel.State.disconnected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 17,
       "symbol": "Peers.PeerModel.State.connected",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 20,
       "symbol": "Peers.PeerModel.ip",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 22,
       "symbol": "Peers.PeerModel.port",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 24,
       "symbol": "Peers.PeerModel.state",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 26,
       "symbol": "Peers.PeerModel.os",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 28,
       "symbol": "Peers.PeerModel.version",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 30,
       "symbol": "Peers.PeerModel.broadhash",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 32,
       "symbol": "Peers.PeerModel.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 34,
       "symbol": "Peers.PeerModel.updated",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeersPeerModel.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Models/PeerModel.swift",
       "line": 36,
       "symbol": "Peers.PeerModel.nonce",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeersPeerResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeerResponse.swift",
       "line": 13,
       "symbol": "Peers.PeerResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeersPeerResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeerResponse.swift",
       "line": 17,
       "symbol": "Peers.PeerResponse.peer",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeersPeerResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeerResponse.swift",
       "line": 20,
       "symbol": "Peers.PeersResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeersPeerResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeerResponse.swift",
       "line": 24,
       "symbol": "Peers.PeersResponse.peers",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeersVersionResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeerVersionResponse.swift",
       "line": 13,
       "symbol": "Peers.VersionResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeersVersionResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeerVersionResponse.swift",
       "line": 17,
       "symbol": "Peers.VersionResponse.version",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeersVersionResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Peers/Responses/PeerVersionResponse.swift",
       "line": 19,
       "symbol": "Peers.VersionResponse.build",
       "symbol_kind": "source.lang.swift.decl.var.instance",
@@ -596,42 +911,42 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsBroadcastResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionBroadcastResponse.swift",
       "line": 12,
       "symbol": "Transactions.BroadcastResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsBroadcastResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionBroadcastResponse.swift",
       "line": 16,
       "symbol": "Transactions.BroadcastResponse.transactionId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionResponse.swift",
       "line": 13,
       "symbol": "Transactions.TransactionResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionResponse.swift",
       "line": 17,
       "symbol": "Transactions.TransactionResponse.transaction",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionResponse.swift",
       "line": 20,
       "symbol": "Transactions.TransactionsResponse",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionsTransactionResponse.swift",
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Responses/TransactionResponse.swift",
       "line": 24,
       "symbol": "Transactions.TransactionsResponse.transactions",
       "symbol_kind": "source.lang.swift.decl.var.instance",
