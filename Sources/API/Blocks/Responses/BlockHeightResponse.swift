@@ -1,5 +1,5 @@
 //
-//  NethashResponse.swift
+//  BlockHeightResponse.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 1/9/18.
@@ -9,10 +9,10 @@ import Foundation
 
 extension Blocks {
 
-    public struct NethashResponse: APIResponse {
+    public struct HeightResponse: APIResponse {
 
         public let success: Bool
 
-        public let nethash: String
+        public let height: Int
     }
 }

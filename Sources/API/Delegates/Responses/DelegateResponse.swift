@@ -16,4 +16,11 @@ extension Delegates {
 
         public let delegate: DelegateModel
     }
+
+    public struct DelegatesResponse: APIResponse {
+
+        public let success: Bool
+
+        public let delegates: [DelegateModel]
+    }
 }

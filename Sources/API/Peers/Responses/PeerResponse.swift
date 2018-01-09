@@ -16,4 +16,11 @@ extension Peers {
 
         public let peer: PeerModel
     }
+
+    public struct PeersResponse: APIResponse {
+
+        public let success: Bool
+
+        public let peers: [PeerModel]
+    }
 }

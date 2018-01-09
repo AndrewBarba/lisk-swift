@@ -1,5 +1,5 @@
 //
-//  RewardResponse.swift
+//  BlockFeesResponse.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 1/9/18.
@@ -9,10 +9,10 @@ import Foundation
 
 extension Blocks {
 
-    public struct RewardResponse: APIResponse {
+    public struct FeesResponse: APIResponse {
 
         public let success: Bool
 
-        public let reward: Int
+        public let fees: FeesModel
     }
 }

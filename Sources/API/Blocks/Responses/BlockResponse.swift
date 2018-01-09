@@ -15,4 +15,11 @@ extension Blocks {
 
         public let block: BlockModel
     }
+
+    public struct BlocksResponse: APIResponse {
+
+        public let success: Bool
+
+        public let blocks: [BlockModel]
+    }
 }

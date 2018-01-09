@@ -20,6 +20,25 @@ public struct Accounts: APIService {
     }
 }
 
+// MARK: - Get
+
+extension Accounts {
+
+    /// Retrieve the account info for an address
+    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-information-from-address
+    public func account(address: String, completionHandler: @escaping (Response<AccountResponse>) -> Void) {
+        let options = ["address": address]
+        client.get(path: "accounts", options: options, completionHandler: completionHandler)
+    }
+
+    /// Retrieve the public key of a Lisk address
+    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-public-key
+    public func publicKey(address: String, completionHandler: @escaping (Response<PublicKeyResponse>) -> Void) {
+        let options = ["address": address]
+        client.get(path: "accounts/getPublicKey", options: options, completionHandler: completionHandler)
+    }
+}
+
 // MARK: - Open
 
 extension Accounts {
@@ -47,29 +66,5 @@ extension Accounts {
     public func balance(address: String, completionHandler: @escaping (Response<BalanceResponse>) -> Void) {
         let options = ["address": address]
         client.get(path: "accounts/getBalance", options: options, completionHandler: completionHandler)
-    }
-}
-
-// MARK: - Public Key
-
-extension Accounts {
-
-    /// Retrieve the public key of a Lisk address
-    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-public-key
-    public func publicKey(address: String, completionHandler: @escaping (Response<PublicKeyResponse>) -> Void) {
-        let options = ["address": address]
-        client.get(path: "accounts/getPublicKey", options: options, completionHandler: completionHandler)
-    }
-}
-
-// MARK: - Account
-
-extension Accounts {
-
-    /// Retrieve the account info for an address
-    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-information-from-address
-    public func account(address: String, completionHandler: @escaping (Response<AccountResponse>) -> Void) {
-        let options = ["address": address]
-        client.get(path: "accounts", options: options, completionHandler: completionHandler)
     }
 }

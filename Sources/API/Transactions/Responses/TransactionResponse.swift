@@ -16,4 +16,11 @@ extension Transactions {
 
         public let transaction: TransactionModel
     }
+
+    public struct TransactionsResponse: APIResponse {
+
+        public let success: Bool
+
+        public let transactions: [TransactionModel]
+    }
 }

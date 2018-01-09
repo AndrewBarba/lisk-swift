@@ -1,5 +1,5 @@
 //
-//  BalanceResponse.swift
+//  AccountBalanceResponse.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 12/31/17.
