@@ -1,11 +1,12 @@
 Pod::Spec.new do |s|
-  s.name             = 'Lisk'
-  s.version          = '1.0.0-beta4'
-  s.summary          = 'Swift 4 library for Lisk - the cryptocurrency and blockchain application platform'
-  s.homepage         = 'https://github.com/AndrewBarba/lisk-swift'
-  s.license          = { :type => 'Apache 2.0', :file => 'LICENSE.md' }
-  s.author           = { 'Andrew Barba' => 'abarba.77@gmail.com' }
-  s.source           = { :git => 'https://github.com/AndrewBarba/lisk-swift.git', :tag => s.version.to_s }
+  s.name = 'Lisk'
+  s.version = '1.0.0-beta4'
+  s.summary = 'Swift 4 library for Lisk - the cryptocurrency and blockchain application platform'
+  s.homepage = 'https://github.com/AndrewBarba/lisk-swift'
+  s.documentation_url = 'https://andrewbarba.github.io/lisk-swift/'
+  s.license = { :type => 'Apache 2.0', :file => 'LICENSE.md' }
+  s.author = { 'Andrew Barba' => 'abarba.77@gmail.com' }
+  s.source = { :git => 'https://github.com/AndrewBarba/lisk-swift.git', :tag => s.version.to_s }
 
   s.pod_target_xcconfig = { 'SWIFT_WHOLE_MODULE_OPTIMIZATION' => 'YES',
                             'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
