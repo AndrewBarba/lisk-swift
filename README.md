@@ -10,8 +10,6 @@ Lisk Swift is a Swift 4 library for Lisk - the cryptocurrency and blockchain app
 
 Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 
-> This project is under heavy development. It aims to follow the Lisk 1.0.0 API which is also under heavy development
-
 ## Features
 
 - [x] Local Signing for maximum security
