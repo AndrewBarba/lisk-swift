@@ -1,5 +1,5 @@
 //
-//  LoaderStatusPingResponse.swift
+//  StatusPingResponse.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 12/27/17.

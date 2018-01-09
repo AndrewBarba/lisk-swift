@@ -73,15 +73,3 @@ extension Accounts {
         client.get(path: "accounts", options: options, completionHandler: completionHandler)
     }
 }
-
-// MARK: - Delegates
-
-extension Accounts {
-
-    /// Retrieve the delegates info for an address
-    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-delegates
-    public func delegates(address: String, completionHandler: @escaping (Response<DelegateResponse>) -> Void) {
-        let options = ["address": address]
-        client.get(path: "accounts/delegates", options: options, completionHandler: completionHandler)
-    }
-}

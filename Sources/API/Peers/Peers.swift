@@ -46,9 +46,9 @@ extension Peers {
     ///   - join: defaults to 'or', specify 'and' for an AND join of passed in parameters
     public func peers(state: PeerModel.State? = nil, version: String? = nil, os: String? = nil, limit: UInt? = nil, offset: UInt? = nil, orderBy: OrderBy? = nil, join: PropertyJoin = .or, completionHandler: @escaping (Response<PeersResponse>) -> Void) {
         var options: RequestOptions = [:]
-        if let value = state { options["\(join.rawValue)version"] = value.rawValue }
+        if let value = state { options["\(join.rawValue)state"] = value.rawValue }
         if let value = version { options["\(join.rawValue)version"] = value }
-        if let value = os { options["\(join.rawValue)version"] = value }
+        if let value = os { options["\(join.rawValue)os"] = value }
         if let value = limit { options["limit"] = value }
         if let value = offset { options["offset"] = value }
         if let value = orderBy { options["orderBy"] = "\(value.column):\(value.direction.rawValue)" }

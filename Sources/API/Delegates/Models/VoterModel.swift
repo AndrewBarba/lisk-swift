@@ -1,5 +1,5 @@
 //
-//  DelegatesVoterModel.swift
+//  VoterModel.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 1/8/18.
@@ -9,7 +9,7 @@ import Foundation
 
 extension Delegates {
 
-    public struct VoterModel: Decodable {
+    public struct VoterModel: APIModel {
 
         public let username: String?
 

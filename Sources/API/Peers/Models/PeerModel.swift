@@ -1,5 +1,5 @@
 //
-//  PeersPeerModel.swift
+//  PeerModel.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 1/8/18.
@@ -9,7 +9,7 @@ import Foundation
 
 extension Peers {
 
-    public struct PeerModel: Decodable {
+    public struct PeerModel: APIModel {
 
         public enum State: UInt8, Decodable {
             case banned = 0

@@ -1,5 +1,5 @@
 //
-//  AccountsAccountResponse.swift
+//  BalanceResponse.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 12/31/17.
@@ -11,10 +11,12 @@ import Foundation
 /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-balance
 extension Accounts {
 
-    public struct AccountResponse: APIResponse {
+    public struct BalanceResponse: APIResponse {
 
         public let success: Bool
 
-        public let account: AccountModel
+        public let balance: String
+
+        public let unconfirmedBalance: String
     }
 }

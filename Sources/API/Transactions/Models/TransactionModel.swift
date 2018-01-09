@@ -9,7 +9,7 @@ import Foundation
 
 extension Transactions {
 
-    public struct TransactionModel: Decodable {
+    public struct TransactionModel: APIModel {
 
         public let id: String
 

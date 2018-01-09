@@ -1,5 +1,5 @@
 //
-//  AccountsAccountModel.swift
+//  AccountModel.swift
 //  Lisk
 //
 //  Created by Andrew Barba on 12/31/17.
@@ -10,7 +10,7 @@ import Foundation
 
 extension Accounts {
 
-    public struct AccountModel: Decodable {
+    public struct AccountModel: APIModel {
 
         public let address: String
 
