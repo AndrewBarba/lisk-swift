@@ -27,6 +27,7 @@ class LiskTestCase: XCTestCase {
 
     let testAddress = "6836577435110752844L"
     let testSecret = "prepare ketchup absorb bonus during glare accuse napkin cause hurdle sausage hurt"
+    let testSecondSecret = "antique stay soul moon link disorder audit reason fabric undo return alter"
 
     @discardableResult
     func tryRequest<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> R {

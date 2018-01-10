@@ -9,7 +9,10 @@ import Foundation
 import Ed25519
 
 /// Struct to represent a local transaction with the ability to locally sign via a secret passphrase
-public struct LocalTransaction: Encodable {
+public struct LocalTransaction {
+
+    /// Transaction asset
+    public typealias Asset = [String: Any]
 
     /// Type of transaction
     public let type: TransactionType
@@ -25,6 +28,9 @@ public struct LocalTransaction: Encodable {
 
     /// Timestamp relative to Genesis epoch time
     public let timestamp: UInt32
+
+    /// Additional transaction data
+    public let asset: Asset?
 
     /// Id of the transaction, only set after the transaction is signed
     public private(set) var id: String?
@@ -49,12 +55,13 @@ public struct LocalTransaction: Encodable {
     }
 
     /// Init
-    public init(_ type: TransactionType, amount: UInt64, recipientId: String? = nil, timestamp: UInt32? = nil) {
+    public init(_ type: TransactionType, amount: UInt64, recipientId: String? = nil, timestamp: UInt32? = nil, asset: Asset? = nil) {
         self.type = type
         self.amount = amount
         self.fee = LocalTransaction.transactionFee(type: type)
         self.recipientId = recipientId
         self.timestamp = timestamp ?? Crypto.timeIntervalSinceGenesis()
+        self.asset = asset
         self.id = nil
         self.senderPublicKey = nil
         self.signature = nil
@@ -62,9 +69,9 @@ public struct LocalTransaction: Encodable {
     }
 
     /// Init
-    public init(_ type: TransactionType, lsk: Double, recipientId: String? = nil, timestamp: UInt32? = nil) {
+    public init(_ type: TransactionType, lsk: Double, recipientId: String? = nil, timestamp: UInt32? = nil, asset: Asset? = nil) {
         let amount = Crypto.fixedPoint(amount: lsk)
-        self.init(type, amount: amount, recipientId: recipientId, timestamp: timestamp)
+        self.init(type, amount: amount, recipientId: recipientId, timestamp: timestamp, asset: asset)
     }
 
     /// Init, copies transaction
@@ -75,6 +82,7 @@ public struct LocalTransaction: Encodable {
         self.recipientId = transaction.recipientId
         self.senderPublicKey = transaction.senderPublicKey
         self.timestamp = transaction.timestamp
+        self.asset = transaction.asset
         self.id = transaction.id
         self.signature = transaction.signature
         self.signSignature = transaction.signSignature
@@ -139,6 +147,7 @@ extension LocalTransaction {
             senderPublicKeyBytes +
             recipientIdBytes +
             amountBytes +
+            assetBytes +
             signatureBytes +
             signSignatureBytes
     }
@@ -158,7 +167,7 @@ extension LocalTransaction {
     var recipientIdBytes: [UInt8] {
         guard
             let value = recipientId?.replacingOccurrences(of: "L", with: ""),
-            let number = UInt64(value) else { return [] }
+            let number = UInt64(value) else { return [UInt8](repeating: 0, count: 8) }
         return BytePacker.pack(number, byteOrder: .bigEndian)
     }
 
@@ -173,6 +182,15 @@ extension LocalTransaction {
     var signSignatureBytes: [UInt8] {
         return signSignature?.hexBytes() ?? []
     }
+
+    var assetBytes: [UInt8] {
+        guard
+            let data = asset as? [String: [String: String]],
+            let signature = data["signature"],
+            let publicKey = signature["publicKey"]
+            else { return [] }
+        return publicKey.hexBytes()
+    }
 }
 
 // MARK: - Request Options
@@ -180,12 +198,17 @@ extension LocalTransaction {
 extension LocalTransaction {
 
     var requestOptions: RequestOptions {
-        do {
-            let data = try JSONEncoder().encode(self)
-            let json = try JSONSerialization.jsonObject(with: data, options: []) as? RequestOptions
-            return json ?? [:]
-        } catch {
-            return [:]
-        }
+        return [
+            "id": id ?? NSNull(),
+            "type": type.rawValue,
+            "amount": amount,
+            "fee": fee,
+            "recipientId": recipientId ?? NSNull(),
+            "senderPublicKey": senderPublicKey ?? NSNull(),
+            "timestamp": timestamp,
+            "asset": asset ?? NSNull(),
+            "signature": signature ?? NSNull(),
+            "signSignature": signSignature ?? NSNull()
+        ]
     }
 }
