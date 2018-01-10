@@ -19,7 +19,7 @@ public enum TransactionType: UInt8, Encodable {
     case transferOutOfDapp = 7
 }
 
-/// Loader - https://docs.lisk.io/docs/lisk-api-080-transactions
+/// Transactions - https://docs.lisk.io/docs/lisk-api-080-transactions
 public struct Transactions: APIService {
 
     /// Client used to send requests
