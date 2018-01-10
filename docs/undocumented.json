@@ -813,6 +813,27 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Signatures/Responses/SignatureFeeResponse.swift",
+      "line": 12,
+      "symbol": "Signatures.FeeResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Signatures/Responses/SignatureFeeResponse.swift",
+      "line": 16,
+      "symbol": "Signatures.FeeResponse.fee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Signatures/Signatures.swift",
+      "line": 26,
+      "symbol": "Signatures.register(secondSecret:secret:completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/API/Transactions/Models/TransactionModel.swift",
       "line": 12,
       "symbol": "Transactions.TransactionModel",

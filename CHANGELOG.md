@@ -5,7 +5,12 @@ Change Log
 
 ---
 
-## [1.0.0-beta5](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta4)
+## [1.0.0-beta6](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta6)
+
+1. Signatures API
+2. Register second secret via local transaction signing
+
+## [1.0.0-beta5](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta5)
 
 1. Blocks API
 

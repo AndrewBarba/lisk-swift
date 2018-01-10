@@ -16,7 +16,7 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 - [x] Targets Lisk 1.0.0 API
 - [x] Directly based on lisk-js
 - [x] Swift 4.0
-- [x] Unit Tests (86% coverage)
+- [x] Unit Tests (87% coverage)
 - [x] Documentation
 
 ## API
@@ -26,6 +26,7 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 - [Delegates](https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html)
 - [Loader](https://andrewbarba.github.io/lisk-swift/Structs/Loader.html)
 - [Peers](https://andrewbarba.github.io/lisk-swift/Structs/Peers.html)
+- [Signatures](https://andrewbarba.github.io/lisk-swift/Structs/Signatures.html)
 - [Transactions](https://andrewbarba.github.io/lisk-swift/Structs/Transactions.html)
 
 ## Documentation
