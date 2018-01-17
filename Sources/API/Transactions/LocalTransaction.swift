@@ -89,17 +89,36 @@ public struct LocalTransaction {
     }
 
     /// Returns a new signed transaction based on this transaction
-    public func signed(secret: String, secondSecret: String? = nil) throws -> LocalTransaction {
+    public func signed(keyPair: KeyPair, secondKeyPair: KeyPair? = nil) throws -> LocalTransaction {
         var transaction = LocalTransaction(transaction: self)
-        let keyPair = try Crypto.keyPair(fromSecret: secret)
         transaction.senderPublicKey = keyPair.publicKeyString
         transaction.signature = LocalTransaction.generateSignature(bytes: transaction.bytes, keyPair: keyPair)
-        if let secondSecret = secondSecret, transaction.type != .registerSecondPassphrase {
-            let secondKeyPair = try Crypto.keyPair(fromSecret: secondSecret)
+        if let secondKeyPair = secondKeyPair, transaction.type != .registerSecondPassphrase {
             transaction.signSignature = LocalTransaction.generateSignature(bytes: transaction.bytes, keyPair: secondKeyPair)
         }
         transaction.id = LocalTransaction.generateId(bytes: transaction.bytes)
         return transaction
+    }
+
+    /// Returns a new signed transaction based on this transaction
+    public func signed(secret: String, secondSecret: String? = nil) throws -> LocalTransaction {
+        let keyPair = try Crypto.keyPair(fromSecret: secret)
+        let secondKeyPair: KeyPair?
+        if let secondSecret = secondSecret {
+            secondKeyPair = try Crypto.keyPair(fromSecret: secondSecret)
+        } else {
+            secondKeyPair = nil
+        }
+        return try signed(keyPair: keyPair, secondKeyPair: secondKeyPair)
+    }
+
+    /// Signs the current transaction
+    public mutating func sign(keyPair: KeyPair, secondKeyPair: KeyPair? = nil) throws {
+        let transaction = try signed(keyPair: keyPair, secondKeyPair: secondKeyPair)
+        self.id = transaction.id
+        self.senderPublicKey = transaction.senderPublicKey
+        self.signature = transaction.signature
+        self.signSignature = transaction.signSignature
     }
 
     /// Signs the current transaction

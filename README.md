@@ -115,7 +115,7 @@ import PackageDescription
 let package = Package(
     name: "My Lisk App",
     dependencies: [
-        .package(url: "https://github.com/AndrewBarba/lisk-swift.git", from: "1.0.0")
+        .package(url: "https://github.com/AndrewBarba/lisk-swift.git", from: "1.0.0-beta")
     ]
 )
 ```
