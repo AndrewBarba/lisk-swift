@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta7](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta7)
+
+1. Setup Package.swift library
+
 ## [1.0.0-beta6](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta6)
 
 1. Signatures API
