@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta10](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta10)
+
+1. Support Linux random
+
 ## [1.0.0-beta9](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta9)
 
 1. Sign transactions with a key pair
