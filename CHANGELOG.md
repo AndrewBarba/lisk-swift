@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta8](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta8)
+
+1. Public public/private key string methods
+
 ## [1.0.0-beta7](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta7)
 
 1. Setup Package.swift library

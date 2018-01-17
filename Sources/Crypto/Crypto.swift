@@ -52,11 +52,13 @@ public struct Crypto {
 
 extension KeyPair {
 
-    internal var publicKeyString: String {
+    /// Hex representation of public key
+    public var publicKeyString: String {
         return publicKey.bytes.hexString()
     }
 
-    internal var privateKeyString: String {
+    /// Hex representation of private key
+    public var privateKeyString: String {
         return privateKey.bytes.hexString()
     }
 }
