@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta11](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta11)
+
+1. Refactor random node selection for Linux
+
 ## [1.0.0-beta10](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta10)
 
 1. Support Linux random
