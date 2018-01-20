@@ -1,6 +1,6 @@
 //
 //  PeersListTests.swift
-//  LiskPackageDescription
+//  Lisk
 //
 //  Created by Andrew Barba on 1/8/18.
 //

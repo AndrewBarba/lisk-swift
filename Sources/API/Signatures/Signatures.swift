@@ -1,6 +1,6 @@
 //
 //  Signatures.swift
-//  LiskPackageDescription
+//  Lisk
 //
 //  Created by Andrew Barba on 1/10/18.
 //

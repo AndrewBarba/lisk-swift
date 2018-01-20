@@ -7,9 +7,6 @@
 //
 
 import Foundation
-#if os(Linux)
-import Glibc
-#endif
 
 /// Represents a Lisk node with API enabled
 public struct APINode {
@@ -46,11 +43,7 @@ extension APINode {
 
     /// Selects a random node from a list of nodes
     public static func random(from nodes: [APINode] = APINode.mainnet) -> APINode {
-        #if os(Linux)
-        let index = Int(random() % nodes.count)
-        #else
-        let index = Int(arc4random_uniform(UInt32(nodes.count)))
-        #endif
+        let index = Random.roll(max: nodes.count)
         return nodes[index]
     }
 }
