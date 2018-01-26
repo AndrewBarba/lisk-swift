@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta12](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta12)
+
+1. Generate secure, 12 word, random passphrases
+
 ## [1.0.0-beta11](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta11)
 
 1. Refactor random node selection for Linux

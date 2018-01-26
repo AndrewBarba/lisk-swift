@@ -38,6 +38,8 @@
 		381C95F82003FA860002FBC4 /* PeersVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F72003FA860002FBC4 /* PeersVersionTests.swift */; };
 		381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F92003FACE0002FBC4 /* PeersGetTests.swift */; };
 		381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */; };
+		385C827C201AF2B000012D71 /* MnemonicPassphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */; };
+		385C8280201AF52000012D71 /* MnemonicPassphraseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */; };
 		3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9A1FFC82490008C527 /* Transactions.swift */; };
 		3874AB9E1FFC82C50008C527 /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9D1FFC82C50008C527 /* TransactionResponse.swift */; };
 		3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA01FFC831B0008C527 /* TransactionModel.swift */; };
@@ -191,6 +193,8 @@
 		381C95F72003FA860002FBC4 /* PeersVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersVersionTests.swift; sourceTree = "<group>"; };
 		381C95F92003FACE0002FBC4 /* PeersGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersGetTests.swift; sourceTree = "<group>"; };
 		381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersListTests.swift; sourceTree = "<group>"; };
+		385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphrase.swift; sourceTree = "<group>"; };
+		385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphraseTests.swift; sourceTree = "<group>"; };
 		3874AB9A1FFC82490008C527 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		3874AB9D1FFC82C50008C527 /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
 		3874ABA01FFC831B0008C527 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
@@ -368,6 +372,14 @@
 				381C95F72003FA860002FBC4 /* PeersVersionTests.swift */,
 			);
 			path = Peers;
+			sourceTree = "<group>";
+		};
+		385C827E201AF4FD00012D71 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 		3874AB991FFC82260008C527 /* Transactions */ = {
@@ -564,6 +576,7 @@
 			children = (
 				3883A8BF20029A4000460A9B /* BytePacker.swift */,
 				OBJ_37 /* Crypto.swift */,
+				385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */,
 				3809038A2013AB9D00E80537 /* Random.swift */,
 				OBJ_38 /* SHA256.swift */,
 			);
@@ -574,6 +587,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_40 /* API */,
+				385C827E201AF4FD00012D71 /* Crypto */,
 				OBJ_51 /* LiskTestCase.swift */,
 			);
 			path = Tests;
@@ -882,6 +896,7 @@
 				OBJ_128 /* DelegateModel.swift in Sources */,
 				38C66D932005281D007B2FA1 /* BlockRewardResponse.swift in Sources */,
 				OBJ_129 /* Loader.swift in Sources */,
+				385C827C201AF2B000012D71 /* MnemonicPassphrase.swift in Sources */,
 				381C95F02003F4A10002FBC4 /* PeerModel.swift in Sources */,
 				3883A8C120029A9700460A9B /* BytePacker.swift in Sources */,
 				38C66D99200528B2007B2FA1 /* BlockStatusResponse.swift in Sources */,
@@ -974,6 +989,7 @@
 				OBJ_99 /* AccountsBalanceTests.swift in Sources */,
 				3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */,
 				38C66DA420053F55007B2FA1 /* BlocksListTests.swift in Sources */,
+				385C8280201AF52000012D71 /* MnemonicPassphraseTests.swift in Sources */,
 				381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */,
 				381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */,
 				3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */,
