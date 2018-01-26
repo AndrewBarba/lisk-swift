@@ -1303,6 +1303,13 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/Crypto/MnemonicPassphrase.swift",
+      "line": 10,
+      "symbol": "MnemonicPassphrase",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/andrewbarba/Code/Lisk/lisk-swift/Sources/Crypto/SHA256.swift",
       "line": 47,
       "symbol": "SHA256.init(_:)",
