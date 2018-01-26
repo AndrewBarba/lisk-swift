@@ -5,6 +5,10 @@ Change Log
 
 ---
 
+## [1.0.0-beta13](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta13)
+
+1. Call all completion handlers on the main thread
+
 ## [1.0.0-beta12](https://github.com/AndrewBarba/lisk-swift-sdk/releases/tag/1.0.0-beta12)
 
 1. Generate secure, 12 word, random passphrases

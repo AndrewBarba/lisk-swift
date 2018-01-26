@@ -124,7 +124,7 @@ public struct APIClient {
     private func dataTask<R>(_ request: URLRequest, completionHandler: @escaping (Response<R>) -> Void) -> URLSessionDataTask {
         let task = urlSession.dataTask(with: request) { data, _, _ in
             let response: Response<R> = self.processRequestCompletion(data)
-            completionHandler(response)
+            DispatchQueue.main.async { completionHandler(response) }
         }
         task.resume()
         return task

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Lisk'
-  s.version = '1.0.0-beta12'
+  s.version = '1.0.0-beta13'
   s.summary = 'Swift 4 library for Lisk - the cryptocurrency and blockchain application platform'
   s.homepage = 'https://github.com/AndrewBarba/lisk-swift'
   s.documentation_url = 'https://andrewbarba.github.io/lisk-swift/'
