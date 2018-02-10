@@ -65,6 +65,7 @@ public struct APIClient {
         self.baseURL = URL(string: urlPath)!
 
         self.headers = [
+            "Accept": nethash.contentType,
             "Content-Type": nethash.contentType,
             "os": nethash.clientOS,
             "version": nethash.version,
@@ -79,31 +80,31 @@ public struct APIClient {
 
     /// Perform GET request
     @discardableResult
-    public func get<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func get<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.get, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform POST request
     @discardableResult
-    public func post<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func post<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.post, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform PUT request
     @discardableResult
-    public func put<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func put<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.put, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform POST request
     @discardableResult
-    public func delete<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func delete<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.delete, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform request
     @discardableResult
-    public func request<R>(_ httpMethod: HTTPMethod, path: String, options: RequestOptions?, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func request<R>(_ httpMethod: HTTPMethod, path: String, options: Any?, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         let request = urlRequest(httpMethod, path: path, options: options)
         let task = dataTask(request, completionHandler: completionHandler)
         return (request, task)
@@ -131,7 +132,7 @@ public struct APIClient {
     }
 
     /// Builds a URL request based on a given HTTP method and options
-    private func urlRequest(_ httpMethod: HTTPMethod, path: String, options: RequestOptions? = nil) -> URLRequest {
+    private func urlRequest(_ httpMethod: HTTPMethod, path: String, options: Any? = nil) -> URLRequest {
         // Build api url
         let url = path.contains("://") ? URL(string: path)! : baseURL.appendingPathComponent(path)
 
@@ -160,7 +161,8 @@ public struct APIClient {
     }
 
     /// Converts a dict to url encoded query string
-    private func urlEncodedQueryString(_ options: RequestOptions) -> String {
+    private func urlEncodedQueryString(_ options: Any) -> String {
+        guard let options = options as? RequestOptions else { return "" }
         let queryParts = options.flatMap { key, value in
             guard
                 let safeKey = key.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),

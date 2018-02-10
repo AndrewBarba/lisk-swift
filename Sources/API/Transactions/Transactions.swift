@@ -35,15 +35,19 @@ public struct Transactions: APIService {
 
 extension Transactions {
 
-    /// Broadcasts a locally signed transaction to the network
-    public func broadcast(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
-        guard signedTransaction.isSigned else {
+    /// Broadcasts multiple locally signed transactions to the network
+    public func broadcast(signedTransactions: [LocalTransaction], completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
+        guard signedTransactions.filter({ !$0.isSigned }).count == 0 else {
             let response = APIResponseError(message: "Invalid Transaction - Transaction has not been signed")
             return completionHandler(.error(response: response))
         }
-        let options = ["transaction": signedTransaction.requestOptions]
-        let path = client.baseURL.absoluteString.replacingOccurrences(of: "/api", with: "/peer")
-        client.post(path: "\(path)/transactions", options: options, completionHandler: completionHandler)
+        let options = signedTransactions.map { $0.requestOptions }
+        client.post(path: "transactions", options: options, completionHandler: completionHandler)
+    }
+
+    /// Broadcasts a locally signed transaction to the network
+    public func broadcast(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
+        self.broadcast(signedTransactions: [signedTransaction], completionHandler: completionHandler)
     }
 }
 
