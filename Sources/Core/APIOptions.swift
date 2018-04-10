@@ -11,34 +11,29 @@ import Foundation
 /// Options for creating an API client
 public struct APIOptions {
 
-    /// Connect to Testnet
-    public let testnet: Bool
+    /// Force node selection
+    public let nodes: [APINode]
 
-    /// Use https:
-    public let ssl: Bool
+    /// Nethash
+    public let nethash: APINethash
 
     /// Selects a random node
     public let randomNode: Bool
 
-    /// Force node selection
-    public let node: APINode?
-
-    /// Port to connect to
-    public let port: String?
-
-    /// Optional nethash
-    public let nethash: String?
-
-    /// Set of banned nodes, unused for now
-    public let bannedNodes: [APINode]?
-
-    public init(testnet: Bool = false, ssl: Bool = true, randomNode: Bool = true, node: APINode? = nil, port: String? = nil, nethash: String? = nil, bannedNodes: [APINode]? = nil) {
-        self.testnet = testnet
-        self.ssl = ssl
-        self.randomNode = randomNode
-        self.node = node
-        self.port = port
-        self.nethash = nethash
-        self.bannedNodes = bannedNodes
+    /// Get a node
+    public var node: APINode {
+        return nodes.select(random: randomNode)
     }
+}
+
+extension APIOptions {
+
+    /// Mainnet options
+    public static let mainnet: APIOptions = .init(nodes: .mainnet, nethash: .mainnet, randomNode: true)
+
+    /// Testnet options
+    public static let testnet: APIOptions = .init(nodes: .testnet, nethash: .testnet, randomNode: true)
+
+    /// Betanet options
+    public static let betanet: APIOptions = .init(nodes: .betanet, nethash: .mainnet, randomNode: true)
 }

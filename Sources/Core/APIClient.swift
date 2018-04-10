@@ -38,41 +38,27 @@ public struct APIClient {
     public static let mainnet = APIClient()
 
     /// Client that connects to Testnet
-    public static let testnet = APIClient(options: .init(testnet: true))
+    public static let testnet = APIClient(options: .testnet)
+
+    /// Client that connects to Betanet
+    public static let betanet = APIClient(options: .betanet)
 
     // MARK: - Init
 
-    public init(options: APIOptions = .init()) {
-        let port: String = {
-            if options.ssl { return Constants.Port.ssl }
-            return options.testnet ? Constants.Port.test : Constants.Port.live
-        }()
-
-        let hostname: String = {
-            if let node = options.node { return node.hostname }
-            let nodes = options.testnet ? APINode.testnet : APINode.mainnet
-            let node = options.randomNode ? APINode.random(from: nodes) : nodes[0]
-            return node.hostname
-        }()
-
-        let nethash = options.testnet ? APINethash.testnet(port: port, nethash: options.nethash) : APINethash.mainnet(port: port, nethash: options.nethash)
-
-        let scheme = options.ssl ? "https" : "http"
-
-        let urlPath = "\(scheme)://\(hostname):\(port)/api"
+    public init(options: APIOptions = .mainnet) {
 
         // swiftlint:disable:next force_unwrapping
-        self.baseURL = URL(string: urlPath)!
+        self.baseURL = URL(string: options.node.origin)!
 
         self.headers = [
-            "Accept": nethash.contentType,
-            "Content-Type": nethash.contentType,
-            "os": nethash.clientOS,
-            "version": nethash.version,
-            "minVersion": nethash.minVersion,
-            "port": nethash.port,
-            "nethash": nethash.nethash,
-            "broadhash": nethash.broadhash
+            "Accept": options.nethash.contentType,
+            "Content-Type": options.nethash.contentType,
+            "os": options.nethash.clientOS,
+            "version": options.nethash.version,
+            "minVersion": options.nethash.minVersion,
+            "port": options.nethash.port,
+            "nethash": options.nethash.nethash,
+            "broadhash": options.nethash.broadhash
         ]
     }
 
@@ -162,14 +148,18 @@ public struct APIClient {
 
     /// Converts a dict to url encoded query string
     private func urlEncodedQueryString(_ options: Any) -> String {
-        guard let options = options as? RequestOptions else { return "" }
-        let queryParts = options.flatMap { key, value in
+        guard let options = options as? RequestOptions else {
+            return ""
+        }
+
+        let queryParts: [String] = options.compactMap { key, value in
             guard
                 let safeKey = key.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
                 let safeValue = "\(value)".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
                 else { return nil }
             return "\(safeKey)=\(safeValue)"
         }
+
         return queryParts.joined(separator: "&")
     }
 

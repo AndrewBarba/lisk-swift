@@ -34,9 +34,16 @@ public struct Constants {
         public static let epoch: Date = Date(timeIntervalSince1970: epochSeconds)
     }
 
+    public struct Nethash {
+        public static let main = "ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511"
+        public static let test = "da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba"
+        public static let beta = "ef3844327d1fd0fc5785291806150c937797bdb34a748c9cd932b7e859e9ca0c"
+    }
+
     public struct Port {
-        public static let live: String = "8000"
+        public static let main: String = "8000"
         public static let test: String = "7000"
+        public static let beta: String = "5000"
         public static let ssl: String = "443"
     }
 }

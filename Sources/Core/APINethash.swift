@@ -8,10 +8,6 @@
 
 import Foundation
 
-private let mainnetNethash = "ed14889723f24ecc54871d058d98ce91ff2f973192075c0155ba2b7b70ad2511"
-
-private let testnetNethash = "da3ed6a45429278bac2666961289ca17ad86595d33b31037615d4b8e8f158bba"
-
 /// Nethash options that are sent as request headers
 public struct APINethash {
 
@@ -22,13 +18,7 @@ public struct APINethash {
     public let clientOS = "lisk-api-swift"
 
     /// Minmimum supported api version
-    public let minVersion = ">=0.5.0"
-
-    /// Current api version
-    public let version: String
-
-    /// Port to connect to
-    public let port: String
+    public let minVersion = ">=1.0.0"
 
     /// Nethash
     public let nethash: String
@@ -36,10 +26,16 @@ public struct APINethash {
     /// Broadhash
     public let broadhash: String
 
-    private init(port: String, nethash: String, broadhash: String, version: String) {
-        self.port = port
+    /// Origin port
+    public let port: String
+
+    /// Current api version
+    public let version: String
+
+    private init(nethash: String, broadhash: String, port: String, version: String) {
         self.nethash = nethash
         self.broadhash = broadhash
+        self.port = port
         self.version = version
     }
 }
@@ -47,14 +43,26 @@ public struct APINethash {
 extension APINethash {
 
     /// Mainnet options
-    public static func mainnet(port: String, nethash: String? = nil) -> APINethash {
-        let version = nethash == nil ? Constants.version : "0.0.0a"
-        return .init(port: port, nethash: nethash ?? mainnetNethash, broadhash: mainnetNethash, version: version)
-    }
+    public static let mainnet: APINethash = .init(
+        nethash: Constants.Nethash.main,
+        broadhash: Constants.Nethash.main,
+        port: Constants.Port.ssl,
+        version: Constants.version
+    )
 
     /// Testnet options
-    public static func testnet(port: String, nethash: String? = nil) -> APINethash {
-        let version = nethash == nil ? Constants.version : "0.0.0a"
-        return .init(port: port, nethash: nethash ?? testnetNethash, broadhash: testnetNethash, version: version)
-    }
+    public static let testnet: APINethash = .init(
+        nethash: Constants.Nethash.test,
+        broadhash: Constants.Nethash.test,
+        port: Constants.Port.test,
+        version: Constants.version
+    )
+
+    /// Betanet options
+    public static let betanet: APINethash = .init(
+        nethash: Constants.Nethash.beta,
+        broadhash: Constants.Nethash.beta,
+        port: Constants.Port.beta,
+        version: Constants.version
+    )
 }
