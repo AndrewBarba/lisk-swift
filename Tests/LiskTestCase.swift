@@ -15,7 +15,9 @@ class LiskTestCase: XCTestCase {
 
     let testNetClient = APIClient.testnet
 
-    let mainPeerClient = APIClient(options: .init(ssl: false, node: .init(hostname: "lisk0.abarba.me")))
+    let betaNetClient = APIClient.betanet
+
+    let mainPeerClient = APIClient(options: .init(nodes: [.init(origin: "http://lisk0.abarba.me:8000")], nethash: .mainnet, randomNode: true))
 
     let andrewUsername = "andrew"
     let andrewAddress = "14987768355736502769L"

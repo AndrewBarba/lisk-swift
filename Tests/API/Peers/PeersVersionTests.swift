@@ -14,6 +14,13 @@ class PeersVersionTests: LiskTestCase {
         let peers = Peers(client: mainNetClient)
         let response = tryRequest { peers.version(completionHandler: $0) }
         XCTAssert(response.success)
-        XCTAssertEqual(response.version, "0.9.11")
+        XCTAssertEqual(response.version, "0.9.13")
+    }
+
+    func testBetanetVersion() {
+        let peers = Peers(client: betaNetClient)
+        let response = tryRequest { peers.version(completionHandler: $0) }
+        XCTAssert(response.success)
+        XCTAssertEqual(response.version, "1.0.0")
     }
 }

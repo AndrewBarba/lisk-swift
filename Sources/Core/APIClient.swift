@@ -48,17 +48,15 @@ public struct APIClient {
     public init(options: APIOptions = .mainnet) {
 
         // swiftlint:disable:next force_unwrapping
-        self.baseURL = URL(string: options.node.origin)!
+        self.baseURL = URL(string: "\(options.node.origin)/api")!
 
         self.headers = [
             "Accept": options.nethash.contentType,
             "Content-Type": options.nethash.contentType,
-            "os": options.nethash.clientOS,
-            "version": options.nethash.version,
-            "minVersion": options.nethash.minVersion,
-            "port": options.nethash.port,
+            "os": options.nethash.os,
             "nethash": options.nethash.nethash,
-            "broadhash": options.nethash.broadhash
+            "version": options.nethash.version,
+            "minVersion": options.nethash.minVersion
         ]
     }
 
