@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/26/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation
@@ -40,11 +39,8 @@ extension Array where Element == APINode {
 
     /// Betanet nodes
     public static let betanet: [APINode] = [
-        .init(origin: "http://94.237.41.99:5000"),
-        .init(origin: "http://209.50.52.217:5000"),
-        .init(origin: "http://94.237.26.150:5000"),
-        .init(origin: "http://83.136.249.102:5000"),
-        .init(origin: "http://94.237.65.179:5000")
+        .init(origin: "http://94.237.42.109:5000"),
+        .init(origin: "http://83.136.252.99:5000")
     ]
 }
 

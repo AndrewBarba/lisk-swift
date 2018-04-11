@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/26/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation

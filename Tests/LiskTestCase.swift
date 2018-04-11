@@ -3,7 +3,6 @@
 //  LiskTests
 //
 //  Created by Andrew Barba on 12/27/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import XCTest
@@ -17,7 +16,11 @@ class LiskTestCase: XCTestCase {
 
     let betaNetClient = APIClient.betanet
 
-    let mainPeerClient = APIClient(options: .init(nodes: [.init(origin: "http://lisk0.abarba.me:8000")], nethash: .mainnet, randomNode: true))
+    let mainPeerClient: APIClient = {
+        let nodes: [APINode] = [.init(origin: "http://lisk0.abarba.me:8000")]
+        let options = APIOptions(nodes: nodes, nethash: .mainnet, randomNode: true)
+        return APIClient(options: options)
+    }()
 
     let andrewUsername = "andrew"
     let andrewAddress = "14987768355736502769L"
