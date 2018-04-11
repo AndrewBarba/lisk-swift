@@ -9,10 +9,8 @@ import Foundation
 
 extension Transactions {
 
-    public struct BroadcastResponse: APIResponse {
+    public struct TransactionBroadcastResponse: APIResponse {
 
-        public let success: Bool
-
-        public let transactionId: String
+        public let data: APIMessageModel
     }
 }

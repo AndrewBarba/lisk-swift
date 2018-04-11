@@ -8,9 +8,9 @@
 import Foundation
 
 /// Represents an HTTP response
-public enum Response<T: APIResponse> {
-    case success(response: T)
-    case error(response: APIResponseError)
+public enum Response<R: APIResponse> {
+    case success(response: R)
+    case error(response: APIError)
 }
 
 /// Type to represent request body/url options
@@ -162,19 +162,14 @@ public struct APIClient {
     /// Process a response
     private func processRequestCompletion<R>(_ data: Data?) -> Response<R> {
         guard let data = data else {
-            return .error(response: defaultErrorResponse())
+            return .error(response: .unexpected)
         }
 
-        guard let result = try? JSONDecoder().decode(R.self, from: data), result.success else {
-            let error = try? JSONDecoder().decode(APIResponseError.self, from: data)
-            return .error(response: error ?? defaultErrorResponse())
+        guard let result = try? JSONDecoder().decode(R.self, from: data) else {
+            let error = try? JSONDecoder().decode(APIError.self, from: data)
+            return .error(response: error ?? .unknown)
         }
 
         return .success(response: result)
-    }
-
-    /// Default error response
-    private func defaultErrorResponse() -> APIResponseError {
-        return APIResponseError(message: "Unknown Error")
     }
 }

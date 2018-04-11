@@ -13,20 +13,20 @@ extension Delegates {
 
         public let username: String
 
-        public let address: String
-
-        public let publicKey: String
-
         public let vote: String
 
-        public let producedblocks: UInt64
+        public let rewards: String?
 
-        public let missedblocks: UInt64
+        public let producedblocks: Int?
 
-        public let rank: UInt64
+        public let missedblocks: Int?
 
-        public let approval: Double
+        public let rate: Int?
 
-        public let productivity: Double
+        public let approval: Double?
+
+        public let productivity: Double?
+
+        public let rank: Int?
     }
 }

@@ -11,14 +11,14 @@ import Ed25519
 public struct Crypto {
 
     /// Generate public and private keys from a given secret
-    public static func keys(fromSecret secret: String) throws -> (publicKey: String, privateKey: String) {
-        let keyPair = try self.keyPair(fromSecret: secret)
+    public static func keys(fromPassphrase passphrase: String) throws -> (publicKey: String, privateKey: String) {
+        let keyPair = try self.keyPair(fromPassphrase: passphrase)
         return (keyPair.publicKeyString, keyPair.privateKeyString)
     }
 
     /// Generate key pair from a given secret
-    public static func keyPair(fromSecret secret: String) throws -> KeyPair {
-        let bytes = SHA256(secret).digest()
+    public static func keyPair(fromPassphrase passphrase: String) throws -> KeyPair {
+        let bytes = SHA256(passphrase).digest()
         let seed = try Seed(bytes: bytes)
         return KeyPair(seed: seed)
     }

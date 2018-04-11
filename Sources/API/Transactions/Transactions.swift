@@ -31,23 +31,22 @@ public struct Transactions: APIService {
     }
 }
 
-// MARK: - Broadcast
+// MARK: - Submit
 
 extension Transactions {
 
-    /// Broadcasts multiple locally signed transactions to the network
-    public func broadcast(signedTransactions: [LocalTransaction], completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
-        guard signedTransactions.filter({ !$0.isSigned }).count == 0 else {
-            let response = APIResponseError(message: "Invalid Transaction - Transaction has not been signed")
+    /// Submit a signed transaction to the network
+    public func submit(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<TransactionBroadcastResponse>) -> Void) {
+        guard signedTransaction.isSigned else {
+            let response = APIError(message: "Invalid Transaction - Transaction has not been signed")
             return completionHandler(.error(response: response))
         }
-        let options = signedTransactions.map { $0.requestOptions }
-        client.post(path: "transactions", options: options, completionHandler: completionHandler)
-    }
 
-    /// Broadcasts a locally signed transaction to the network
-    public func broadcast(signedTransaction: LocalTransaction, completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
-        self.broadcast(signedTransactions: [signedTransaction], completionHandler: completionHandler)
+        let options: RequestOptions = [
+            "transaction": signedTransaction.requestOptions
+        ]
+
+        client.post(path: "transactions", options: options, completionHandler: completionHandler)
     }
 }
 
@@ -56,38 +55,34 @@ extension Transactions {
 extension Transactions {
 
     /// Transfer LSK to a Lisk address using Local Signing
-    public func transfer(lsk: Double, to recipient: String, secret: String, secondSecret: String? = nil, completionHandler: @escaping (Response<BroadcastResponse>) -> Void) {
+    public func transfer(lsk: Double, to recipient: String, passphrase: String, secondPassphrase: String? = nil, completionHandler: @escaping (Response<TransactionBroadcastResponse>) -> Void) {
         do {
             let transaction = LocalTransaction(.transfer, lsk: lsk, recipientId: recipient)
-            let signedTransaction = try transaction.signed(secret: secret, secondSecret: secondSecret)
-            broadcast(signedTransaction: signedTransaction, completionHandler: completionHandler)
+            let signedTransaction = try transaction.signed(passphrase: passphrase, secondPassphrase: secondPassphrase)
+            submit(signedTransaction: signedTransaction, completionHandler: completionHandler)
         } catch {
-            let response = APIResponseError(message: error.localizedDescription)
+            let response = APIError(message: error.localizedDescription)
             completionHandler(.error(response: response))
         }
     }
 }
 
-// MARK: - Get
+// MARK: - Register Second Passphrase
 
 extension Transactions {
 
-    /// Get a transaction by id
-    public func transaction(id: String, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
-        let options = ["id": id]
-        client.get(path: "transactions/get", options: options, completionHandler: completionHandler)
-    }
-
-    /// Get an unconfirmed transaction by id
-    public func unconfirmedTransaction(id: String, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
-        let options = ["id": id]
-        client.get(path: "transactions/unconfirmed/get", options: options, completionHandler: completionHandler)
-    }
-
-    /// Get a queued transaction by id
-    public func queuedTransaction(id: String, completionHandler: @escaping (Response<TransactionResponse>) -> Void) {
-        let options = ["id": id]
-        client.get(path: "transactions/queued/get", options: options, completionHandler: completionHandler)
+    /// Register a second passphrase
+    public func registerSecondPassphrase(_ secondPassphrase: String, passphrase: String, completionHandler: @escaping (Response<TransactionBroadcastResponse>) -> Void) {
+        do {
+            let (publicKey, _) = try Crypto.keys(fromPassphrase: secondPassphrase)
+            let asset = ["signature": ["publicKey": publicKey]]
+            let transaction = LocalTransaction(.registerSecondPassphrase, amount: 0, asset: asset)
+            let signedTransaction = try transaction.signed(passphrase: passphrase, secondPassphrase: nil)
+            submit(signedTransaction: signedTransaction, completionHandler: completionHandler)
+        } catch {
+            let response = APIError(message: error.localizedDescription)
+            completionHandler(.error(response: response))
+        }
     }
 }
 
@@ -96,34 +91,15 @@ extension Transactions {
 extension Transactions {
 
     /// List transaction objects
-    ///
-    /// - Parameters:
-    ///   - block: transactions for this block
-    ///   - sender: transactions from this sender
-    ///   - recipient: transactions to this recipient
-    ///   - limit: limit number of returned transactions
-    ///   - offset: used for paging, offset by certain number of transactions
-    ///   - orderBy: sort results by a column and direction
-    ///   - join: defaults to 'or', specify 'and' for an AND join of passed in parameters
-    public func transactions(block: String? = nil, sender: String? = nil, recipient: String? = nil, limit: UInt? = nil, offset: UInt? = nil, orderBy: OrderBy? = nil, join: PropertyJoin = .or, completionHandler: @escaping (Response<TransactionsResponse>) -> Void) {
+    public func transactions(block: String? = nil, sender: String? = nil, recipient: String? = nil, limit: UInt? = nil, offset: UInt? = nil, sort: APIRequest.Sort? = nil, completionHandler: @escaping (Response<TransactionsResponse>) -> Void) {
         var options: RequestOptions = [:]
-        if let value = block { options["\(join.rawValue)blockId"] = value }
-        if let value = sender { options["\(join.rawValue)senderId"] = value }
-        if let value = recipient { options["\(join.rawValue)recipientId"] = value }
+        if let value = block { options["blockId"] = value }
+        if let value = sender { options["senderId"] = value }
+        if let value = recipient { options["recipientId"] = value }
         if let value = limit { options["limit"] = value }
         if let value = offset { options["offset"] = value }
-        if let value = orderBy { options["orderBy"] = "\(value.column):\(value.direction.rawValue)" }
+        if let value = sort?.value { options["sort"] = value }
 
         client.get(path: "transactions", options: options, completionHandler: completionHandler)
-    }
-
-    /// List unconfirmed transactions
-    public func unconfirmedTransactions(completionHandler: @escaping (Response<TransactionsResponse>) -> Void) {
-        client.get(path: "transactions/unconfirmed", completionHandler: completionHandler)
-    }
-
-    /// List queued transactions
-    public func queuedTransactions(completionHandler: @escaping (Response<TransactionsResponse>) -> Void) {
-        client.get(path: "transactions/queued", completionHandler: completionHandler)
     }
 }

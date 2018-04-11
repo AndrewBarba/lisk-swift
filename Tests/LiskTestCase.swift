@@ -54,9 +54,9 @@ class LiskTestCase: XCTestCase {
     }
 
     @discardableResult
-    func tryRequestError<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> APIResponseError {
+    func tryRequestError<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> APIError {
         let expectation = XCTestExpectation()
-        var error: APIResponseError?
+        var error: APIError?
         block() { response in
             switch response {
             case .success:

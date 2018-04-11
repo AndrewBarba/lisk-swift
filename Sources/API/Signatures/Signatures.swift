@@ -19,31 +19,20 @@ public struct Signatures: APIService {
     }
 }
 
-// MARK: - Register
+// MARK: - Submit
 
 extension Signatures {
 
-    public func register(secondSecret: String, secret: String, completionHandler: @escaping (Response<Transactions.BroadcastResponse>) -> Void) {
-        do {
-            let (publicKey, _) = try Crypto.keys(fromSecret: secondSecret)
-            let asset = ["signature": ["publicKey": publicKey]]
-            let transaction = LocalTransaction(.registerSecondPassphrase, amount: 0, asset: asset)
-            let signedTransaction = try transaction.signed(secret: secret, secondSecret: nil)
-            print(signedTransaction)
-            Transactions().broadcast(signedTransaction: signedTransaction, completionHandler: completionHandler)
-        } catch {
-            let response = APIResponseError(message: error.localizedDescription)
-            completionHandler(.error(response: response))
-        }
-    }
-}
+    /// Submits a sognature to the network
+    public func submit(signature: SignatureModel, completionHandler: @escaping (Response<SignatureBroadcastResponse>) -> Void) {
+        let options: RequestOptions = [
+            "signature": [
+                "transactionId": signature.transactionId,
+                "publicKey": signature.publicKey,
+                "signature": signature.signature
+            ]
+        ]
 
-// MARK: - Fee
-
-extension Signatures {
-
-    /// Get fee for registering second passphrase
-    public func fee(completionHandler: @escaping (Response<FeeResponse>) -> Void) {
-        client.get(path: "signatures/fee", completionHandler: completionHandler)
+        client.post(path: "signatures", options: options, completionHandler: completionHandler)
     }
 }

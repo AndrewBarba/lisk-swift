@@ -17,22 +17,22 @@ extension Peers {
             case connected = 2
         }
 
-        public let ip: String
+        public let ip: String?
 
-        public let port: UInt64
+        public let httpPort: Int?
+
+        public let wsPort: Int?
+
+        public let os: String?
+
+        public let version: String?
 
         public let state: State
 
-        public let os: String
+        public let height: Int?
 
-        public let version: String
+        public let broadhash: String?
 
-        public let broadhash: String
-
-        public let height: UInt64
-
-        public let updated: Double
-
-        public let nonce: String
+        public let nonce: String?
     }
 }

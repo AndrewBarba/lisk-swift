@@ -11,3 +11,9 @@ import Foundation
 public protocol APIModel: Decodable {
     
 }
+
+/// Common model for single message response
+public struct APIMessageModel: APIModel {
+
+    public let message: String
+}

@@ -13,14 +13,14 @@ extension Accounts {
 
         public let address: String
 
-        public let balance: String
-
-        public let unconfirmedBalance: String
-
         public let publicKey: String
 
-        public let unconfirmedSignature: UInt8
+        public let balance: String?
 
-        public let secondSignature: UInt8
+        public let unconfirmedBalance: String?
+
+        public let secondPublicKey: String?
+
+        public let delegate: Delegates.DelegateModel?
     }
 }
