@@ -12,19 +12,15 @@ class DelegatesGetTests: LiskTestCase {
 
     func testMainnetGetUsername() {
         let delegates = Delegates(client: mainNetClient)
-        let response = tryRequest { delegates.delegate(username: andrewUsername, completionHandler: $0) }
-        XCTAssert(response.success)
-        XCTAssertEqual(response.delegate.username, andrewUsername)
-        XCTAssertEqual(response.delegate.address, andrewAddress)
-        XCTAssertEqual(response.delegate.publicKey, andrewPublicKey)
+        let response = tryRequest { delegates.delegates(username: andrewUsername, completionHandler: $0) }
+        XCTAssertEqual(response.data.count, 1)
+        XCTAssertEqual(response.data[0].username, andrewUsername)
     }
 
     func testMainnetGetPublicKey() {
         let delegates = Delegates(client: mainNetClient)
-        let response = tryRequest { delegates.delegate(publicKey: andrewPublicKey, completionHandler: $0) }
-        XCTAssert(response.success)
-        XCTAssertEqual(response.delegate.username, andrewUsername)
-        XCTAssertEqual(response.delegate.address, andrewAddress)
-        XCTAssertEqual(response.delegate.publicKey, andrewPublicKey)
+        let response = tryRequest { delegates.delegates(publicKey: andrewPublicKey, completionHandler: $0) }
+        XCTAssertEqual(response.data.count, 1)
+        XCTAssertEqual(response.data[0].username, andrewUsername)
     }
 }

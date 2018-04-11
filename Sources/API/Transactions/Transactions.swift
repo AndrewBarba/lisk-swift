@@ -91,8 +91,9 @@ extension Transactions {
 extension Transactions {
 
     /// List transaction objects
-    public func transactions(block: String? = nil, sender: String? = nil, recipient: String? = nil, limit: UInt? = nil, offset: UInt? = nil, sort: APIRequest.Sort? = nil, completionHandler: @escaping (Response<TransactionsResponse>) -> Void) {
+    public func transactions(id: String? = nil, block: String? = nil, sender: String? = nil, recipient: String? = nil, limit: UInt? = nil, offset: UInt? = nil, sort: APIRequest.Sort? = nil, completionHandler: @escaping (Response<TransactionsResponse>) -> Void) {
         var options: RequestOptions = [:]
+        if let value = id { options["id"] = value }
         if let value = block { options["blockId"] = value }
         if let value = sender { options["senderId"] = value }
         if let value = recipient { options["recipientId"] = value }

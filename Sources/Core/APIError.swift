@@ -8,20 +8,29 @@
 import Foundation
 
 /// Protocol describing an error
-public struct APIError: Decodable {
+public struct APIError {
 
-    /// Internal backing message
-    private let _message: String?
+    public let message: String
 
-    /// Internal backing error
-    private let _error: String?
+    public init(message: String) {
+        self.message = message
+    }
+}
 
-    /// Public error message
-    public lazy var message: String = _message ?? _error ?? "Unexpected Error"
+extension APIError: Decodable {
 
-    internal init(message: String? = nil) {
-        self._message = message
-        self._error = nil
+    private enum Keys: String, CodingKey {
+        case message
+        case error
+    }
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: Keys.self)
+        if let message = try? container.decode(String.self, forKey: .message) {
+            self.message = message
+        } else {
+            self.message = try container.decode(String.self, forKey: .error)
+        }
     }
 }
 

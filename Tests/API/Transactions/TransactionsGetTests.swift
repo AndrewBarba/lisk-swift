@@ -13,8 +13,8 @@ class TransactionsGetTests: LiskTestCase {
     func testMainnetGet() {
         let id = "10861152394901264352"
         let transactions = Transactions(client: mainNetClient)
-        let response = tryRequest { transactions.transaction(id: id, completionHandler: $0) }
-        XCTAssert(response.success)
-        XCTAssertEqual(response.transaction.id, id)
+        let response = tryRequest { transactions.transactions(id: id, completionHandler: $0) }
+        XCTAssertEqual(response.data.count, 1)
+        XCTAssertEqual(response.data[0].id, id)
     }
 }

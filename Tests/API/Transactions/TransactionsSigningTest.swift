@@ -12,7 +12,7 @@ class TransactionsSigningTests: LiskTestCase {
 
     func testSign() {
         var transaction = LocalTransaction(.transfer, lsk: 1.12, recipientId: andrewAddress, timestamp: 10)
-        try? transaction.sign(secret: exampleSecret)
+        try? transaction.sign(passphrase: exampleSecret)
 
         XCTAssertEqual(transaction.typeBytes, [0])
         XCTAssertEqual(transaction.timestampBytes, [10, 0, 0, 0])
@@ -25,7 +25,7 @@ class TransactionsSigningTests: LiskTestCase {
 
     func testSignWithRealmTimestamp() {
         var transaction = LocalTransaction(.transfer, lsk: 1, recipientId: andrewAddress, timestamp: 51262230)
-        try? transaction.sign(secret: exampleSecret)
+        try? transaction.sign(passphrase: exampleSecret)
 
         // Check bytes
         XCTAssertEqual(transaction.signature, "5bcfbd0ed92df0fbb96dab8dd844b06f82aab05b89f3ac2e53b4ffc632ad96ca0a6dd9b158d754ccde08dac50a831a21bcfc16029e80710a9faf78ac94f0ec01")
@@ -34,7 +34,7 @@ class TransactionsSigningTests: LiskTestCase {
 
     func testSecondSign() {
         var transaction = LocalTransaction(.transfer, lsk: 1.12, recipientId: andrewAddress, timestamp: 10)
-        try? transaction.sign(secret: exampleSecret, secondSecret: exampleSecret)
+        try? transaction.sign(passphrase: exampleSecret, secondPassphrase: exampleSecret)
 
         XCTAssertEqual(transaction.typeBytes, [0])
         XCTAssertEqual(transaction.timestampBytes, [10, 0, 0, 0])
@@ -48,7 +48,7 @@ class TransactionsSigningTests: LiskTestCase {
 
     func testSignRequestOptions() {
         var transaction = LocalTransaction(.transfer, lsk: 1.12, recipientId: andrewAddress, timestamp: 10)
-        try? transaction.sign(secret: exampleSecret)
+        try? transaction.sign(passphrase: exampleSecret)
 
         let options = transaction.requestOptions
 
