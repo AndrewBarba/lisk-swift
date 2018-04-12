@@ -1,1383 +1,2024 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXAggregateTarget section */
-		"Lisk::LiskPackageTests::ProductTarget" /* LiskPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_175 /* Build configuration list for PBXAggregateTarget "LiskPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_178 /* PBXTargetDependency */,
-			);
-			name = LiskPackageTests;
-			productName = LiskPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
-/* Begin PBXBuildFile section */
-		3809038C2013AC1B00E80537 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3809038A2013AB9D00E80537 /* Random.swift */; };
-		381C95D92003E44E0002FBC4 /* DelegatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95D82003E44E0002FBC4 /* DelegatesResponse.swift */; };
-		381C95DD2003E6D50002FBC4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95DC2003E6D50002FBC4 /* APIService.swift */; };
-		381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */; };
-		381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E92003EE440002FBC4 /* DelegatesListTests.swift */; };
-		381C95ED2003F4580002FBC4 /* Peers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95EC2003F4580002FBC4 /* Peers.swift */; };
-		381C95F02003F4A10002FBC4 /* PeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95EF2003F4A10002FBC4 /* PeerModel.swift */; };
-		381C95F32003F5CF0002FBC4 /* PeersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F22003F5CF0002FBC4 /* PeersResponse.swift */; };
-		381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F92003FACE0002FBC4 /* PeersGetTests.swift */; };
-		381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */; };
-		385C827C201AF2B000012D71 /* MnemonicPassphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */; };
-		385C8280201AF52000012D71 /* MnemonicPassphraseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */; };
-		3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9A1FFC82490008C527 /* Transactions.swift */; };
-		3874AB9E1FFC82C50008C527 /* TransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9D1FFC82C50008C527 /* TransactionsResponse.swift */; };
-		3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA01FFC831B0008C527 /* TransactionModel.swift */; };
-		3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */; };
-		3874ABA61FFC8EEE0008C527 /* TransactionsListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */; };
-		3883A8C120029A9700460A9B /* BytePacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BF20029A4000460A9B /* BytePacker.swift */; };
-		3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C220029BE500460A9B /* LocalTransaction.swift */; };
-		3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */; };
-		3883A8C82002DC4E00460A9B /* TransactionsTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */; };
-		3883A8CA2003BED900460A9B /* TransactionBroadcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C92003BED900460A9B /* TransactionBroadcastResponse.swift */; };
-		38B8E222200672780067BA8E /* SignatureBroadcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B8E220200672730067BA8E /* SignatureBroadcastResponse.swift */; };
-		38B8E2232006728A0067BA8E /* Signatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B8E21D2006723B0067BA8E /* Signatures.swift */; };
-		38C55B982006854000C0CCA4 /* SignaturesRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C55B972006854000C0CCA4 /* SignaturesRegisterTests.swift */; };
-		38C66D7B20051FB8007B2FA1 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D7A20051FB8007B2FA1 /* Blocks.swift */; };
-		38C66D7F20051FF8007B2FA1 /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D7E20051FF8007B2FA1 /* BlockModel.swift */; };
-		38C66D8120052032007B2FA1 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D8020052032007B2FA1 /* APIModel.swift */; };
-		38C66D83200523F2007B2FA1 /* BlocksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D82200523F2007B2FA1 /* BlocksResponse.swift */; };
-		38C66DA220053DEE007B2FA1 /* BlocksGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66DA120053DEE007B2FA1 /* BlocksGetTests.swift */; };
-		38C66DA420053F55007B2FA1 /* BlocksListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66DA320053F55007B2FA1 /* BlocksListTests.swift */; };
-		38FB2B01207E9ED700F13CFE /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2AFF207E9E8500F13CFE /* APIRequest.swift */; };
-		38FB2B04207EA6D400F13CFE /* NodeStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2B03207EA6D400F13CFE /* NodeStatusModel.swift */; };
-		38FB2B06207EA7EF00F13CFE /* NodeConstantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2B05207EA7EF00F13CFE /* NodeConstantsResponse.swift */; };
-		38FB2B08207EA81900F13CFE /* NodeConstantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2B07207EA81900F13CFE /* NodeConstantsModel.swift */; };
-		38FB2B0B207EA9AC00F13CFE /* Dapps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2B0A207EA9AC00F13CFE /* Dapps.swift */; };
-		38FB2B0F207EA9F400F13CFE /* DappsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2B0E207EA9F400F13CFE /* DappsResponse.swift */; };
-		38FB2B11207EA9FC00F13CFE /* DappModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2B10207EA9FC00F13CFE /* DappModel.swift */; };
-		38FB2B14207EAF7200F13CFE /* SignatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38FB2B13207EAF7200F13CFE /* SignatureModel.swift */; };
-		OBJ_101 /* AccountsOpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AccountsOpenTests.swift */; };
-		OBJ_102 /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* AccountsPublicKeyTests.swift */; };
-		OBJ_106 /* LiskTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* LiskTestCase.swift */; };
-		OBJ_108 /* Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Lisk::Lisk::Product" /* Lisk.framework */; };
-		OBJ_109 /* Ed25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::Ed25519::Product" /* Ed25519.framework */; };
-		OBJ_110 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
-		OBJ_121 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Accounts.swift */; };
-		OBJ_122 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AccountModel.swift */; };
-		OBJ_123 /* AccountsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* AccountsResponse.swift */; };
-		OBJ_127 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Delegates.swift */; };
-		OBJ_128 /* DelegateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DelegateModel.swift */; };
-		OBJ_129 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Node.swift */; };
-		OBJ_131 /* NodeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* NodeStatusResponse.swift */; };
-		OBJ_133 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Constants.swift */; };
-		OBJ_134 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* APIClient.swift */; };
-		OBJ_135 /* APINethash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* APINethash.swift */; };
-		OBJ_136 /* APINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* APINode.swift */; };
-		OBJ_137 /* APIOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* APIOptions.swift */; };
-		OBJ_138 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* APIResponse.swift */; };
-		OBJ_139 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* APIError.swift */; };
-		OBJ_140 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Crypto.swift */; };
-		OBJ_141 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* SHA256.swift */; };
-		OBJ_143 /* Ed25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::Ed25519::Product" /* Ed25519.framework */; };
-		OBJ_144 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
-		OBJ_151 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Error.swift */; };
-		OBJ_152 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* KeyPair.swift */; };
-		OBJ_153 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* PrivateKey.swift */; };
-		OBJ_154 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* PublicKey.swift */; };
-		OBJ_155 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Seed.swift */; };
-		OBJ_157 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
-		OBJ_163 /* add_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* add_scalar.c */; };
-		OBJ_164 /* fe.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* fe.c */; };
-		OBJ_165 /* ge.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* ge.c */; };
-		OBJ_166 /* key_exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* key_exchange.c */; };
-		OBJ_167 /* keypair.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* keypair.c */; };
-		OBJ_168 /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* sc.c */; };
-		OBJ_169 /* seed.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* seed.c */; };
-		OBJ_170 /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* sha512.c */; };
-		OBJ_171 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* sign.c */; };
-		OBJ_172 /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* verify.c */; };
-		OBJ_86 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_92 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Package.swift */; };
-		OBJ_98 /* AccountsAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* AccountsAccountTests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		38434E581FFADA1400AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Ed25519::Ed25519";
-			remoteInfo = Ed25519;
-		};
-		38434E591FFADA1400AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Ed25519::CEd25519";
-			remoteInfo = CEd25519;
-		};
-		38434E5A1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Ed25519::CEd25519";
-			remoteInfo = CEd25519;
-		};
-		38434E5B1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Lisk::Lisk";
-			remoteInfo = Lisk;
-		};
-		38434E5C1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Ed25519::Ed25519";
-			remoteInfo = Ed25519;
-		};
-		38434E5D1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Ed25519::CEd25519";
-			remoteInfo = CEd25519;
-		};
-		38434E5E1FFADA1500AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Lisk::LiskTests";
-			remoteInfo = LiskTests;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		3809038A2013AB9D00E80537 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		381C95D82003E44E0002FBC4 /* DelegatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesResponse.swift; sourceTree = "<group>"; };
-		381C95DC2003E6D50002FBC4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesGetTests.swift; sourceTree = "<group>"; };
-		381C95E92003EE440002FBC4 /* DelegatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesListTests.swift; sourceTree = "<group>"; };
-		381C95EC2003F4580002FBC4 /* Peers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peers.swift; sourceTree = "<group>"; };
-		381C95EF2003F4A10002FBC4 /* PeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerModel.swift; sourceTree = "<group>"; };
-		381C95F22003F5CF0002FBC4 /* PeersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersResponse.swift; sourceTree = "<group>"; };
-		381C95F92003FACE0002FBC4 /* PeersGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersGetTests.swift; sourceTree = "<group>"; };
-		381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersListTests.swift; sourceTree = "<group>"; };
-		385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphrase.swift; sourceTree = "<group>"; };
-		385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphraseTests.swift; sourceTree = "<group>"; };
-		3874AB9A1FFC82490008C527 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
-		3874AB9D1FFC82C50008C527 /* TransactionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsResponse.swift; sourceTree = "<group>"; };
-		3874ABA01FFC831B0008C527 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
-		3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsGetTests.swift; sourceTree = "<group>"; };
-		3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListTest.swift; sourceTree = "<group>"; };
-		3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSigningTest.swift; sourceTree = "<group>"; };
-		3883A8BF20029A4000460A9B /* BytePacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytePacker.swift; sourceTree = "<group>"; };
-		3883A8C220029BE500460A9B /* LocalTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransaction.swift; sourceTree = "<group>"; };
-		3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTransferTests.swift; sourceTree = "<group>"; };
-		3883A8C92003BED900460A9B /* TransactionBroadcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBroadcastResponse.swift; sourceTree = "<group>"; };
-		38B8E21D2006723B0067BA8E /* Signatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signatures.swift; sourceTree = "<group>"; };
-		38B8E220200672730067BA8E /* SignatureBroadcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureBroadcastResponse.swift; sourceTree = "<group>"; };
-		38C55B972006854000C0CCA4 /* SignaturesRegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturesRegisterTests.swift; sourceTree = "<group>"; };
-		38C66D7A20051FB8007B2FA1 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
-		38C66D7E20051FF8007B2FA1 /* BlockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
-		38C66D8020052032007B2FA1 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
-		38C66D82200523F2007B2FA1 /* BlocksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksResponse.swift; sourceTree = "<group>"; };
-		38C66DA120053DEE007B2FA1 /* BlocksGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksGetTests.swift; sourceTree = "<group>"; };
-		38C66DA320053F55007B2FA1 /* BlocksListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksListTests.swift; sourceTree = "<group>"; };
-		38FB2AFF207E9E8500F13CFE /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
-		38FB2B03207EA6D400F13CFE /* NodeStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStatusModel.swift; sourceTree = "<group>"; };
-		38FB2B05207EA7EF00F13CFE /* NodeConstantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConstantsResponse.swift; sourceTree = "<group>"; };
-		38FB2B07207EA81900F13CFE /* NodeConstantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConstantsModel.swift; sourceTree = "<group>"; };
-		38FB2B0A207EA9AC00F13CFE /* Dapps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dapps.swift; sourceTree = "<group>"; };
-		38FB2B0E207EA9F400F13CFE /* DappsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DappsResponse.swift; sourceTree = "<group>"; };
-		38FB2B10207EA9FC00F13CFE /* DappModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DappModel.swift; sourceTree = "<group>"; };
-		38FB2B13207EAF7200F13CFE /* SignatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureModel.swift; sourceTree = "<group>"; };
-		"Ed25519::CEd25519::Product" /* CEd25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CEd25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Ed25519::Ed25519::Product" /* Ed25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ed25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Lisk::Lisk::Product" /* Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Lisk::LiskTests::Product" /* LiskTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = LiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
-		OBJ_12 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
-		OBJ_14 /* AccountsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsResponse.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
-		OBJ_21 /* DelegateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateModel.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		OBJ_26 /* NodeStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStatusResponse.swift; sourceTree = "<group>"; };
-		OBJ_28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		OBJ_30 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		OBJ_31 /* APINethash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINethash.swift; sourceTree = "<group>"; };
-		OBJ_32 /* APINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINode.swift; sourceTree = "<group>"; };
-		OBJ_33 /* APIOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOptions.swift; sourceTree = "<group>"; };
-		OBJ_34 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
-		OBJ_35 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
-		OBJ_37 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		OBJ_38 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
-		OBJ_42 /* AccountsAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsAccountTests.swift; sourceTree = "<group>"; };
-		OBJ_45 /* AccountsOpenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsOpenTests.swift; sourceTree = "<group>"; };
-		OBJ_46 /* AccountsPublicKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPublicKeyTests.swift; sourceTree = "<group>"; };
-		OBJ_51 /* LiskTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTestCase.swift; sourceTree = "<group>"; };
-		OBJ_56 /* add_scalar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = add_scalar.c; sourceTree = "<group>"; };
-		OBJ_57 /* fe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fe.c; sourceTree = "<group>"; };
-		OBJ_58 /* ge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ge.c; sourceTree = "<group>"; };
-		OBJ_59 /* key_exchange.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = key_exchange.c; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* keypair.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = keypair.c; sourceTree = "<group>"; };
-		OBJ_61 /* sc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sc.c; sourceTree = "<group>"; };
-		OBJ_62 /* seed.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = seed.c; sourceTree = "<group>"; };
-		OBJ_63 /* sha512.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha512.c; sourceTree = "<group>"; };
-		OBJ_64 /* sign.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
-		OBJ_65 /* verify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = verify.c; sourceTree = "<group>"; };
-		OBJ_67 /* ed25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
-		OBJ_68 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/andrewbarba/Code/Lisk/lisk-swift/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap"; sourceTree = "<group>"; };
-		OBJ_70 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		OBJ_71 /* KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
-		OBJ_72 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
-		OBJ_73 /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
-		OBJ_74 /* Seed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
-		OBJ_75 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/andrewbarba/Code/Lisk/lisk-swift/.build/checkouts/ed25519.git-6274347002403739230/Package.swift"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		OBJ_107 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_108 /* Lisk.framework in Frameworks */,
-				OBJ_109 /* Ed25519.framework in Frameworks */,
-				OBJ_110 /* CEd25519.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_142 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_143 /* Ed25519.framework in Frameworks */,
-				OBJ_144 /* CEd25519.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_156 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_157 /* CEd25519.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_173 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		381C95D72003E4360002FBC4 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				381C95D82003E44E0002FBC4 /* DelegatesResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		381C95E22003EC300002FBC4 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */,
-				381C95E92003EE440002FBC4 /* DelegatesListTests.swift */,
-			);
-			path = Delegates;
-			sourceTree = "<group>";
-		};
-		381C95EB2003F4430002FBC4 /* Peers */ = {
-			isa = PBXGroup;
-			children = (
-				381C95EE2003F4940002FBC4 /* Models */,
-				381C95F12003F5C10002FBC4 /* Responses */,
-				381C95EC2003F4580002FBC4 /* Peers.swift */,
-			);
-			path = Peers;
-			sourceTree = "<group>";
-		};
-		381C95EE2003F4940002FBC4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				381C95EF2003F4A10002FBC4 /* PeerModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		381C95F12003F5C10002FBC4 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				381C95F22003F5CF0002FBC4 /* PeersResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		381C95F62003FA700002FBC4 /* Peers */ = {
-			isa = PBXGroup;
-			children = (
-				381C95F92003FACE0002FBC4 /* PeersGetTests.swift */,
-				381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */,
-			);
-			path = Peers;
-			sourceTree = "<group>";
-		};
-		385C827E201AF4FD00012D71 /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		3874AB991FFC82260008C527 /* Transactions */ = {
-			isa = PBXGroup;
-			children = (
-				38C55B9120067F7A00C0CCA4 /* Asset */,
-				3874AB9F1FFC830E0008C527 /* Models */,
-				3874AB9C1FFC82B20008C527 /* Responses */,
-				3874AB9A1FFC82490008C527 /* Transactions.swift */,
-				3883A8C220029BE500460A9B /* LocalTransaction.swift */,
-			);
-			path = Transactions;
-			sourceTree = "<group>";
-		};
-		3874AB9C1FFC82B20008C527 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				3874AB9D1FFC82C50008C527 /* TransactionsResponse.swift */,
-				3883A8C92003BED900460A9B /* TransactionBroadcastResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		3874AB9F1FFC830E0008C527 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3874ABA01FFC831B0008C527 /* TransactionModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3874ABA21FFC8E550008C527 /* Transactions */ = {
-			isa = PBXGroup;
-			children = (
-				3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */,
-				3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */,
-				3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */,
-				3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */,
-			);
-			path = Transactions;
-			sourceTree = "<group>";
-		};
-		38B8E21C2006722C0067BA8E /* Signatures */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B12207EAF6800F13CFE /* Models */,
-				38B8E21F2006725C0067BA8E /* Responses */,
-				38B8E21D2006723B0067BA8E /* Signatures.swift */,
-			);
-			path = Signatures;
-			sourceTree = "<group>";
-		};
-		38B8E21F2006725C0067BA8E /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				38B8E220200672730067BA8E /* SignatureBroadcastResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		38C55B9120067F7A00C0CCA4 /* Asset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Asset;
-			sourceTree = "<group>";
-		};
-		38C55B94200684EE00C0CCA4 /* Signatures */ = {
-			isa = PBXGroup;
-			children = (
-				38C55B972006854000C0CCA4 /* SignaturesRegisterTests.swift */,
-			);
-			path = Signatures;
-			sourceTree = "<group>";
-		};
-		38C66D7920051FA7007B2FA1 /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				38C66D7C20051FE1007B2FA1 /* Models */,
-				38C66D7D20051FE6007B2FA1 /* Responses */,
-				38C66D7A20051FB8007B2FA1 /* Blocks.swift */,
-			);
-			path = Blocks;
-			sourceTree = "<group>";
-		};
-		38C66D7C20051FE1007B2FA1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				38C66D7E20051FF8007B2FA1 /* BlockModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		38C66D7D20051FE6007B2FA1 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				38C66D82200523F2007B2FA1 /* BlocksResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		38C66D9E20053D25007B2FA1 /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				38C66DA120053DEE007B2FA1 /* BlocksGetTests.swift */,
-				38C66DA320053F55007B2FA1 /* BlocksListTests.swift */,
-			);
-			path = Blocks;
-			sourceTree = "<group>";
-		};
-		38FB2B02207EA6C600F13CFE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B07207EA81900F13CFE /* NodeConstantsModel.swift */,
-				38FB2B03207EA6D400F13CFE /* NodeStatusModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		38FB2B09207EA99F00F13CFE /* Dapps */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B0C207EA9E000F13CFE /* Models */,
-				38FB2B0D207EA9E400F13CFE /* Responses */,
-				38FB2B0A207EA9AC00F13CFE /* Dapps.swift */,
-			);
-			path = Dapps;
-			sourceTree = "<group>";
-		};
-		38FB2B0C207EA9E000F13CFE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B10207EA9FC00F13CFE /* DappModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		38FB2B0D207EA9E400F13CFE /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B0E207EA9F400F13CFE /* DappsResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		38FB2B12207EAF6800F13CFE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B13207EAF7200F13CFE /* SignatureModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		OBJ_11 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* AccountModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		OBJ_13 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_14 /* AccountsResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		OBJ_18 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_20 /* Models */,
-				381C95D72003E4360002FBC4 /* Responses */,
-				OBJ_19 /* Delegates.swift */,
-			);
-			path = Delegates;
-			sourceTree = "<group>";
-		};
-		OBJ_20 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* DelegateModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		OBJ_22 /* Node */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B02207EA6C600F13CFE /* Models */,
-				OBJ_24 /* Responses */,
-				OBJ_23 /* Node.swift */,
-			);
-			path = Node;
-			sourceTree = "<group>";
-		};
-		OBJ_24 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				38FB2B05207EA7EF00F13CFE /* NodeConstantsResponse.swift */,
-				OBJ_26 /* NodeStatusResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		OBJ_29 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_30 /* APIClient.swift */,
-				OBJ_35 /* APIError.swift */,
-				38C66D8020052032007B2FA1 /* APIModel.swift */,
-				OBJ_31 /* APINethash.swift */,
-				OBJ_32 /* APINode.swift */,
-				OBJ_33 /* APIOptions.swift */,
-				38FB2AFF207E9E8500F13CFE /* APIRequest.swift */,
-				OBJ_34 /* APIResponse.swift */,
-				381C95DC2003E6D50002FBC4 /* APIService.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		OBJ_36 /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				3883A8BF20029A4000460A9B /* BytePacker.swift */,
-				OBJ_37 /* Crypto.swift */,
-				385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */,
-				3809038A2013AB9D00E80537 /* Random.swift */,
-				OBJ_38 /* SHA256.swift */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		OBJ_39 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_40 /* API */,
-				385C827E201AF4FD00012D71 /* Crypto */,
-				OBJ_51 /* LiskTestCase.swift */,
-			);
-			path = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_40 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_41 /* Accounts */,
-				38C66D9E20053D25007B2FA1 /* Blocks */,
-				381C95E22003EC300002FBC4 /* Delegates */,
-				381C95F62003FA700002FBC4 /* Peers */,
-				38C55B94200684EE00C0CCA4 /* Signatures */,
-				3874ABA21FFC8E550008C527 /* Transactions */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		OBJ_41 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_42 /* AccountsAccountTests.swift */,
-				OBJ_45 /* AccountsOpenTests.swift */,
-				OBJ_46 /* AccountsPublicKeyTests.swift */,
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
-		OBJ_5 = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_39 /* Tests */,
-				OBJ_53 /* Dependencies */,
-				OBJ_76 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		OBJ_53 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_54 /* Ed25519 0.2.0 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_54 /* Ed25519 0.2.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_55 /* CEd25519 */,
-				OBJ_69 /* Ed25519 */,
-				OBJ_75 /* Package.swift */,
-			);
-			name = "Ed25519 0.2.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_55 /* CEd25519 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_56 /* add_scalar.c */,
-				OBJ_57 /* fe.c */,
-				OBJ_58 /* ge.c */,
-				OBJ_59 /* key_exchange.c */,
-				OBJ_60 /* keypair.c */,
-				OBJ_61 /* sc.c */,
-				OBJ_62 /* seed.c */,
-				OBJ_63 /* sha512.c */,
-				OBJ_64 /* sign.c */,
-				OBJ_65 /* verify.c */,
-				OBJ_66 /* include */,
-			);
-			name = CEd25519;
-			path = ".build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_66 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_67 /* ed25519.h */,
-				OBJ_68 /* module.modulemap */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		OBJ_69 /* Ed25519 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_70 /* Error.swift */,
-				OBJ_71 /* KeyPair.swift */,
-				OBJ_72 /* PrivateKey.swift */,
-				OBJ_73 /* PublicKey.swift */,
-				OBJ_74 /* Seed.swift */,
-			);
-			name = Ed25519;
-			path = ".build/checkouts/ed25519.git-6274347002403739230/Sources/Ed25519";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_28 /* Constants.swift */,
-				OBJ_8 /* API */,
-				OBJ_29 /* Core */,
-				OBJ_36 /* Crypto */,
-			);
-			path = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_76 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"Lisk::LiskTests::Product" /* LiskTests.xctest */,
-				"Lisk::Lisk::Product" /* Lisk.framework */,
-				"Ed25519::Ed25519::Product" /* Ed25519.framework */,
-				"Ed25519::CEd25519::Product" /* CEd25519.framework */,
-			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		OBJ_8 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* Accounts */,
-				38C66D7920051FA7007B2FA1 /* Blocks */,
-				38FB2B09207EA99F00F13CFE /* Dapps */,
-				OBJ_18 /* Delegates */,
-				OBJ_22 /* Node */,
-				381C95EB2003F4430002FBC4 /* Peers */,
-				38B8E21C2006722C0067BA8E /* Signatures */,
-				3874AB991FFC82260008C527 /* Transactions */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		OBJ_9 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_11 /* Models */,
-				OBJ_13 /* Responses */,
-				OBJ_10 /* Accounts.swift */,
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		"Ed25519::CEd25519" /* CEd25519 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_159 /* Build configuration list for PBXNativeTarget "CEd25519" */;
-			buildPhases = (
-				OBJ_162 /* Sources */,
-				OBJ_173 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CEd25519;
-			productName = CEd25519;
-			productReference = "Ed25519::CEd25519::Product" /* CEd25519.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Ed25519::Ed25519" /* Ed25519 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_147 /* Build configuration list for PBXNativeTarget "Ed25519" */;
-			buildPhases = (
-				OBJ_150 /* Sources */,
-				OBJ_156 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_158 /* PBXTargetDependency */,
-			);
-			name = Ed25519;
-			productName = Ed25519;
-			productReference = "Ed25519::Ed25519::Product" /* Ed25519.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Ed25519::SwiftPMPackageDescription" /* Ed25519PackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_88 /* Build configuration list for PBXNativeTarget "Ed25519PackageDescription" */;
-			buildPhases = (
-				OBJ_91 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Ed25519PackageDescription;
-			productName = Ed25519PackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-		"Lisk::Lisk" /* Lisk */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_117 /* Build configuration list for PBXNativeTarget "Lisk" */;
-			buildPhases = (
-				OBJ_120 /* Sources */,
-				OBJ_142 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_145 /* PBXTargetDependency */,
-				OBJ_146 /* PBXTargetDependency */,
-			);
-			name = Lisk;
-			productName = Lisk;
-			productReference = "Lisk::Lisk::Product" /* Lisk.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"Lisk::LiskTests" /* LiskTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "LiskTests" */;
-			buildPhases = (
-				OBJ_97 /* Sources */,
-				OBJ_107 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_111 /* PBXTargetDependency */,
-				OBJ_113 /* PBXTargetDependency */,
-				OBJ_115 /* PBXTargetDependency */,
-			);
-			name = LiskTests;
-			productName = LiskTests;
-			productReference = "Lisk::LiskTests::Product" /* LiskTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		"Lisk::SwiftPMPackageDescription" /* LiskPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_82 /* Build configuration list for PBXNativeTarget "LiskPackageDescription" */;
-			buildPhases = (
-				OBJ_85 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LiskPackageDescription;
-			productName = LiskPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		OBJ_1 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 9999;
-			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Lisk" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_76 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				"Lisk::SwiftPMPackageDescription" /* LiskPackageDescription */,
-				"Ed25519::SwiftPMPackageDescription" /* Ed25519PackageDescription */,
-				"Lisk::LiskTests" /* LiskTests */,
-				"Lisk::Lisk" /* Lisk */,
-				"Ed25519::Ed25519" /* Ed25519 */,
-				"Ed25519::CEd25519" /* CEd25519 */,
-				"Lisk::LiskPackageTests::ProductTarget" /* LiskPackageTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		OBJ_120 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */,
-				38C66D7F20051FF8007B2FA1 /* BlockModel.swift in Sources */,
-				OBJ_121 /* Accounts.swift in Sources */,
-				38FB2B08207EA81900F13CFE /* NodeConstantsModel.swift in Sources */,
-				38C66D7B20051FB8007B2FA1 /* Blocks.swift in Sources */,
-				381C95ED2003F4580002FBC4 /* Peers.swift in Sources */,
-				OBJ_122 /* AccountModel.swift in Sources */,
-				OBJ_123 /* AccountsResponse.swift in Sources */,
-				OBJ_127 /* Delegates.swift in Sources */,
-				OBJ_128 /* DelegateModel.swift in Sources */,
-				OBJ_129 /* Node.swift in Sources */,
-				38FB2B14207EAF7200F13CFE /* SignatureModel.swift in Sources */,
-				385C827C201AF2B000012D71 /* MnemonicPassphrase.swift in Sources */,
-				381C95F02003F4A10002FBC4 /* PeerModel.swift in Sources */,
-				3883A8C120029A9700460A9B /* BytePacker.swift in Sources */,
-				3809038C2013AC1B00E80537 /* Random.swift in Sources */,
-				OBJ_131 /* NodeStatusResponse.swift in Sources */,
-				381C95F32003F5CF0002FBC4 /* PeersResponse.swift in Sources */,
-				OBJ_133 /* Constants.swift in Sources */,
-				381C95DD2003E6D50002FBC4 /* APIService.swift in Sources */,
-				OBJ_134 /* APIClient.swift in Sources */,
-				38FB2B0F207EA9F400F13CFE /* DappsResponse.swift in Sources */,
-				OBJ_135 /* APINethash.swift in Sources */,
-				38FB2B01207E9ED700F13CFE /* APIRequest.swift in Sources */,
-				3883A8CA2003BED900460A9B /* TransactionBroadcastResponse.swift in Sources */,
-				OBJ_136 /* APINode.swift in Sources */,
-				38FB2B06207EA7EF00F13CFE /* NodeConstantsResponse.swift in Sources */,
-				38B8E222200672780067BA8E /* SignatureBroadcastResponse.swift in Sources */,
-				38C66D8120052032007B2FA1 /* APIModel.swift in Sources */,
-				38FB2B04207EA6D400F13CFE /* NodeStatusModel.swift in Sources */,
-				3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */,
-				3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */,
-				38FB2B0B207EA9AC00F13CFE /* Dapps.swift in Sources */,
-				38B8E2232006728A0067BA8E /* Signatures.swift in Sources */,
-				OBJ_137 /* APIOptions.swift in Sources */,
-				381C95D92003E44E0002FBC4 /* DelegatesResponse.swift in Sources */,
-				38FB2B11207EA9FC00F13CFE /* DappModel.swift in Sources */,
-				OBJ_138 /* APIResponse.swift in Sources */,
-				OBJ_139 /* APIError.swift in Sources */,
-				38C66D83200523F2007B2FA1 /* BlocksResponse.swift in Sources */,
-				OBJ_140 /* Crypto.swift in Sources */,
-				OBJ_141 /* SHA256.swift in Sources */,
-				3874AB9E1FFC82C50008C527 /* TransactionsResponse.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_150 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_151 /* Error.swift in Sources */,
-				OBJ_152 /* KeyPair.swift in Sources */,
-				OBJ_153 /* PrivateKey.swift in Sources */,
-				OBJ_154 /* PublicKey.swift in Sources */,
-				OBJ_155 /* Seed.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_162 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_163 /* add_scalar.c in Sources */,
-				OBJ_164 /* fe.c in Sources */,
-				OBJ_165 /* ge.c in Sources */,
-				OBJ_166 /* key_exchange.c in Sources */,
-				OBJ_167 /* keypair.c in Sources */,
-				OBJ_168 /* sc.c in Sources */,
-				OBJ_169 /* seed.c in Sources */,
-				OBJ_170 /* sha512.c in Sources */,
-				OBJ_171 /* sign.c in Sources */,
-				OBJ_172 /* verify.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_85 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_86 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_91 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_92 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_97 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_98 /* AccountsAccountTests.swift in Sources */,
-				3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */,
-				38C66DA420053F55007B2FA1 /* BlocksListTests.swift in Sources */,
-				385C8280201AF52000012D71 /* MnemonicPassphraseTests.swift in Sources */,
-				381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */,
-				381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */,
-				3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */,
-				381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */,
-				OBJ_101 /* AccountsOpenTests.swift in Sources */,
-				OBJ_102 /* AccountsPublicKeyTests.swift in Sources */,
-				3883A8C82002DC4E00460A9B /* TransactionsTransferTests.swift in Sources */,
-				38C66DA220053DEE007B2FA1 /* BlocksGetTests.swift in Sources */,
-				3874ABA61FFC8EEE0008C527 /* TransactionsListTest.swift in Sources */,
-				OBJ_106 /* LiskTestCase.swift in Sources */,
-				38C55B982006854000C0CCA4 /* SignaturesRegisterTests.swift in Sources */,
-				381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_111 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Lisk::Lisk" /* Lisk */;
-			targetProxy = 38434E5B1FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_113 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::Ed25519" /* Ed25519 */;
-			targetProxy = 38434E5C1FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_115 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::CEd25519" /* CEd25519 */;
-			targetProxy = 38434E5D1FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_145 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::Ed25519" /* Ed25519 */;
-			targetProxy = 38434E581FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_146 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::CEd25519" /* CEd25519 */;
-			targetProxy = 38434E5A1FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_158 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::CEd25519" /* CEd25519 */;
-			targetProxy = 38434E591FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_178 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Lisk::LiskTests" /* LiskTests */;
-			targetProxy = 38434E5E1FFADA1500AA3540 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		OBJ_118 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/Lisk_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Lisk;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Lisk;
-			};
-			name = Debug;
-		};
-		OBJ_119 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/Lisk_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Lisk;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Lisk;
-			};
-			name = Release;
-		};
-		OBJ_148 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/Ed25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Ed25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Ed25519;
-			};
-			name = Debug;
-		};
-		OBJ_149 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/Ed25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Ed25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Ed25519;
-			};
-			name = Release;
-		};
-		OBJ_160 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/CEd25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = CEd25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = CEd25519;
-			};
-			name = Debug;
-		};
-		OBJ_161 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/CEd25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = CEd25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = CEd25519;
-			};
-			name = Release;
-		};
-		OBJ_176 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_177 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_NS_ASSERTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				USE_HEADERMAP = NO;
-			};
-			name = Debug;
-		};
-		OBJ_4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_OPTIMIZATION_LEVEL = s;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				USE_HEADERMAP = NO;
-			};
-			name = Release;
-		};
-		OBJ_83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/LiskTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = LiskTests;
-			};
-			name = Debug;
-		};
-		OBJ_96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/LiskTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = LiskTests;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		OBJ_117 /* Build configuration list for PBXNativeTarget "Lisk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_118 /* Debug */,
-				OBJ_119 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_147 /* Build configuration list for PBXNativeTarget "Ed25519" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_148 /* Debug */,
-				OBJ_149 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_159 /* Build configuration list for PBXNativeTarget "CEd25519" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_160 /* Debug */,
-				OBJ_161 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_175 /* Build configuration list for PBXAggregateTarget "LiskPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_176 /* Debug */,
-				OBJ_177 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_2 /* Build configuration list for PBXProject "Lisk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_3 /* Debug */,
-				OBJ_4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_82 /* Build configuration list for PBXNativeTarget "LiskPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_83 /* Debug */,
-				OBJ_84 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_88 /* Build configuration list for PBXNativeTarget "Ed25519PackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_89 /* Debug */,
-				OBJ_90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_94 /* Build configuration list for PBXNativeTarget "LiskTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_95 /* Debug */,
-				OBJ_96 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = OBJ_1 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "Ed25519::CEd25519" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_133";
+         buildPhases = (
+            "OBJ_136",
+            "OBJ_147",
+         );
+         dependencies = (
+         );
+         name = "CEd25519";
+         productName = "CEd25519";
+         productReference = "Ed25519::CEd25519::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Ed25519::CEd25519::Product" = {
+         isa = "PBXFileReference";
+         path = "CEd25519.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Ed25519::Ed25519" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_149";
+         buildPhases = (
+            "OBJ_152",
+            "OBJ_158",
+         );
+         dependencies = (
+            "OBJ_160",
+         );
+         name = "Ed25519";
+         productName = "Ed25519";
+         productReference = "Ed25519::Ed25519::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Ed25519::Ed25519::Product" = {
+         isa = "PBXFileReference";
+         path = "Ed25519.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Ed25519::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_162";
+         buildPhases = (
+            "OBJ_165",
+         );
+         dependencies = (
+         );
+         name = "Ed25519PackageDescription";
+         productName = "Ed25519PackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "Lisk::Lisk" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_168";
+         buildPhases = (
+            "OBJ_171",
+            "OBJ_215",
+         );
+         dependencies = (
+            "OBJ_218",
+            "OBJ_219",
+         );
+         name = "Lisk";
+         productName = "Lisk";
+         productReference = "Lisk::Lisk::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "Lisk::Lisk::Product" = {
+         isa = "PBXFileReference";
+         path = "Lisk.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Lisk::LiskPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_227";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_230",
+         );
+         name = "LiskPackageTests";
+         productName = "LiskPackageTests";
+      };
+      "Lisk::LiskTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_232";
+         buildPhases = (
+            "OBJ_235",
+            "OBJ_252",
+         );
+         dependencies = (
+            "OBJ_256",
+            "OBJ_257",
+            "OBJ_258",
+         );
+         name = "LiskTests";
+         productName = "LiskTests";
+         productReference = "Lisk::LiskTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "Lisk::LiskTests::Product" = {
+         isa = "PBXFileReference";
+         path = "LiskTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "Lisk::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_221";
+         buildPhases = (
+            "OBJ_224",
+         );
+         dependencies = (
+         );
+         name = "LiskPackageDescription";
+         productName = "LiskPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "English";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en",
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_127";
+         projectDirPath = ".";
+         targets = (
+            "Ed25519::CEd25519",
+            "Ed25519::Ed25519",
+            "Ed25519::SwiftPMPackageDescription",
+            "Lisk::Lisk",
+            "Lisk::SwiftPMPackageDescription",
+            "Lisk::LiskPackageTests::ProductTarget",
+            "Lisk::LiskTests",
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "Accounts.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_101",
+         );
+         name = "Crypto";
+         path = "Crypto";
+         sourceTree = "<group>";
+      };
+      "OBJ_101" = {
+         isa = "PBXFileReference";
+         path = "MnemonicPassphraseTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_102" = {
+         isa = "PBXFileReference";
+         path = "LiskTestCase.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_103" = {
+         isa = "PBXFileReference";
+         path = "docs";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_104" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_105",
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_105" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_106",
+            "OBJ_120",
+            "OBJ_126",
+         );
+         name = "Ed25519 0.2.0";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_106" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_107",
+            "OBJ_108",
+            "OBJ_109",
+            "OBJ_110",
+            "OBJ_111",
+            "OBJ_112",
+            "OBJ_113",
+            "OBJ_114",
+            "OBJ_115",
+            "OBJ_116",
+            "OBJ_117",
+         );
+         name = "CEd25519";
+         path = ".build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_107" = {
+         isa = "PBXFileReference";
+         path = "add_scalar.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_108" = {
+         isa = "PBXFileReference";
+         path = "fe.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_109" = {
+         isa = "PBXFileReference";
+         path = "ge.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_110" = {
+         isa = "PBXFileReference";
+         path = "key_exchange.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_111" = {
+         isa = "PBXFileReference";
+         path = "keypair.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_112" = {
+         isa = "PBXFileReference";
+         path = "sc.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_113" = {
+         isa = "PBXFileReference";
+         path = "seed.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_114" = {
+         isa = "PBXFileReference";
+         path = "sha512.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_115" = {
+         isa = "PBXFileReference";
+         path = "sign.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_116" = {
+         isa = "PBXFileReference";
+         path = "verify.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_117" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_118",
+            "OBJ_119",
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_118" = {
+         isa = "PBXFileReference";
+         path = "ed25519.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_119" = {
+         isa = "PBXFileReference";
+         name = "module.modulemap";
+         path = "/Users/andrewbarba/Code/Lisk/lisk-swift/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
+         sourceTree = "<group>";
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "AccountModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_120" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_121",
+            "OBJ_122",
+            "OBJ_123",
+            "OBJ_124",
+            "OBJ_125",
+         );
+         name = "Ed25519";
+         path = ".build/checkouts/ed25519.git-6274347002403739230/Sources/Ed25519";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_121" = {
+         isa = "PBXFileReference";
+         path = "Error.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_122" = {
+         isa = "PBXFileReference";
+         path = "KeyPair.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_123" = {
+         isa = "PBXFileReference";
+         path = "PrivateKey.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_124" = {
+         isa = "PBXFileReference";
+         path = "PublicKey.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_125" = {
+         isa = "PBXFileReference";
+         path = "Seed.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_126" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/andrewbarba/Code/Lisk/lisk-swift/.build/checkouts/ed25519.git-6274347002403739230/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_127" = {
+         isa = "PBXGroup";
+         children = (
+            "Ed25519::CEd25519::Product",
+            "Ed25519::Ed25519::Product",
+            "Lisk::Lisk::Product",
+            "Lisk::LiskTests::Product",
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_13" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_14",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_133" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_134",
+            "OBJ_135",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_134" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/CEd25519_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CEd25519";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "CEd25519";
+         };
+         name = "Debug";
+      };
+      "OBJ_135" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/CEd25519_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CEd25519";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            TARGET_NAME = "CEd25519";
+         };
+         name = "Release";
+      };
+      "OBJ_136" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_137",
+            "OBJ_138",
+            "OBJ_139",
+            "OBJ_140",
+            "OBJ_141",
+            "OBJ_142",
+            "OBJ_143",
+            "OBJ_144",
+            "OBJ_145",
+            "OBJ_146",
+         );
+      };
+      "OBJ_137" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_107";
+      };
+      "OBJ_138" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_108";
+      };
+      "OBJ_139" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_109";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "AccountsResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_140" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_110";
+      };
+      "OBJ_141" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_111";
+      };
+      "OBJ_142" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_112";
+      };
+      "OBJ_143" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_113";
+      };
+      "OBJ_144" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_114";
+      };
+      "OBJ_145" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_115";
+      };
+      "OBJ_146" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_116";
+      };
+      "OBJ_147" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_149" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_150",
+            "OBJ_151",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_15" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_16",
+            "OBJ_17",
+            "OBJ_19",
+         );
+         name = "Blocks";
+         path = "Blocks";
+         sourceTree = "<group>";
+      };
+      "OBJ_150" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+               "$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/Ed25519_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Ed25519";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "3.0";
+            TARGET_NAME = "Ed25519";
+         };
+         name = "Debug";
+      };
+      "OBJ_151" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+               "$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/Ed25519_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Ed25519";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "3.0";
+            TARGET_NAME = "Ed25519";
+         };
+         name = "Release";
+      };
+      "OBJ_152" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_153",
+            "OBJ_154",
+            "OBJ_155",
+            "OBJ_156",
+            "OBJ_157",
+         );
+      };
+      "OBJ_153" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_121";
+      };
+      "OBJ_154" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_122";
+      };
+      "OBJ_155" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_123";
+      };
+      "OBJ_156" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_124";
+      };
+      "OBJ_157" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_125";
+      };
+      "OBJ_158" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_159",
+         );
+      };
+      "OBJ_159" = {
+         isa = "PBXBuildFile";
+         fileRef = "Ed25519::CEd25519::Product";
+      };
+      "OBJ_16" = {
+         isa = "PBXFileReference";
+         path = "Blocks.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_160" = {
+         isa = "PBXTargetDependency";
+         target = "Ed25519::CEd25519";
+      };
+      "OBJ_162" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_163",
+            "OBJ_164",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_163" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "3",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/3",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "3.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_164" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "3",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/3",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "3.0";
+         };
+         name = "Release";
+      };
+      "OBJ_165" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_166",
+         );
+      };
+      "OBJ_166" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_126";
+      };
+      "OBJ_168" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_169",
+            "OBJ_170",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_169" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+               "$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/Lisk_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Lisk";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Lisk";
+         };
+         name = "Debug";
+      };
+      "OBJ_17" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_18",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_170" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+               "$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/Lisk_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap",
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Lisk";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "Lisk";
+         };
+         name = "Release";
+      };
+      "OBJ_171" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_172",
+            "OBJ_173",
+            "OBJ_174",
+            "OBJ_175",
+            "OBJ_176",
+            "OBJ_177",
+            "OBJ_178",
+            "OBJ_179",
+            "OBJ_180",
+            "OBJ_181",
+            "OBJ_182",
+            "OBJ_183",
+            "OBJ_184",
+            "OBJ_185",
+            "OBJ_186",
+            "OBJ_187",
+            "OBJ_188",
+            "OBJ_189",
+            "OBJ_190",
+            "OBJ_191",
+            "OBJ_192",
+            "OBJ_193",
+            "OBJ_194",
+            "OBJ_195",
+            "OBJ_196",
+            "OBJ_197",
+            "OBJ_198",
+            "OBJ_199",
+            "OBJ_200",
+            "OBJ_201",
+            "OBJ_202",
+            "OBJ_203",
+            "OBJ_204",
+            "OBJ_205",
+            "OBJ_206",
+            "OBJ_207",
+            "OBJ_208",
+            "OBJ_209",
+            "OBJ_210",
+            "OBJ_211",
+            "OBJ_212",
+            "OBJ_213",
+            "OBJ_214",
+         );
+      };
+      "OBJ_172" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_173" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_174" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_175" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_16";
+      };
+      "OBJ_176" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_177" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_178" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_22";
+      };
+      "OBJ_179" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_24";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "BlockModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_180" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_26";
+      };
+      "OBJ_181" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+      };
+      "OBJ_182" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_183" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+      };
+      "OBJ_184" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_185" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_36";
+      };
+      "OBJ_186" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_37";
+      };
+      "OBJ_187" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+      };
+      "OBJ_188" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_40";
+      };
+      "OBJ_189" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_43";
+      };
+      "OBJ_19" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_20",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_190" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_44";
+      };
+      "OBJ_191" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_46";
+      };
+      "OBJ_192" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_49";
+      };
+      "OBJ_193" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_51";
+      };
+      "OBJ_194" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_52";
+      };
+      "OBJ_195" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_54";
+      };
+      "OBJ_196" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_56";
+      };
+      "OBJ_197" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_58";
+      };
+      "OBJ_198" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_59";
+      };
+      "OBJ_199" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_60";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "BlocksResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_200" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_61";
+      };
+      "OBJ_201" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_63";
+      };
+      "OBJ_202" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_64";
+      };
+      "OBJ_203" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_65";
+      };
+      "OBJ_204" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_66";
+      };
+      "OBJ_205" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_67";
+      };
+      "OBJ_206" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_68";
+      };
+      "OBJ_207" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_69";
+      };
+      "OBJ_208" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_70";
+      };
+      "OBJ_209" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_71";
+      };
+      "OBJ_21" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_22",
+            "OBJ_23",
+            "OBJ_25",
+         );
+         name = "Dapps";
+         path = "Dapps";
+         sourceTree = "<group>";
+      };
+      "OBJ_210" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_73";
+      };
+      "OBJ_211" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_74";
+      };
+      "OBJ_212" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_75";
+      };
+      "OBJ_213" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_76";
+      };
+      "OBJ_214" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_77";
+      };
+      "OBJ_215" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_216",
+            "OBJ_217",
+         );
+      };
+      "OBJ_216" = {
+         isa = "PBXBuildFile";
+         fileRef = "Ed25519::Ed25519::Product";
+      };
+      "OBJ_217" = {
+         isa = "PBXBuildFile";
+         fileRef = "Ed25519::CEd25519::Product";
+      };
+      "OBJ_218" = {
+         isa = "PBXTargetDependency";
+         target = "Ed25519::Ed25519";
+      };
+      "OBJ_219" = {
+         isa = "PBXTargetDependency";
+         target = "Ed25519::CEd25519";
+      };
+      "OBJ_22" = {
+         isa = "PBXFileReference";
+         path = "Dapps.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_221" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_222",
+            "OBJ_223",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_222" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_223" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "4",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4",
+               "-target",
+               "x86_64-apple-macosx10.10",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk",
+            );
+            SWIFT_VERSION = "4.0";
+         };
+         name = "Release";
+      };
+      "OBJ_224" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_225",
+         );
+      };
+      "OBJ_225" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_227" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_228",
+            "OBJ_229",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_228" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_229" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_23" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_24",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_230" = {
+         isa = "PBXTargetDependency";
+         target = "Lisk::LiskTests";
+      };
+      "OBJ_232" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_233",
+            "OBJ_234",
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_233" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+               "$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/LiskTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap",
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "LiskTests";
+         };
+         name = "Debug";
+      };
+      "OBJ_234" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks",
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+               "$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+            );
+            INFOPLIST_FILE = "Lisk.xcodeproj/LiskTests_Info.plist";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks",
+            );
+            OTHER_CFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)",
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap",
+            );
+            SWIFT_VERSION = "4.0";
+            TARGET_NAME = "LiskTests";
+         };
+         name = "Release";
+      };
+      "OBJ_235" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_236",
+            "OBJ_237",
+            "OBJ_238",
+            "OBJ_239",
+            "OBJ_240",
+            "OBJ_241",
+            "OBJ_242",
+            "OBJ_243",
+            "OBJ_244",
+            "OBJ_245",
+            "OBJ_246",
+            "OBJ_247",
+            "OBJ_248",
+            "OBJ_249",
+            "OBJ_250",
+            "OBJ_251",
+         );
+      };
+      "OBJ_236" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_81";
+      };
+      "OBJ_237" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_82";
+      };
+      "OBJ_238" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_83";
+      };
+      "OBJ_239" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_85";
+      };
+      "OBJ_24" = {
+         isa = "PBXFileReference";
+         path = "DappModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_240" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_86";
+      };
+      "OBJ_241" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_88";
+      };
+      "OBJ_242" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_89";
+      };
+      "OBJ_243" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_91";
+      };
+      "OBJ_244" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_92";
+      };
+      "OBJ_245" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_94";
+      };
+      "OBJ_246" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_96";
+      };
+      "OBJ_247" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_97";
+      };
+      "OBJ_248" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_98";
+      };
+      "OBJ_249" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_99";
+      };
+      "OBJ_25" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_26",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_250" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_101";
+      };
+      "OBJ_251" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_102";
+      };
+      "OBJ_252" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_253",
+            "OBJ_254",
+            "OBJ_255",
+         );
+      };
+      "OBJ_253" = {
+         isa = "PBXBuildFile";
+         fileRef = "Lisk::Lisk::Product";
+      };
+      "OBJ_254" = {
+         isa = "PBXBuildFile";
+         fileRef = "Ed25519::Ed25519::Product";
+      };
+      "OBJ_255" = {
+         isa = "PBXBuildFile";
+         fileRef = "Ed25519::CEd25519::Product";
+      };
+      "OBJ_256" = {
+         isa = "PBXTargetDependency";
+         target = "Lisk::Lisk";
+      };
+      "OBJ_257" = {
+         isa = "PBXTargetDependency";
+         target = "Ed25519::Ed25519";
+      };
+      "OBJ_258" = {
+         isa = "PBXTargetDependency";
+         target = "Ed25519::CEd25519";
+      };
+      "OBJ_26" = {
+         isa = "PBXFileReference";
+         path = "DappsResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_27" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_28",
+            "OBJ_29",
+            "OBJ_31",
+         );
+         name = "Delegates";
+         path = "Delegates";
+         sourceTree = "<group>";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "Delegates.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_29" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_30",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         path = "DelegateModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_31" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_32",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_32" = {
+         isa = "PBXFileReference";
+         path = "DelegatesResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_33" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_34",
+            "OBJ_37",
+            "OBJ_38",
+         );
+         name = "Node";
+         path = "Node";
+         sourceTree = "<group>";
+      };
+      "OBJ_34" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_35",
+            "OBJ_36",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "NodeConstantsModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_36" = {
+         isa = "PBXFileReference";
+         path = "NodeStatusModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_37" = {
+         isa = "PBXFileReference";
+         path = "Node.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_38" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_39",
+            "OBJ_40",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "NodeConstantsResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "-DXcode",
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator",
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE";
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXFileReference";
+         path = "NodeStatusResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_41" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_42",
+            "OBJ_44",
+            "OBJ_45",
+         );
+         name = "Peers";
+         path = "Peers";
+         sourceTree = "<group>";
+      };
+      "OBJ_42" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_43",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_43" = {
+         isa = "PBXFileReference";
+         path = "PeerModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_44" = {
+         isa = "PBXFileReference";
+         path = "Peers.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_45" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_46",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_46" = {
+         isa = "PBXFileReference";
+         path = "PeersResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_47" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_48",
+            "OBJ_50",
+            "OBJ_52",
+         );
+         name = "Signatures";
+         path = "Signatures";
+         sourceTree = "<group>";
+      };
+      "OBJ_48" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_49",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_49" = {
+         isa = "PBXFileReference";
+         path = "SignatureModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_78",
+            "OBJ_103",
+            "OBJ_104",
+            "OBJ_127",
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_51",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_51" = {
+         isa = "PBXFileReference";
+         path = "SignatureBroadcastResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_52" = {
+         isa = "PBXFileReference";
+         path = "Signatures.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_53" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_54",
+            "OBJ_55",
+            "OBJ_57",
+            "OBJ_60",
+         );
+         name = "Transactions";
+         path = "Transactions";
+         sourceTree = "<group>";
+      };
+      "OBJ_54" = {
+         isa = "PBXFileReference";
+         path = "LocalTransaction.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_55" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_56",
+         );
+         name = "Models";
+         path = "Models";
+         sourceTree = "<group>";
+      };
+      "OBJ_56" = {
+         isa = "PBXFileReference";
+         path = "TransactionModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_57" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_58",
+            "OBJ_59",
+         );
+         name = "Responses";
+         path = "Responses";
+         sourceTree = "<group>";
+      };
+      "OBJ_58" = {
+         isa = "PBXFileReference";
+         path = "TransactionBroadcastResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_59" = {
+         isa = "PBXFileReference";
+         path = "TransactionsResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXFileReference";
+         path = "Transactions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_61" = {
+         isa = "PBXFileReference";
+         path = "Constants.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_62" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65",
+            "OBJ_66",
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+         );
+         name = "Core";
+         path = "Core";
+         sourceTree = "<group>";
+      };
+      "OBJ_63" = {
+         isa = "PBXFileReference";
+         path = "APIClient.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_64" = {
+         isa = "PBXFileReference";
+         path = "APIError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_65" = {
+         isa = "PBXFileReference";
+         path = "APIModel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_66" = {
+         isa = "PBXFileReference";
+         path = "APINethash.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_67" = {
+         isa = "PBXFileReference";
+         path = "APINode.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_68" = {
+         isa = "PBXFileReference";
+         path = "APIOptions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_69" = {
+         isa = "PBXFileReference";
+         path = "APIRequest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8",
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_72",
+         );
+         name = "Sources";
+         path = "Sources";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXFileReference";
+         path = "APIResponse.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_71" = {
+         isa = "PBXFileReference";
+         path = "APIService.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_72" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_73",
+            "OBJ_74",
+            "OBJ_75",
+            "OBJ_76",
+            "OBJ_77",
+         );
+         name = "Crypto";
+         path = "Crypto";
+         sourceTree = "<group>";
+      };
+      "OBJ_73" = {
+         isa = "PBXFileReference";
+         path = "BytePacker.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_74" = {
+         isa = "PBXFileReference";
+         path = "Crypto.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_75" = {
+         isa = "PBXFileReference";
+         path = "MnemonicPassphrase.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_76" = {
+         isa = "PBXFileReference";
+         path = "Random.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_77" = {
+         isa = "PBXFileReference";
+         path = "SHA256.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_78" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_79",
+            "OBJ_100",
+            "OBJ_102",
+         );
+         name = "Tests";
+         path = "Tests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_79" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_80",
+            "OBJ_84",
+            "OBJ_87",
+            "OBJ_90",
+            "OBJ_93",
+            "OBJ_95",
+         );
+         name = "API";
+         path = "API";
+         sourceTree = "<group>";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_15",
+            "OBJ_21",
+            "OBJ_27",
+            "OBJ_33",
+            "OBJ_41",
+            "OBJ_47",
+            "OBJ_53",
+         );
+         name = "API";
+         path = "API";
+         sourceTree = "<group>";
+      };
+      "OBJ_80" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_81",
+            "OBJ_82",
+            "OBJ_83",
+         );
+         name = "Accounts";
+         path = "Accounts";
+         sourceTree = "<group>";
+      };
+      "OBJ_81" = {
+         isa = "PBXFileReference";
+         path = "AccountsAccountTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_82" = {
+         isa = "PBXFileReference";
+         path = "AccountsOpenTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_83" = {
+         isa = "PBXFileReference";
+         path = "AccountsPublicKeyTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_84" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_85",
+            "OBJ_86",
+         );
+         name = "Blocks";
+         path = "Blocks";
+         sourceTree = "<group>";
+      };
+      "OBJ_85" = {
+         isa = "PBXFileReference";
+         path = "BlocksGetTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_86" = {
+         isa = "PBXFileReference";
+         path = "BlocksListTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_87" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_88",
+            "OBJ_89",
+         );
+         name = "Delegates";
+         path = "Delegates";
+         sourceTree = "<group>";
+      };
+      "OBJ_88" = {
+         isa = "PBXFileReference";
+         path = "DelegatesGetTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_89" = {
+         isa = "PBXFileReference";
+         path = "DelegatesListTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_9" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_10",
+            "OBJ_11",
+            "OBJ_13",
+         );
+         name = "Accounts";
+         path = "Accounts";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_91",
+            "OBJ_92",
+         );
+         name = "Peers";
+         path = "Peers";
+         sourceTree = "<group>";
+      };
+      "OBJ_91" = {
+         isa = "PBXFileReference";
+         path = "PeersGetTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_92" = {
+         isa = "PBXFileReference";
+         path = "PeersListTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_93" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_94",
+         );
+         name = "Signatures";
+         path = "Signatures";
+         sourceTree = "<group>";
+      };
+      "OBJ_94" = {
+         isa = "PBXFileReference";
+         path = "SignaturesRegisterTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_95" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_96",
+            "OBJ_97",
+            "OBJ_98",
+            "OBJ_99",
+         );
+         name = "Transactions";
+         path = "Transactions";
+         sourceTree = "<group>";
+      };
+      "OBJ_96" = {
+         isa = "PBXFileReference";
+         path = "TransactionsGetTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_97" = {
+         isa = "PBXFileReference";
+         path = "TransactionsListTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_98" = {
+         isa = "PBXFileReference";
+         path = "TransactionsSigningTest.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_99" = {
+         isa = "PBXFileReference";
+         path = "TransactionsTransferTests.swift";
+         sourceTree = "<group>";
+      };
+   };
+   rootObject = "OBJ_1";
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 /// API model
-public protocol APIModel: Decodable {
+public protocol APIModel: Decodable, Hashable {
     
 }
 

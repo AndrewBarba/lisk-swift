@@ -28,5 +28,15 @@ extension Delegates {
         public let productivity: Double?
 
         public let rank: Int?
+
+        // MARK: - Hashable
+
+        public static func == (lhs: DelegateModel, rhs: DelegateModel) -> Bool {
+            return lhs.username == rhs.username
+        }
+
+        public var hashValue: Int {
+            return username.hashValue
+        }
     }
 }

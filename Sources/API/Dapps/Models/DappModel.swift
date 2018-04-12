@@ -26,5 +26,15 @@ extension Dapps {
         public let description: String?
 
         public let name: String
+
+        // MARK: - Hashable
+
+        public static func == (lhs: DappModel, rhs: DappModel) -> Bool {
+            return lhs.name == rhs.name
+        }
+
+        public var hashValue: Int {
+            return name.hashValue
+        }
     }
 }

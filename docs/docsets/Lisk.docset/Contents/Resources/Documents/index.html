@@ -13,7 +13,7 @@
     <a title="Lisk  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Lisk Docs</a> (54% documented)</p>
+        <p><a href="index.html">Lisk Docs</a> (42% documented)</p>
         <p class="header-right"><a href="https://github.com/AndrewBarba/lisk-swift"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -42,12 +42,6 @@
                 <a href="Enums/HTTPMethod.html">HTTPMethod</a>
               </li>
               <li class="nav-group-task">
-                <a href="Enums/OrderByDirection.html">OrderByDirection</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Enums/PropertyJoin.html">PropertyJoin</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Enums/Response.html">Response</a>
               </li>
               <li class="nav-group-task">
@@ -58,6 +52,9 @@
           <li class="nav-group-name">
             <a href="Extensions.html">Extensions</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/Array.html">Array</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Extensions/KeyPair.html">KeyPair</a>
               </li>
@@ -84,6 +81,12 @@
                 <a href="Structs/APIClient.html">APIClient</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/APIMessageModel.html">APIMessageModel</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Structs/APINethash.html">APINethash</a>
               </li>
               <li class="nav-group-task">
@@ -93,7 +96,13 @@
                 <a href="Structs/APIOptions.html">APIOptions</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/APIResponseError.html">APIResponseError</a>
+                <a href="Structs/APIRequest.html">APIRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/APIRequest/Sort.html">– Sort</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/APIRequest/Join.html">– Join</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Accounts.html">Accounts</a>
@@ -102,49 +111,13 @@
                 <a href="Structs/Accounts/AccountModel.html">– AccountModel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Accounts/AccountResponse.html">– AccountResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Accounts/BalanceResponse.html">– BalanceResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Accounts/PublicKeyResponse.html">– PublicKeyResponse</a>
+                <a href="Structs/Accounts/AccountsResponse.html">– AccountsResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Blocks.html">Blocks</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Blocks/BlockModel.html">– BlockModel</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/FeesResponse.html">– FeesResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/SupplyResponse.html">– SupplyResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/RewardResponse.html">– RewardResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/StatusResponse.html">– StatusResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/FeesModel.html">– FeesModel</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/HeightResponse.html">– HeightResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/FeeResponse.html">– FeeResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/MilestoneResponse.html">– MilestoneResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/NethashResponse.html">– NethashResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Blocks/BlockResponse.html">– BlockResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Blocks/BlocksResponse.html">– BlocksResponse</a>
@@ -159,10 +132,19 @@
                 <a href="Structs/Constants/Time.html">– Time</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Constants/Port.html">– Port</a>
+                <a href="Structs/Constants/Nethash.html">– Nethash</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Crypto.html">Crypto</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Dapps.html">Dapps</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Dapps/DappModel.html">– DappModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Dapps/DappsResponse.html">– DappsResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Delegates.html">Delegates</a>
@@ -171,31 +153,7 @@
                 <a href="Structs/Delegates/DelegateModel.html">– DelegateModel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Delegates/CountResponse.html">– CountResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Delegates/VoterModel.html">– VoterModel</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Delegates/VotersResponse.html">– VotersResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Delegates/DelegateResponse.html">– DelegateResponse</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Structs/Delegates/DelegatesResponse.html">– DelegatesResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Loader.html">Loader</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Loader/StatusPingResponse.html">– StatusPingResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Loader/StatusResponse.html">– StatusResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Loader/StatusSyncResponse.html">– StatusSyncResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/LocalTransaction.html">LocalTransaction</a>
@@ -204,7 +162,25 @@
                 <a href="Structs/MnemonicPassphrase.html">MnemonicPassphrase</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/OrderBy.html">OrderBy</a>
+                <a href="Structs/Node.html">Node</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Node/NodeConstantsModel.html">– NodeConstantsModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Node/NodeConstantsFeesModel.html">– NodeConstantsFeesModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Node/NodeStatusModel.html">– NodeStatusModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Node/NodeStatusTransactionsModel.html">– NodeStatusTransactionsModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Node/NodeConstantsResponse.html">– NodeConstantsResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Node/NodeStatusResponse.html">– NodeStatusResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Peers.html">Peers</a>
@@ -213,19 +189,16 @@
                 <a href="Structs/Peers/PeerModel.html">– PeerModel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Peers/VersionResponse.html">– VersionResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Peers/PeerResponse.html">– PeerResponse</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="Structs/Peers/PeersResponse.html">– PeersResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Signatures.html">Signatures</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Signatures/FeeResponse.html">– FeeResponse</a>
+                <a href="Structs/Signatures/SignatureModel.html">– SignatureModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/Signatures/SignatureBroadcastResponse.html">– SignatureBroadcastResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Transactions.html">Transactions</a>
@@ -234,10 +207,7 @@
                 <a href="Structs/Transactions/TransactionModel.html">– TransactionModel</a>
               </li>
               <li class="nav-group-task">
-                <a href="Structs/Transactions/BroadcastResponse.html">– BroadcastResponse</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Structs/Transactions/TransactionResponse.html">– TransactionResponse</a>
+                <a href="Structs/Transactions/TransactionBroadcastResponse.html">– TransactionBroadcastResponse</a>
               </li>
               <li class="nav-group-task">
                 <a href="Structs/Transactions/TransactionsResponse.html">– TransactionsResponse</a>
@@ -274,7 +244,7 @@
 <li>[x] Local Signing for maximum security</li>
 <li>[x] Targets Lisk 1.0.0 API</li>
 <li>[x] Directly based on lisk-js</li>
-<li>[x] Swift 4.0</li>
+<li>[x] Swift 4.1</li>
 <li>[x] Unit Tests (87% coverage)</li>
 <li>[x] Documentation</li>
 </ul>
@@ -283,8 +253,9 @@
 <ul>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html">Accounts</a></li>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Blocks.html">Blocks</a></li>
+<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Dapps.html">Dapps</a></li>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html">Delegates</a></li>
-<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Loader.html">Loader</a></li>
+<li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Node.html">Node</a></li>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Peers.html">Peers</a></li>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Signatures.html">Signatures</a></li>
 <li><a href="https://andrewbarba.github.io/lisk-swift/Structs/Transactions.html">Transactions</a></li>
@@ -348,26 +319,26 @@
 </ul>
 <h2 id='installation' class='heading'>Installation</h2>
 <h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
-<pre class="highlight swift"><code><span class="c1">// swift-tools-version:4.0</span>
+<pre class="highlight swift"><code><span class="c1">// swift-tools-version:4.1</span>
 
 <span class="kd">import</span> <span class="kt">PackageDescription</span>
 
 <span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
     <span class="nv">name</span><span class="p">:</span> <span class="s">"My Lisk App"</span><span class="p">,</span>
     <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
-        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/AndrewBarba/lisk-swift.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"1.0.0-beta"</span><span class="p">)</span>
+        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/AndrewBarba/lisk-swift.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"1.0.0.beta"</span><span class="p">)</span>
     <span class="p">]</span>
 <span class="p">)</span>
 </code></pre>
 <h3 id='cocoapods' class='heading'>CocoaPods</h3>
 
 <blockquote>
-<p>CocoaPods 1.1.0+ is required to build lisk-swift</p>
+<p>CocoaPods 1.5.0+ is required to build lisk-swift</p>
 </blockquote>
-<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Lisk'</span><span class="p">,</span> <span class="s1">'~&gt; 1.0.0-beta'</span>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Lisk'</span><span class="p">,</span> <span class="s1">'~&gt; 1.0.0.beta'</span>
 </code></pre>
 <h3 id='carthage' class='heading'>Carthage</h3>
-<pre class="highlight plaintext"><code>github "AndrewBarba/lisk-swift" ~&gt; 1.0.0-beta
+<pre class="highlight plaintext"><code>github "AndrewBarba/lisk-swift" ~&gt; 1.0.0.beta
 </code></pre>
 <h2 id='thank-you' class='heading'>Thank You</h2>
 
@@ -378,7 +349,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="https://abarba.me" target="_blank" rel="external">Andrew Barba</a>. All rights reserved. (Last updated: 2018-01-26)</p>
+          <p>&copy; 2018 <a class="link" href="https://abarba.me" target="_blank" rel="external">Andrew Barba</a>. All rights reserved. (Last updated: 2018-04-12)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

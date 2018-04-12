@@ -42,5 +42,15 @@ extension Blocks {
         public let reward: String
 
         public let totalForged: String
+
+        // MARK: - Hashable
+
+        public static func == (lhs: BlockModel, rhs: BlockModel) -> Bool {
+            return lhs.id == rhs.id
+        }
+
+        public var hashValue: Int {
+            return id.hashValue
+        }
     }
 }

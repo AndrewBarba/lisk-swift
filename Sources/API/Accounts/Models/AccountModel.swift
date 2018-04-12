@@ -22,5 +22,15 @@ extension Accounts {
         public let secondPublicKey: String?
 
         public let delegate: Delegates.DelegateModel?
+
+        // MARK: - Hashable
+
+        public static func == (lhs: AccountModel, rhs: AccountModel) -> Bool {
+            return lhs.address == rhs.address
+        }
+
+        public var hashValue: Int {
+            return address.hashValue
+        }
     }
 }

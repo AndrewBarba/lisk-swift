@@ -7,7 +7,6 @@
 
 import Foundation
 
-/// Signatures - https://docs.lisk.io/docs/lisk-api-080-signatures
 public struct Signatures: APIService {
 
     /// Client used to send requests
