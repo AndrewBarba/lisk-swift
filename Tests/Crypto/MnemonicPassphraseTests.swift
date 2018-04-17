@@ -12,7 +12,7 @@ class MnemonicPassphraseTests: LiskTestCase {
 
     func testPassphrases() {
         var passphrases = Set<String>()
-        for _ in 0...10_000 {
+        for _ in 0...100_000 {
             let passphrase = MnemonicPassphrase().passphrase
             XCTAssertFalse(passphrases.contains(passphrase))
             passphrases.insert(passphrase)

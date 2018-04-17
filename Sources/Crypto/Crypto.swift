@@ -30,6 +30,19 @@ public struct Crypto {
         return "\(identifier)L"
     }
 
+    /// Sign a message
+    public static func signMessage(_ message: String, passphrase: String) throws -> String {
+        let keyPair = try self.keyPair(fromPassphrase: passphrase)
+        let bytes = keyPair.sign(message.hexBytes())
+        return bytes.hexString()
+    }
+
+    /// Verify a message
+    public static func verifyMessage(_ message: String, signature: String, publicKey: String) throws -> Bool {
+        let key = try PublicKey(publicKey.hexBytes())
+        return try key.verify(signature: signature.hexBytes(), message: message.hexBytes())
+    }
+
     /// Epoch time relative to genesis block
     public static func timeIntervalSinceGenesis(offset: TimeInterval = 0) -> UInt32 {
         let now = Date().timeIntervalSince1970 + offset
