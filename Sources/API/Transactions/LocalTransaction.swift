@@ -89,18 +89,6 @@ public struct LocalTransaction {
     }
 
     /// Returns a new signed transaction based on this transaction
-    public func signed(keyPair: KeyPair, secondKeyPair: KeyPair? = nil) throws -> LocalTransaction {
-        var transaction = LocalTransaction(transaction: self)
-        transaction.senderPublicKey = keyPair.publicKeyString
-        transaction.signature = LocalTransaction.generateSignature(bytes: transaction.bytes, keyPair: keyPair)
-        if let secondKeyPair = secondKeyPair, transaction.type != .registerSecondPassphrase {
-            transaction.signSignature = LocalTransaction.generateSignature(bytes: transaction.bytes, keyPair: secondKeyPair)
-        }
-        transaction.id = LocalTransaction.generateId(bytes: transaction.bytes)
-        return transaction
-    }
-
-    /// Returns a new signed transaction based on this transaction
     public func signed(passphrase: String, secondPassphrase: String? = nil) throws -> LocalTransaction {
         let keyPair = try Crypto.keyPair(fromPassphrase: passphrase)
         let secondKeyPair: KeyPair?
@@ -113,17 +101,29 @@ public struct LocalTransaction {
     }
 
     /// Signs the current transaction
-    public mutating func sign(keyPair: KeyPair, secondKeyPair: KeyPair? = nil) throws {
-        let transaction = try signed(keyPair: keyPair, secondKeyPair: secondKeyPair)
+    public mutating func sign(passphrase: String, secondPassphrase: String? = nil) throws {
+        let transaction = try signed(passphrase: passphrase, secondPassphrase: secondPassphrase)
         self.id = transaction.id
         self.senderPublicKey = transaction.senderPublicKey
         self.signature = transaction.signature
         self.signSignature = transaction.signSignature
     }
 
+    /// Returns a new signed transaction based on this transaction
+    private func signed(keyPair: KeyPair, secondKeyPair: KeyPair? = nil) throws -> LocalTransaction {
+        var transaction = LocalTransaction(transaction: self)
+        transaction.senderPublicKey = keyPair.publicKeyString
+        transaction.signature = LocalTransaction.generateSignature(bytes: transaction.bytes, keyPair: keyPair)
+        if let secondKeyPair = secondKeyPair, transaction.type != .registerSecondPassphrase {
+            transaction.signSignature = LocalTransaction.generateSignature(bytes: transaction.bytes, keyPair: secondKeyPair)
+        }
+        transaction.id = LocalTransaction.generateId(bytes: transaction.bytes)
+        return transaction
+    }
+
     /// Signs the current transaction
-    public mutating func sign(passphrase: String, secondPassphrase: String? = nil) throws {
-        let transaction = try signed(passphrase: passphrase, secondPassphrase: secondPassphrase)
+    private mutating func sign(keyPair: KeyPair, secondKeyPair: KeyPair? = nil) throws {
+        let transaction = try signed(keyPair: keyPair, secondKeyPair: secondKeyPair)
         self.id = transaction.id
         self.senderPublicKey = transaction.senderPublicKey
         self.signature = transaction.signature
