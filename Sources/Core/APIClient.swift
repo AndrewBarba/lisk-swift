@@ -51,10 +51,10 @@ public struct APIClient {
         self.headers = [
             "Accept": options.nethash.contentType,
             "Content-Type": options.nethash.contentType,
-            "os": options.nethash.os,
+            "User-Agent": options.nethash.userAgent,
             "nethash": options.nethash.nethash,
             "version": options.nethash.version,
-            "minVersion": options.nethash.minVersion
+            "minVersion": options.nethash.minVersion,
         ]
     }
 
