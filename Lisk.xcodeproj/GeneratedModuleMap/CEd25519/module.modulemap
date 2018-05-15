@@ -1,4 +1,4 @@
 module CEd25519 {
-    umbrella "/Users/andrewbarba/Code/Lisk/lisk-swift/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include"
+    umbrella "/Users/andrewbarba/Code/Lisk/lisk-swift/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include"
     export *
 }

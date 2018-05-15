@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Ed25519::CEd25519"
-               BuildableName = "CEd25519.framework"
-               BlueprintName = "CEd25519"
+               BlueprintIdentifier = "Ed25519::Ed25519"
+               BuildableName = "Ed25519.framework"
+               BlueprintName = "Ed25519"
                ReferencedContainer = "container:Lisk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,9 +42,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Ed25519::Ed25519"
-               BuildableName = "Ed25519.framework"
-               BlueprintName = "Ed25519"
+               BlueprintIdentifier = "Ed25519::CEd25519"
+               BuildableName = "CEd25519.framework"
+               BlueprintName = "CEd25519"
                ReferencedContainer = "container:Lisk.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

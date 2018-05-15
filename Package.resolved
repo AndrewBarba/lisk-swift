@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Ed25519",
-        "repositoryURL": "https://github.com/vzsg/ed25519.git",
+        "repositoryURL": "https://github.com/AndrewBarba/ed25519.git",
         "state": {
           "branch": null,
-          "revision": "0d2cfe8ce5e55cb3df77a846def37071b0b6ff91",
-          "version": "0.2.0"
+          "revision": "9c402265ebbb07a835d932ff921aa6b75a436bf5",
+          "version": "1.0.0"
         }
       }
     ]
