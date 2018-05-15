@@ -46,7 +46,8 @@ public struct Crypto {
     /// Epoch time relative to genesis block
     public static func timeIntervalSinceGenesis(offset: TimeInterval = 0) -> UInt32 {
         let now = Date().timeIntervalSince1970 + offset
-        return UInt32(now - Constants.Time.epochSeconds)
+        let diff = max(0, now - Constants.Time.epochSeconds)
+        return UInt32(diff)
     }
 
     /// Multiplies a given amount by Lisk fixed point
