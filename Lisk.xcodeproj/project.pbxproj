@@ -196,7 +196,7 @@
             "OBJ_121",
             "OBJ_127",
          );
-         name = "Ed25519 1.0.0";
+         name = "Ed25519 1.1.0";
          path = "";
          sourceTree = "SOURCE_ROOT";
       };
@@ -352,10 +352,10 @@
       "OBJ_128" = {
          isa = "PBXGroup";
          children = (
-            "Lisk::LiskTests::Product",
-            "Lisk::Lisk::Product",
             "Ed25519::Ed25519::Product",
             "Ed25519::CEd25519::Product",
+            "Lisk::Lisk::Product",
+            "Lisk::LiskTests::Product",
          );
          name = "Products";
          path = "";
