@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/27/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation
@@ -11,6 +10,8 @@ import Foundation
 /// Protocol describing an response
 public protocol APIResponse: Decodable {
 
-    /// All api responses have a success boolean
-    var success: Bool { get }
+    associatedtype APIData: Any
+
+    /// All successful responses have a data key
+    var data: APIData { get }
 }

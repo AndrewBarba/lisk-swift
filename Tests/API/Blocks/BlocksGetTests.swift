@@ -13,8 +13,8 @@ class BlocksGetTests: LiskTestCase {
     func testMainnetGet() {
         let blockId = "6699130148421113207"
         let blocks = Blocks(client: mainNetClient)
-        let response = tryRequest { blocks.block(id: blockId, completionHandler: $0) }
-        XCTAssert(response.success)
-        XCTAssertEqual(response.block.id, blockId)
+        let response = tryRequest { blocks.blocks(id: blockId, completionHandler: $0) }
+        XCTAssertEqual(response.data.count, 1)
+        XCTAssertEqual(response.data[0].id, blockId)
     }
 }

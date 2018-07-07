@@ -11,14 +11,14 @@ import Ed25519
 public struct Crypto {
 
     /// Generate public and private keys from a given secret
-    public static func keys(fromSecret secret: String) throws -> (publicKey: String, privateKey: String) {
-        let keyPair = try self.keyPair(fromSecret: secret)
+    public static func keys(fromPassphrase passphrase: String) throws -> (publicKey: String, privateKey: String) {
+        let keyPair = try self.keyPair(fromPassphrase: passphrase)
         return (keyPair.publicKeyString, keyPair.privateKeyString)
     }
 
     /// Generate key pair from a given secret
-    public static func keyPair(fromSecret secret: String) throws -> KeyPair {
-        let bytes = SHA256(secret).digest()
+    public static func keyPair(fromPassphrase passphrase: String) throws -> KeyPair {
+        let bytes = SHA256(passphrase).digest()
         let seed = try Seed(bytes: bytes)
         return KeyPair(seed: seed)
     }
@@ -30,10 +30,24 @@ public struct Crypto {
         return "\(identifier)L"
     }
 
+    /// Sign a message
+    public static func signMessage(_ message: String, passphrase: String) throws -> String {
+        let keyPair = try self.keyPair(fromPassphrase: passphrase)
+        let bytes = keyPair.sign(message.hexBytes())
+        return bytes.hexString()
+    }
+
+    /// Verify a message
+    public static func verifyMessage(_ message: String, signature: String, publicKey: String) throws -> Bool {
+        let key = try PublicKey(publicKey.hexBytes())
+        return try key.verify(signature: signature.hexBytes(), message: message.hexBytes())
+    }
+
     /// Epoch time relative to genesis block
     public static func timeIntervalSinceGenesis(offset: TimeInterval = 0) -> UInt32 {
         let now = Date().timeIntervalSince1970 + offset
-        return UInt32(now - Constants.Time.epochSeconds)
+        let diff = max(0, now - Constants.Time.epochSeconds)
+        return UInt32(diff)
     }
 
     /// Multiplies a given amount by Lisk fixed point

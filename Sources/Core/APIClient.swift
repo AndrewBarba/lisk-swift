@@ -3,16 +3,14 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/26/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation
 
-
 /// Represents an HTTP response
-public enum Response<T: APIResponse> {
-    case success(response: T)
-    case error(response: APIResponseError)
+public enum Response<R: APIResponse> {
+    case success(response: R)
+    case error(response: APIError)
 }
 
 /// Type to represent request body/url options
@@ -38,40 +36,25 @@ public struct APIClient {
     public static let mainnet = APIClient()
 
     /// Client that connects to Testnet
-    public static let testnet = APIClient(options: .init(testnet: true))
+    public static let testnet = APIClient(options: .testnet)
+
+    /// Client that connects to Betanet
+    public static let betanet = APIClient(options: .betanet)
 
     // MARK: - Init
 
-    public init(options: APIOptions = .init()) {
-        let port: String = {
-            if options.ssl { return Constants.Port.ssl }
-            return options.testnet ? Constants.Port.test : Constants.Port.live
-        }()
-
-        let hostname: String = {
-            if let node = options.node { return node.hostname }
-            let nodes = options.testnet ? APINode.testnet : APINode.mainnet
-            let node = options.randomNode ? APINode.random(from: nodes) : nodes[0]
-            return node.hostname
-        }()
-
-        let nethash = options.testnet ? APINethash.testnet(port: port, nethash: options.nethash) : APINethash.mainnet(port: port, nethash: options.nethash)
-
-        let scheme = options.ssl ? "https" : "http"
-
-        let urlPath = "\(scheme)://\(hostname):\(port)/api"
+    public init(options: APIOptions = .mainnet) {
 
         // swiftlint:disable:next force_unwrapping
-        self.baseURL = URL(string: urlPath)!
+        self.baseURL = URL(string: "\(options.node.origin)/api")!
 
         self.headers = [
-            "Content-Type": nethash.contentType,
-            "os": nethash.clientOS,
-            "version": nethash.version,
-            "minVersion": nethash.minVersion,
-            "port": nethash.port,
-            "nethash": nethash.nethash,
-            "broadhash": nethash.broadhash
+            "Accept": options.nethash.contentType,
+            "Content-Type": options.nethash.contentType,
+            "User-Agent": options.nethash.userAgent,
+            "nethash": options.nethash.nethash,
+            "version": options.nethash.version,
+            "minVersion": options.nethash.minVersion,
         ]
     }
 
@@ -79,31 +62,31 @@ public struct APIClient {
 
     /// Perform GET request
     @discardableResult
-    public func get<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func get<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.get, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform POST request
     @discardableResult
-    public func post<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func post<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.post, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform PUT request
     @discardableResult
-    public func put<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func put<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.put, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform POST request
     @discardableResult
-    public func delete<R>(path: String, options: RequestOptions? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func delete<R>(path: String, options: Any? = nil, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         return request(.delete, path: path, options: options, completionHandler: completionHandler)
     }
 
     /// Perform request
     @discardableResult
-    public func request<R>(_ httpMethod: HTTPMethod, path: String, options: RequestOptions?, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
+    public func request<R>(_ httpMethod: HTTPMethod, path: String, options: Any?, completionHandler: @escaping (Response<R>) -> Void) -> (URLRequest, URLSessionDataTask) {
         let request = urlRequest(httpMethod, path: path, options: options)
         let task = dataTask(request, completionHandler: completionHandler)
         return (request, task)
@@ -131,7 +114,7 @@ public struct APIClient {
     }
 
     /// Builds a URL request based on a given HTTP method and options
-    private func urlRequest(_ httpMethod: HTTPMethod, path: String, options: RequestOptions? = nil) -> URLRequest {
+    private func urlRequest(_ httpMethod: HTTPMethod, path: String, options: Any? = nil) -> URLRequest {
         // Build api url
         let url = path.contains("://") ? URL(string: path)! : baseURL.appendingPathComponent(path)
 
@@ -160,33 +143,33 @@ public struct APIClient {
     }
 
     /// Converts a dict to url encoded query string
-    private func urlEncodedQueryString(_ options: RequestOptions) -> String {
-        let queryParts = options.flatMap { key, value in
+    private func urlEncodedQueryString(_ options: Any) -> String {
+        guard let options = options as? RequestOptions else {
+            return ""
+        }
+
+        let queryParts: [String] = options.compactMap { key, value in
             guard
                 let safeKey = key.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
                 let safeValue = "\(value)".addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
                 else { return nil }
             return "\(safeKey)=\(safeValue)"
         }
+
         return queryParts.joined(separator: "&")
     }
 
     /// Process a response
     private func processRequestCompletion<R>(_ data: Data?) -> Response<R> {
         guard let data = data else {
-            return .error(response: defaultErrorResponse())
+            return .error(response: .unexpected)
         }
 
-        guard let result = try? JSONDecoder().decode(R.self, from: data), result.success else {
-            let error = try? JSONDecoder().decode(APIResponseError.self, from: data)
-            return .error(response: error ?? defaultErrorResponse())
+        guard let result = try? JSONDecoder().decode(R.self, from: data) else {
+            let error = try? JSONDecoder().decode(APIError.self, from: data)
+            return .error(response: error ?? .unknown)
         }
 
         return .success(response: result)
-    }
-
-    /// Default error response
-    private func defaultErrorResponse() -> APIResponseError {
-        return APIResponseError(message: "Unknown Error")
     }
 }

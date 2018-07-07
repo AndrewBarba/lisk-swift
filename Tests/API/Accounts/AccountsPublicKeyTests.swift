@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/31/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import XCTest
@@ -13,8 +12,8 @@ class AccountsPublicKeyTests: LiskTestCase {
 
     func testMainnetPublicKey() {
         let accounts = Accounts(client: mainNetClient)
-        let response = tryRequest { accounts.publicKey(address: andrewAddress, completionHandler: $0) }
-        XCTAssert(response.success)
-        XCTAssertEqual(response.publicKey, andrewPublicKey)
+        let response = tryRequest { accounts.accounts(address: andrewAddress, completionHandler: $0) }
+        XCTAssertEqual(response.data.count, 1)
+        XCTAssertEqual(response.data[0].publicKey, andrewPublicKey)
     }
 }

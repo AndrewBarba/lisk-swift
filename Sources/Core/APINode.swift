@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/26/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation
@@ -11,39 +10,45 @@ import Foundation
 /// Represents a Lisk node with API enabled
 public struct APINode {
 
-    /// Hostname or IP address of this node
-    public let hostname: String
+    /// Origin url of this node
+    public let origin: String
 
-    public init(hostname: String) {
-        self.hostname = hostname
+    public init(origin: String) {
+        self.origin = origin
     }
 }
 
-extension APINode {
+extension Array where Element == APINode {
 
     /// Mainnet nodes
     public static let mainnet: [APINode] = [
-        .init(hostname: "node01.lisk.io"),
-        .init(hostname: "node02.lisk.io"),
-        .init(hostname: "node03.lisk.io"),
-        .init(hostname: "node04.lisk.io"),
-        .init(hostname: "node05.lisk.io"),
-        .init(hostname: "node06.lisk.io"),
-        .init(hostname: "node07.lisk.io"),
-        .init(hostname: "node08.lisk.io")
+        .init(origin: "https://node01.lisk.io:443"),
+        .init(origin: "https://node02.lisk.io:443"),
+        .init(origin: "https://node03.lisk.io:443"),
+        .init(origin: "https://node04.lisk.io:443"),
+        .init(origin: "https://node05.lisk.io:443"),
+        .init(origin: "https://node06.lisk.io:443"),
+        .init(origin: "https://node07.lisk.io:443"),
+        .init(origin: "https://node08.lisk.io:443")
     ]
 
     /// Testnet nodes
     public static let testnet: [APINode] = [
-        .init(hostname: "testnet-wallet.lisknode.io")
+        .init(origin: "http://testnet.lisk.io:7000")
+    ]
+
+    /// Betanet nodes
+    public static let betanet: [APINode] = [
+        .init(origin: "http://94.237.42.109:5000"),
+        .init(origin: "http://83.136.252.99:5000")
     ]
 }
 
-extension APINode {
+extension Array where Element == APINode {
 
     /// Selects a random node from a list of nodes
-    public static func random(from nodes: [APINode] = APINode.mainnet) -> APINode {
-        let index = Random.roll(max: nodes.count)
-        return nodes[index]
+    public func select(random: Bool = false) -> APINode {
+        let index: Int = random ? Random.roll(max: count) : 0
+        return self[index]
     }
 }

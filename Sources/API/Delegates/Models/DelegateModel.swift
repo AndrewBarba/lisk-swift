@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/31/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation
@@ -14,20 +13,30 @@ extension Delegates {
 
         public let username: String
 
-        public let address: String
-
-        public let publicKey: String
-
         public let vote: String
 
-        public let producedblocks: UInt64
+        public let rewards: String?
 
-        public let missedblocks: UInt64
+        public let producedblocks: Int?
 
-        public let rank: UInt64
+        public let missedblocks: Int?
 
-        public let approval: Double
+        public let rate: Int?
 
-        public let productivity: Double
+        public let approval: Double?
+
+        public let productivity: Double?
+
+        public let rank: Int?
+
+        // MARK: - Hashable
+
+        public static func == (lhs: DelegateModel, rhs: DelegateModel) -> Bool {
+            return lhs.username == rhs.username
+        }
+
+        public var hashValue: Int {
+            return username.hashValue
+        }
     }
 }

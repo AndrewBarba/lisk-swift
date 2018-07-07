@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/31/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation
@@ -20,51 +19,21 @@ public struct Accounts: APIService {
     }
 }
 
-// MARK: - Get
+// MARK: - List
 
 extension Accounts {
 
-    /// Retrieve the account info for an address
-    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-information-from-address
-    public func account(address: String, completionHandler: @escaping (Response<AccountResponse>) -> Void) {
-        let options = ["address": address]
+    /// Retrieve accounts
+    public func accounts(address: String? = nil, publicKey: String? = nil, secondPublicKey: String? = nil, username: String? = nil, limit: Int? = nil, offset: Int? = nil, sort: APIRequest.Sort? = nil, completionHandler: @escaping (Response<AccountsResponse>) -> Void) {
+        var options: RequestOptions = [:]
+        if let value = address { options["address"] = value }
+        if let value = publicKey { options["publicKey"] = value }
+        if let value = secondPublicKey { options["secondPublicKey"] = value }
+        if let value = username { options["username"] = value }
+        if let value = limit { options["limit"] = value }
+        if let value = offset { options["offset"] = value }
+        if let value = sort?.value { options["sort"] = value }
+
         client.get(path: "accounts", options: options, completionHandler: completionHandler)
-    }
-
-    /// Retrieve the public key of a Lisk address
-    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-public-key
-    public func publicKey(address: String, completionHandler: @escaping (Response<PublicKeyResponse>) -> Void) {
-        let options = ["address": address]
-        client.get(path: "accounts/getPublicKey", options: options, completionHandler: completionHandler)
-    }
-}
-
-// MARK: - Open
-
-extension Accounts {
-
-    /// Opens a new/existing Lisk account via secret passphrase
-    /// https://docs.lisk.io/v1.4/docs/lisk-api-080-accounts#section-get-account-information
-    public func open(secret: String, completionHandler: @escaping (Response<AccountResponse>) -> Void) {
-        do {
-            let (publicKey, _) = try Crypto.keys(fromSecret: secret)
-            let address = Crypto.address(fromPublicKey: publicKey)
-            self.account(address: address, completionHandler: completionHandler)
-        } catch {
-            let response = APIResponseError(message: "Invalid secret key")
-            completionHandler(.error(response: response))
-        }
-    }
-}
-
-// MARK: - Balance
-
-extension Accounts {
-
-    /// Retrieve the balance of a Lisk address
-    /// https://docs.lisk.io/docs/lisk-api-080-accounts#section-get-account-balance
-    public func balance(address: String, completionHandler: @escaping (Response<BalanceResponse>) -> Void) {
-        let options = ["address": address]
-        client.get(path: "accounts/getBalance", options: options, completionHandler: completionHandler)
     }
 }

@@ -15,7 +15,7 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 - [x] Local Signing for maximum security
 - [x] Targets Lisk 1.0.0 API
 - [x] Directly based on lisk-js
-- [x] Swift 4.0
+- [x] Swift 4.1
 - [x] Unit Tests (87% coverage)
 - [x] Documentation
 
@@ -23,8 +23,9 @@ Lisk Swift is heavily inspired by [Lisk JS](https://github.com/LiskHQ/lisk-js)
 
 - [Accounts](https://andrewbarba.github.io/lisk-swift/Structs/Accounts.html)
 - [Blocks](https://andrewbarba.github.io/lisk-swift/Structs/Blocks.html)
+- [Dapps](https://andrewbarba.github.io/lisk-swift/Structs/Dapps.html)
 - [Delegates](https://andrewbarba.github.io/lisk-swift/Structs/Delegates.html)
-- [Loader](https://andrewbarba.github.io/lisk-swift/Structs/Loader.html)
+- [Node](https://andrewbarba.github.io/lisk-swift/Structs/Node.html)
 - [Peers](https://andrewbarba.github.io/lisk-swift/Structs/Peers.html)
 - [Signatures](https://andrewbarba.github.io/lisk-swift/Structs/Signatures.html)
 - [Transactions](https://andrewbarba.github.io/lisk-swift/Structs/Transactions.html)
@@ -108,30 +109,30 @@ let transactions = Transactions()
 ### Swift Package Manager
 
 ```swift
-// swift-tools-version:4.0
+// swift-tools-version:4.1
 
 import PackageDescription
 
 let package = Package(
     name: "My Lisk App",
     dependencies: [
-        .package(url: "https://github.com/AndrewBarba/lisk-swift.git", from: "1.0.0-beta")
+        .package(url: "https://github.com/AndrewBarba/lisk-swift.git", from: "1.0.0.beta")
     ]
 )
 ```
 
 ### CocoaPods
 
-> CocoaPods 1.1.0+ is required to build lisk-swift
+> CocoaPods 1.5.0+ is required to build lisk-swift
 
 ```ruby
-pod 'Lisk', '~> 1.0.0-beta'
+pod 'Lisk', '~> 1.0.0.beta'
 ```
 
 ### Carthage
 
 ```ogdl
-github "AndrewBarba/lisk-swift" ~> 1.0.0-beta
+github "AndrewBarba/lisk-swift" ~> 1.0.0.beta
 ```
 
 ## Thank You

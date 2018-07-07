@@ -3,7 +3,6 @@
 //  Lisk
 //
 //  Created by Andrew Barba on 12/31/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import Foundation
@@ -14,14 +13,24 @@ extension Accounts {
 
         public let address: String
 
-        public let balance: String
-
-        public let unconfirmedBalance: String
-
         public let publicKey: String
 
-        public let unconfirmedSignature: UInt8
+        public let balance: String?
 
-        public let secondSignature: UInt8
+        public let unconfirmedBalance: String?
+
+        public let secondPublicKey: String?
+
+        public let delegate: Delegates.DelegateModel?
+
+        // MARK: - Hashable
+
+        public static func == (lhs: AccountModel, rhs: AccountModel) -> Bool {
+            return lhs.address == rhs.address
+        }
+
+        public var hashValue: Int {
+            return address.hashValue
+        }
     }
 }

@@ -3,7 +3,6 @@
 //  LiskTests
 //
 //  Created by Andrew Barba on 12/27/17.
-//  Copyright © 2017 Andrew Barba. All rights reserved.
 //
 
 import XCTest
@@ -15,7 +14,13 @@ class LiskTestCase: XCTestCase {
 
     let testNetClient = APIClient.testnet
 
-    let mainPeerClient = APIClient(options: .init(ssl: false, node: .init(hostname: "lisk0.abarba.me")))
+    let betaNetClient = APIClient.betanet
+
+    let mainPeerClient: APIClient = {
+        let nodes: [APINode] = [.init(origin: "http://lisk0.abarba.me:8000")]
+        let options = APIOptions(nodes: nodes, nethash: .mainnet, randomNode: true)
+        return APIClient(options: options)
+    }()
 
     let andrewUsername = "andrew"
     let andrewAddress = "14987768355736502769L"
@@ -49,9 +54,9 @@ class LiskTestCase: XCTestCase {
     }
 
     @discardableResult
-    func tryRequestError<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> APIResponseError {
+    func tryRequestError<R>(_ block: (@escaping (Response<R>) -> Void) -> Void) -> APIError {
         let expectation = XCTestExpectation()
-        var error: APIResponseError?
+        var error: APIError?
         block() { response in
             switch response {
             case .success:

@@ -36,5 +36,15 @@ extension Transactions {
         public let signature: String
 
         public let confirmations: UInt64
+
+        // MARK: - Hashable
+
+        public static func == (lhs: TransactionModel, rhs: TransactionModel) -> Bool {
+            return lhs.id == rhs.id
+        }
+
+        public var hashValue: Int {
+            return id.hashValue
+        }
     }
 }

@@ -13,32 +13,44 @@ extension Blocks {
 
         public let id: String
 
-        public let version: Int
-
-        public let timestamp: Int
+        public let version: Int?
 
         public let height: Int
 
-        public let previousBlock: String
+        public let timestamp: Int
 
-        public let numberOfTransactions: Int
-
-        public let totalAmount: Int
-
-        public let totalFee: Int
-
-        public let reward: Int
-
-        public let payloadHash: String
+        public let generatorAddress: String?
 
         public let generatorPublicKey: String
 
-        public let generatorId: String
+        public let payloadLength: Int?
 
-        public let blockSignature: String
+        public let payloadHash: String?
 
-        public let confirmations: Int
+        public let blockSignature: String?
+
+        public let confirmations: Int?
+
+        public let previousBlockId: String?
+
+        public let numberOfTransactions: Int
+
+        public let totalAmount: String
+
+        public let totalFee: String
+
+        public let reward: String
 
         public let totalForged: String
+
+        // MARK: - Hashable
+
+        public static func == (lhs: BlockModel, rhs: BlockModel) -> Bool {
+            return lhs.id == rhs.id
+        }
+
+        public var hashValue: Int {
+            return id.hashValue
+        }
     }
 }

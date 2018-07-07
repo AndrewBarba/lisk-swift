@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"Lisk::LiskPackageTests::ProductTarget" /* LiskPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_175 /* Build configuration list for PBXAggregateTarget "LiskPackageTests" */;
+			buildConfigurationList = OBJ_228 /* Build configuration list for PBXAggregateTarget "LiskPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_178 /* PBXTargetDependency */,
+				OBJ_231 /* PBXTargetDependency */,
 			);
 			name = LiskPackageTests;
 			productName = LiskPackageTests;
@@ -21,152 +21,137 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		3809038C2013AC1B00E80537 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3809038A2013AB9D00E80537 /* Random.swift */; };
-		381C95D92003E44E0002FBC4 /* DelegateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95D82003E44E0002FBC4 /* DelegateResponse.swift */; };
-		381C95DB2003E6060002FBC4 /* DelegateCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95DA2003E6060002FBC4 /* DelegateCountResponse.swift */; };
-		381C95DD2003E6D50002FBC4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95DC2003E6D50002FBC4 /* APIService.swift */; };
-		381C95DF2003EAA40002FBC4 /* VoterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95DE2003EAA40002FBC4 /* VoterModel.swift */; };
-		381C95E12003EADC0002FBC4 /* DelegateVotersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E02003EADC0002FBC4 /* DelegateVotersResponse.swift */; };
-		381C95E42003EC460002FBC4 /* DelegatesCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E32003EC460002FBC4 /* DelegatesCountTests.swift */; };
-		381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */; };
-		381C95E82003EDB70002FBC4 /* DelegatesVotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */; };
-		381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95E92003EE440002FBC4 /* DelegatesListTests.swift */; };
-		381C95ED2003F4580002FBC4 /* Peers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95EC2003F4580002FBC4 /* Peers.swift */; };
-		381C95F02003F4A10002FBC4 /* PeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95EF2003F4A10002FBC4 /* PeerModel.swift */; };
-		381C95F32003F5CF0002FBC4 /* PeerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F22003F5CF0002FBC4 /* PeerResponse.swift */; };
-		381C95F52003F6090002FBC4 /* PeerVersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F42003F6090002FBC4 /* PeerVersionResponse.swift */; };
-		381C95F82003FA860002FBC4 /* PeersVersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F72003FA860002FBC4 /* PeersVersionTests.swift */; };
-		381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95F92003FACE0002FBC4 /* PeersGetTests.swift */; };
-		381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */; };
-		385C827C201AF2B000012D71 /* MnemonicPassphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */; };
-		385C8280201AF52000012D71 /* MnemonicPassphraseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */; };
-		3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9A1FFC82490008C527 /* Transactions.swift */; };
-		3874AB9E1FFC82C50008C527 /* TransactionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874AB9D1FFC82C50008C527 /* TransactionResponse.swift */; };
-		3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA01FFC831B0008C527 /* TransactionModel.swift */; };
-		3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */; };
-		3874ABA61FFC8EEE0008C527 /* TransactionsListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */; };
-		3883A8C120029A9700460A9B /* BytePacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BF20029A4000460A9B /* BytePacker.swift */; };
-		3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C220029BE500460A9B /* LocalTransaction.swift */; };
-		3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */; };
-		3883A8C82002DC4E00460A9B /* TransactionsTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */; };
-		3883A8CA2003BED900460A9B /* TransactionBroadcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3883A8C92003BED900460A9B /* TransactionBroadcastResponse.swift */; };
-		38B8E222200672780067BA8E /* SignatureFeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B8E220200672730067BA8E /* SignatureFeeResponse.swift */; };
-		38B8E2232006728A0067BA8E /* Signatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B8E21D2006723B0067BA8E /* Signatures.swift */; };
-		38C55B962006850400C0CCA4 /* SignaturesFeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C55B952006850400C0CCA4 /* SignaturesFeeTests.swift */; };
-		38C55B982006854000C0CCA4 /* SignaturesRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C55B972006854000C0CCA4 /* SignaturesRegisterTests.swift */; };
-		38C66D7B20051FB8007B2FA1 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D7A20051FB8007B2FA1 /* Blocks.swift */; };
-		38C66D7F20051FF8007B2FA1 /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D7E20051FF8007B2FA1 /* BlockModel.swift */; };
-		38C66D8120052032007B2FA1 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D8020052032007B2FA1 /* APIModel.swift */; };
-		38C66D83200523F2007B2FA1 /* BlockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D82200523F2007B2FA1 /* BlockResponse.swift */; };
-		38C66D8D20052777007B2FA1 /* BlockFeeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D8C20052777007B2FA1 /* BlockFeeResponse.swift */; };
-		38C66D8F20052794007B2FA1 /* BlockFeesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D8E20052794007B2FA1 /* BlockFeesResponse.swift */; };
-		38C66D91200527C7007B2FA1 /* FeesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D90200527C7007B2FA1 /* FeesModel.swift */; };
-		38C66D932005281D007B2FA1 /* BlockRewardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D922005281D007B2FA1 /* BlockRewardResponse.swift */; };
-		38C66D952005283E007B2FA1 /* BlockSupplyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D942005283E007B2FA1 /* BlockSupplyResponse.swift */; };
-		38C66D9720052865007B2FA1 /* BlockHeightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D9620052865007B2FA1 /* BlockHeightResponse.swift */; };
-		38C66D99200528B2007B2FA1 /* BlockStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D98200528B2007B2FA1 /* BlockStatusResponse.swift */; };
-		38C66D9B200528FC007B2FA1 /* BlockNethashResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D9A200528FC007B2FA1 /* BlockNethashResponse.swift */; };
-		38C66D9D20052927007B2FA1 /* BlockMilestoneResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D9C20052927007B2FA1 /* BlockMilestoneResponse.swift */; };
-		38C66DA020053D35007B2FA1 /* BlocksMiscTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66D9F20053D35007B2FA1 /* BlocksMiscTests.swift */; };
-		38C66DA220053DEE007B2FA1 /* BlocksGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66DA120053DEE007B2FA1 /* BlocksGetTests.swift */; };
-		38C66DA420053F55007B2FA1 /* BlocksListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C66DA320053F55007B2FA1 /* BlocksListTests.swift */; };
-		OBJ_101 /* AccountsOpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AccountsOpenTests.swift */; };
-		OBJ_102 /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* AccountsPublicKeyTests.swift */; };
-		OBJ_103 /* LoaderStatusPingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* LoaderStatusPingTests.swift */; };
-		OBJ_104 /* LoaderStatusSyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* LoaderStatusSyncTests.swift */; };
-		OBJ_105 /* LoaderStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* LoaderStatusTests.swift */; };
-		OBJ_106 /* LiskTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* LiskTestCase.swift */; };
-		OBJ_108 /* Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Lisk::Lisk::Product" /* Lisk.framework */; };
-		OBJ_109 /* Ed25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::Ed25519::Product" /* Ed25519.framework */; };
-		OBJ_110 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
-		OBJ_121 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Accounts.swift */; };
-		OBJ_122 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AccountModel.swift */; };
-		OBJ_123 /* AccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* AccountResponse.swift */; };
-		OBJ_124 /* AccountBalanceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* AccountBalanceResponse.swift */; };
-		OBJ_126 /* AccountPublicKeyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* AccountPublicKeyResponse.swift */; };
-		OBJ_127 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Delegates.swift */; };
-		OBJ_128 /* DelegateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DelegateModel.swift */; };
-		OBJ_129 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Loader.swift */; };
-		OBJ_130 /* LoaderStatusPingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* LoaderStatusPingResponse.swift */; };
-		OBJ_131 /* LoaderStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* LoaderStatusResponse.swift */; };
-		OBJ_132 /* LoaderStatusSyncResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* LoaderStatusSyncResponse.swift */; };
-		OBJ_133 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Constants.swift */; };
-		OBJ_134 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* APIClient.swift */; };
-		OBJ_135 /* APINethash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* APINethash.swift */; };
-		OBJ_136 /* APINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* APINode.swift */; };
-		OBJ_137 /* APIOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* APIOptions.swift */; };
-		OBJ_138 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* APIResponse.swift */; };
-		OBJ_139 /* APIResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* APIResponseError.swift */; };
-		OBJ_140 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Crypto.swift */; };
-		OBJ_141 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* SHA256.swift */; };
-		OBJ_143 /* Ed25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::Ed25519::Product" /* Ed25519.framework */; };
-		OBJ_144 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
-		OBJ_151 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Error.swift */; };
-		OBJ_152 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* KeyPair.swift */; };
-		OBJ_153 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* PrivateKey.swift */; };
-		OBJ_154 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* PublicKey.swift */; };
-		OBJ_155 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Seed.swift */; };
-		OBJ_157 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
-		OBJ_163 /* add_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* add_scalar.c */; };
-		OBJ_164 /* fe.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* fe.c */; };
-		OBJ_165 /* ge.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* ge.c */; };
-		OBJ_166 /* key_exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* key_exchange.c */; };
-		OBJ_167 /* keypair.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* keypair.c */; };
-		OBJ_168 /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* sc.c */; };
-		OBJ_169 /* seed.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* seed.c */; };
-		OBJ_170 /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* sha512.c */; };
-		OBJ_171 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* sign.c */; };
-		OBJ_172 /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* verify.c */; };
-		OBJ_86 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_92 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Package.swift */; };
-		OBJ_98 /* AccountsAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* AccountsAccountTests.swift */; };
-		OBJ_99 /* AccountsBalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* AccountsBalanceTests.swift */; };
+		3896F03420AB3B9900069A45 /* WebToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896F03320AB3B9900069A45 /* WebToken.swift */; };
+		3896F03620AB421300069A45 /* WebTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3896F03520AB421300069A45 /* WebTokenTests.swift */; };
+		OBJ_138 /* add_scalar.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* add_scalar.c */; };
+		OBJ_139 /* fe.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* fe.c */; };
+		OBJ_140 /* ge.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* ge.c */; };
+		OBJ_141 /* key_exchange.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_111 /* key_exchange.c */; };
+		OBJ_142 /* keypair.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_112 /* keypair.c */; };
+		OBJ_143 /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* sc.c */; };
+		OBJ_144 /* seed.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* seed.c */; };
+		OBJ_145 /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* sha512.c */; };
+		OBJ_146 /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* sign.c */; };
+		OBJ_147 /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* verify.c */; };
+		OBJ_154 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* Error.swift */; };
+		OBJ_155 /* KeyPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* KeyPair.swift */; };
+		OBJ_156 /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* PrivateKey.swift */; };
+		OBJ_157 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* PublicKey.swift */; };
+		OBJ_158 /* Seed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* Seed.swift */; };
+		OBJ_160 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
+		OBJ_167 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* Package.swift */; };
+		OBJ_173 /* Accounts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Accounts.swift */; };
+		OBJ_174 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AccountModel.swift */; };
+		OBJ_175 /* AccountsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* AccountsResponse.swift */; };
+		OBJ_176 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Blocks.swift */; };
+		OBJ_177 /* BlockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* BlockModel.swift */; };
+		OBJ_178 /* BlocksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* BlocksResponse.swift */; };
+		OBJ_179 /* Dapps.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Dapps.swift */; };
+		OBJ_180 /* DappModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* DappModel.swift */; };
+		OBJ_181 /* DappsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* DappsResponse.swift */; };
+		OBJ_182 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Delegates.swift */; };
+		OBJ_183 /* DelegateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* DelegateModel.swift */; };
+		OBJ_184 /* DelegatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* DelegatesResponse.swift */; };
+		OBJ_185 /* NodeConstantsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* NodeConstantsModel.swift */; };
+		OBJ_186 /* NodeStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* NodeStatusModel.swift */; };
+		OBJ_187 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Node.swift */; };
+		OBJ_188 /* NodeConstantsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* NodeConstantsResponse.swift */; };
+		OBJ_189 /* NodeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* NodeStatusResponse.swift */; };
+		OBJ_190 /* PeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* PeerModel.swift */; };
+		OBJ_191 /* Peers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Peers.swift */; };
+		OBJ_192 /* PeersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PeersResponse.swift */; };
+		OBJ_193 /* SignatureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* SignatureModel.swift */; };
+		OBJ_194 /* SignatureBroadcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* SignatureBroadcastResponse.swift */; };
+		OBJ_195 /* Signatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Signatures.swift */; };
+		OBJ_196 /* LocalTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* LocalTransaction.swift */; };
+		OBJ_197 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* TransactionModel.swift */; };
+		OBJ_198 /* TransactionBroadcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* TransactionBroadcastResponse.swift */; };
+		OBJ_199 /* TransactionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* TransactionsResponse.swift */; };
+		OBJ_200 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Transactions.swift */; };
+		OBJ_201 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Constants.swift */; };
+		OBJ_202 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* APIClient.swift */; };
+		OBJ_203 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* APIError.swift */; };
+		OBJ_204 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* APIModel.swift */; };
+		OBJ_205 /* APINethash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* APINethash.swift */; };
+		OBJ_206 /* APINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* APINode.swift */; };
+		OBJ_207 /* APIOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* APIOptions.swift */; };
+		OBJ_208 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* APIRequest.swift */; };
+		OBJ_209 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* APIResponse.swift */; };
+		OBJ_210 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* APIService.swift */; };
+		OBJ_211 /* BytePacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* BytePacker.swift */; };
+		OBJ_212 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Crypto.swift */; };
+		OBJ_213 /* MnemonicPassphrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* MnemonicPassphrase.swift */; };
+		OBJ_214 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* Random.swift */; };
+		OBJ_215 /* SHA256.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* SHA256.swift */; };
+		OBJ_217 /* Ed25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::Ed25519::Product" /* Ed25519.framework */; };
+		OBJ_218 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
+		OBJ_226 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_237 /* AccountsAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* AccountsAccountTests.swift */; };
+		OBJ_238 /* AccountsOpenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* AccountsOpenTests.swift */; };
+		OBJ_239 /* AccountsPublicKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* AccountsPublicKeyTests.swift */; };
+		OBJ_240 /* BlocksGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* BlocksGetTests.swift */; };
+		OBJ_241 /* BlocksListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* BlocksListTests.swift */; };
+		OBJ_242 /* DelegatesGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* DelegatesGetTests.swift */; };
+		OBJ_243 /* DelegatesListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* DelegatesListTests.swift */; };
+		OBJ_244 /* PeersGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* PeersGetTests.swift */; };
+		OBJ_245 /* PeersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* PeersListTests.swift */; };
+		OBJ_246 /* SignaturesRegisterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* SignaturesRegisterTests.swift */; };
+		OBJ_247 /* TransactionsGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* TransactionsGetTests.swift */; };
+		OBJ_248 /* TransactionsListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* TransactionsListTest.swift */; };
+		OBJ_249 /* TransactionsSigningTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* TransactionsSigningTest.swift */; };
+		OBJ_250 /* TransactionsTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* TransactionsTransferTests.swift */; };
+		OBJ_251 /* MnemonicPassphraseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* MnemonicPassphraseTests.swift */; };
+		OBJ_252 /* SignMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* SignMessageTests.swift */; };
+		OBJ_253 /* LiskTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* LiskTestCase.swift */; };
+		OBJ_255 /* Lisk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Lisk::Lisk::Product" /* Lisk.framework */; };
+		OBJ_256 /* Ed25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::Ed25519::Product" /* Ed25519.framework */; };
+		OBJ_257 /* CEd25519.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Ed25519::CEd25519::Product" /* CEd25519.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38434E581FFADA1400AA3540 /* PBXContainerItemProxy */ = {
+		3896F02C20AB2BF800069A45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Ed25519::CEd25519";
+			remoteInfo = CEd25519;
+		};
+		3896F02D20AB2BF800069A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Ed25519::Ed25519";
 			remoteInfo = Ed25519;
 		};
-		38434E591FFADA1400AA3540 /* PBXContainerItemProxy */ = {
+		3896F02E20AB2BF800069A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Ed25519::CEd25519";
 			remoteInfo = CEd25519;
 		};
-		38434E5A1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Ed25519::CEd25519";
-			remoteInfo = CEd25519;
-		};
-		38434E5B1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
+		3896F02F20AB2BF800069A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Lisk::Lisk";
 			remoteInfo = Lisk;
 		};
-		38434E5C1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
+		3896F03020AB2BF800069A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Ed25519::Ed25519";
 			remoteInfo = Ed25519;
 		};
-		38434E5D1FFADA1400AA3540 /* PBXContainerItemProxy */ = {
+		3896F03120AB2BF800069A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Ed25519::CEd25519";
 			remoteInfo = CEd25519;
 		};
-		38434E5E1FFADA1500AA3540 /* PBXContainerItemProxy */ = {
+		3896F03220AB2BF800069A45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -176,329 +161,178 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3809038A2013AB9D00E80537 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		381C95D82003E44E0002FBC4 /* DelegateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateResponse.swift; sourceTree = "<group>"; };
-		381C95DA2003E6060002FBC4 /* DelegateCountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateCountResponse.swift; sourceTree = "<group>"; };
-		381C95DC2003E6D50002FBC4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		381C95DE2003EAA40002FBC4 /* VoterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoterModel.swift; sourceTree = "<group>"; };
-		381C95E02003EADC0002FBC4 /* DelegateVotersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVotersResponse.swift; sourceTree = "<group>"; };
-		381C95E32003EC460002FBC4 /* DelegatesCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesCountTests.swift; sourceTree = "<group>"; };
-		381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesGetTests.swift; sourceTree = "<group>"; };
-		381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesVotesTests.swift; sourceTree = "<group>"; };
-		381C95E92003EE440002FBC4 /* DelegatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesListTests.swift; sourceTree = "<group>"; };
-		381C95EC2003F4580002FBC4 /* Peers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peers.swift; sourceTree = "<group>"; };
-		381C95EF2003F4A10002FBC4 /* PeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerModel.swift; sourceTree = "<group>"; };
-		381C95F22003F5CF0002FBC4 /* PeerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerResponse.swift; sourceTree = "<group>"; };
-		381C95F42003F6090002FBC4 /* PeerVersionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerVersionResponse.swift; sourceTree = "<group>"; };
-		381C95F72003FA860002FBC4 /* PeersVersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersVersionTests.swift; sourceTree = "<group>"; };
-		381C95F92003FACE0002FBC4 /* PeersGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersGetTests.swift; sourceTree = "<group>"; };
-		381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersListTests.swift; sourceTree = "<group>"; };
-		385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphrase.swift; sourceTree = "<group>"; };
-		385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphraseTests.swift; sourceTree = "<group>"; };
-		3874AB9A1FFC82490008C527 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
-		3874AB9D1FFC82C50008C527 /* TransactionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionResponse.swift; sourceTree = "<group>"; };
-		3874ABA01FFC831B0008C527 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
-		3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsGetTests.swift; sourceTree = "<group>"; };
-		3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListTest.swift; sourceTree = "<group>"; };
-		3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSigningTest.swift; sourceTree = "<group>"; };
-		3883A8BF20029A4000460A9B /* BytePacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytePacker.swift; sourceTree = "<group>"; };
-		3883A8C220029BE500460A9B /* LocalTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransaction.swift; sourceTree = "<group>"; };
-		3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTransferTests.swift; sourceTree = "<group>"; };
-		3883A8C92003BED900460A9B /* TransactionBroadcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBroadcastResponse.swift; sourceTree = "<group>"; };
-		38B8E21D2006723B0067BA8E /* Signatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signatures.swift; sourceTree = "<group>"; };
-		38B8E220200672730067BA8E /* SignatureFeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureFeeResponse.swift; sourceTree = "<group>"; };
-		38C55B952006850400C0CCA4 /* SignaturesFeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturesFeeTests.swift; sourceTree = "<group>"; };
-		38C55B972006854000C0CCA4 /* SignaturesRegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturesRegisterTests.swift; sourceTree = "<group>"; };
-		38C66D7A20051FB8007B2FA1 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
-		38C66D7E20051FF8007B2FA1 /* BlockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
-		38C66D8020052032007B2FA1 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
-		38C66D82200523F2007B2FA1 /* BlockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockResponse.swift; sourceTree = "<group>"; };
-		38C66D8C20052777007B2FA1 /* BlockFeeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFeeResponse.swift; sourceTree = "<group>"; };
-		38C66D8E20052794007B2FA1 /* BlockFeesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockFeesResponse.swift; sourceTree = "<group>"; };
-		38C66D90200527C7007B2FA1 /* FeesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeesModel.swift; sourceTree = "<group>"; };
-		38C66D922005281D007B2FA1 /* BlockRewardResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRewardResponse.swift; sourceTree = "<group>"; };
-		38C66D942005283E007B2FA1 /* BlockSupplyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockSupplyResponse.swift; sourceTree = "<group>"; };
-		38C66D9620052865007B2FA1 /* BlockHeightResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockHeightResponse.swift; sourceTree = "<group>"; };
-		38C66D98200528B2007B2FA1 /* BlockStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockStatusResponse.swift; sourceTree = "<group>"; };
-		38C66D9A200528FC007B2FA1 /* BlockNethashResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockNethashResponse.swift; sourceTree = "<group>"; };
-		38C66D9C20052927007B2FA1 /* BlockMilestoneResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockMilestoneResponse.swift; sourceTree = "<group>"; };
-		38C66D9F20053D35007B2FA1 /* BlocksMiscTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksMiscTests.swift; sourceTree = "<group>"; };
-		38C66DA120053DEE007B2FA1 /* BlocksGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksGetTests.swift; sourceTree = "<group>"; };
-		38C66DA320053F55007B2FA1 /* BlocksListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksListTests.swift; sourceTree = "<group>"; };
-		"Ed25519::CEd25519::Product" /* CEd25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CEd25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Ed25519::Ed25519::Product" /* Ed25519.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ed25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"Lisk::Lisk::Product" /* Lisk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3896F03320AB3B9900069A45 /* WebToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebToken.swift; sourceTree = "<group>"; };
+		3896F03520AB421300069A45 /* WebTokenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTokenTests.swift; sourceTree = "<group>"; };
+		"Ed25519::CEd25519::Product" /* CEd25519.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CEd25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Ed25519::Ed25519::Product" /* Ed25519.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ed25519.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Lisk::Lisk::Product" /* Lisk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lisk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Lisk::LiskTests::Product" /* LiskTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = LiskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Accounts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accounts.swift; sourceTree = "<group>"; };
+		OBJ_101 /* MnemonicPassphraseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphraseTests.swift; sourceTree = "<group>"; };
+		OBJ_102 /* SignMessageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignMessageTests.swift; sourceTree = "<group>"; };
+		OBJ_103 /* LiskTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTestCase.swift; sourceTree = "<group>"; };
+		OBJ_104 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
+		OBJ_108 /* add_scalar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = add_scalar.c; sourceTree = "<group>"; };
+		OBJ_109 /* fe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fe.c; sourceTree = "<group>"; };
+		OBJ_110 /* ge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ge.c; sourceTree = "<group>"; };
+		OBJ_111 /* key_exchange.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = key_exchange.c; sourceTree = "<group>"; };
+		OBJ_112 /* keypair.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = keypair.c; sourceTree = "<group>"; };
+		OBJ_113 /* sc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sc.c; sourceTree = "<group>"; };
+		OBJ_114 /* seed.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = seed.c; sourceTree = "<group>"; };
+		OBJ_115 /* sha512.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha512.c; sourceTree = "<group>"; };
+		OBJ_116 /* sign.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
+		OBJ_117 /* verify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = verify.c; sourceTree = "<group>"; };
+		OBJ_119 /* ed25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
 		OBJ_12 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
-		OBJ_14 /* AccountResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountResponse.swift; sourceTree = "<group>"; };
-		OBJ_15 /* AccountBalanceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBalanceResponse.swift; sourceTree = "<group>"; };
-		OBJ_17 /* AccountPublicKeyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPublicKeyResponse.swift; sourceTree = "<group>"; };
-		OBJ_19 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
-		OBJ_21 /* DelegateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateModel.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
-		OBJ_25 /* LoaderStatusPingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusPingResponse.swift; sourceTree = "<group>"; };
-		OBJ_26 /* LoaderStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusResponse.swift; sourceTree = "<group>"; };
-		OBJ_27 /* LoaderStatusSyncResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusSyncResponse.swift; sourceTree = "<group>"; };
-		OBJ_28 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		OBJ_30 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		OBJ_31 /* APINethash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINethash.swift; sourceTree = "<group>"; };
-		OBJ_32 /* APINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINode.swift; sourceTree = "<group>"; };
-		OBJ_33 /* APIOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOptions.swift; sourceTree = "<group>"; };
-		OBJ_34 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
-		OBJ_35 /* APIResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponseError.swift; sourceTree = "<group>"; };
-		OBJ_37 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		OBJ_38 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
-		OBJ_42 /* AccountsAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsAccountTests.swift; sourceTree = "<group>"; };
-		OBJ_43 /* AccountsBalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsBalanceTests.swift; sourceTree = "<group>"; };
-		OBJ_45 /* AccountsOpenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsOpenTests.swift; sourceTree = "<group>"; };
-		OBJ_46 /* AccountsPublicKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPublicKeyTests.swift; sourceTree = "<group>"; };
-		OBJ_48 /* LoaderStatusPingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusPingTests.swift; sourceTree = "<group>"; };
-		OBJ_49 /* LoaderStatusSyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusSyncTests.swift; sourceTree = "<group>"; };
-		OBJ_50 /* LoaderStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderStatusTests.swift; sourceTree = "<group>"; };
-		OBJ_51 /* LiskTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiskTestCase.swift; sourceTree = "<group>"; };
-		OBJ_56 /* add_scalar.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = add_scalar.c; sourceTree = "<group>"; };
-		OBJ_57 /* fe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fe.c; sourceTree = "<group>"; };
-		OBJ_58 /* ge.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ge.c; sourceTree = "<group>"; };
-		OBJ_59 /* key_exchange.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = key_exchange.c; sourceTree = "<group>"; };
+		OBJ_120 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/andrewbarba/Code/Lisk/lisk-swift/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap"; sourceTree = "<group>"; };
+		OBJ_122 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_123 /* KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
+		OBJ_124 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		OBJ_125 /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		OBJ_126 /* Seed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
+		OBJ_127 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/andrewbarba/Code/Lisk/lisk-swift/.build/checkouts/ed25519.git--1962158432852652388/Package.swift"; sourceTree = "<group>"; };
+		OBJ_14 /* AccountsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsResponse.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		OBJ_18 /* BlockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockModel.swift; sourceTree = "<group>"; };
+		OBJ_20 /* BlocksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksResponse.swift; sourceTree = "<group>"; };
+		OBJ_22 /* Dapps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dapps.swift; sourceTree = "<group>"; };
+		OBJ_24 /* DappModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DappModel.swift; sourceTree = "<group>"; };
+		OBJ_26 /* DappsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DappsResponse.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
+		OBJ_30 /* DelegateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateModel.swift; sourceTree = "<group>"; };
+		OBJ_32 /* DelegatesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesResponse.swift; sourceTree = "<group>"; };
+		OBJ_35 /* NodeConstantsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConstantsModel.swift; sourceTree = "<group>"; };
+		OBJ_36 /* NodeStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStatusModel.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		OBJ_39 /* NodeConstantsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeConstantsResponse.swift; sourceTree = "<group>"; };
+		OBJ_40 /* NodeStatusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeStatusResponse.swift; sourceTree = "<group>"; };
+		OBJ_43 /* PeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerModel.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Peers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peers.swift; sourceTree = "<group>"; };
+		OBJ_46 /* PeersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersResponse.swift; sourceTree = "<group>"; };
+		OBJ_49 /* SignatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureModel.swift; sourceTree = "<group>"; };
+		OBJ_51 /* SignatureBroadcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignatureBroadcastResponse.swift; sourceTree = "<group>"; };
+		OBJ_52 /* Signatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signatures.swift; sourceTree = "<group>"; };
+		OBJ_54 /* LocalTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTransaction.swift; sourceTree = "<group>"; };
+		OBJ_56 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		OBJ_58 /* TransactionBroadcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionBroadcastResponse.swift; sourceTree = "<group>"; };
+		OBJ_59 /* TransactionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsResponse.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* keypair.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = keypair.c; sourceTree = "<group>"; };
-		OBJ_61 /* sc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sc.c; sourceTree = "<group>"; };
-		OBJ_62 /* seed.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = seed.c; sourceTree = "<group>"; };
-		OBJ_63 /* sha512.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha512.c; sourceTree = "<group>"; };
-		OBJ_64 /* sign.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sign.c; sourceTree = "<group>"; };
-		OBJ_65 /* verify.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = verify.c; sourceTree = "<group>"; };
-		OBJ_67 /* ed25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ed25519.h; sourceTree = "<group>"; };
-		OBJ_68 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "/Users/andrewbarba/Code/Lisk/lisk-swift/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap"; sourceTree = "<group>"; };
-		OBJ_70 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
-		OBJ_71 /* KeyPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPair.swift; sourceTree = "<group>"; };
-		OBJ_72 /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
-		OBJ_73 /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
-		OBJ_74 /* Seed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seed.swift; sourceTree = "<group>"; };
-		OBJ_75 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/andrewbarba/Code/Lisk/lisk-swift/.build/checkouts/ed25519.git-6274347002403739230/Package.swift"; sourceTree = "<group>"; };
+		OBJ_60 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		OBJ_61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		OBJ_63 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		OBJ_64 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		OBJ_65 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		OBJ_66 /* APINethash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINethash.swift; sourceTree = "<group>"; };
+		OBJ_67 /* APINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APINode.swift; sourceTree = "<group>"; };
+		OBJ_68 /* APIOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOptions.swift; sourceTree = "<group>"; };
+		OBJ_69 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		OBJ_70 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		OBJ_71 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		OBJ_73 /* BytePacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BytePacker.swift; sourceTree = "<group>"; };
+		OBJ_74 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		OBJ_75 /* MnemonicPassphrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicPassphrase.swift; sourceTree = "<group>"; };
+		OBJ_76 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		OBJ_77 /* SHA256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA256.swift; sourceTree = "<group>"; };
+		OBJ_81 /* AccountsAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsAccountTests.swift; sourceTree = "<group>"; };
+		OBJ_82 /* AccountsOpenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsOpenTests.swift; sourceTree = "<group>"; };
+		OBJ_83 /* AccountsPublicKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsPublicKeyTests.swift; sourceTree = "<group>"; };
+		OBJ_85 /* BlocksGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksGetTests.swift; sourceTree = "<group>"; };
+		OBJ_86 /* BlocksListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlocksListTests.swift; sourceTree = "<group>"; };
+		OBJ_88 /* DelegatesGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesGetTests.swift; sourceTree = "<group>"; };
+		OBJ_89 /* DelegatesListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatesListTests.swift; sourceTree = "<group>"; };
+		OBJ_91 /* PeersGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersGetTests.swift; sourceTree = "<group>"; };
+		OBJ_92 /* PeersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeersListTests.swift; sourceTree = "<group>"; };
+		OBJ_94 /* SignaturesRegisterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignaturesRegisterTests.swift; sourceTree = "<group>"; };
+		OBJ_96 /* TransactionsGetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsGetTests.swift; sourceTree = "<group>"; };
+		OBJ_97 /* TransactionsListTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListTest.swift; sourceTree = "<group>"; };
+		OBJ_98 /* TransactionsSigningTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsSigningTest.swift; sourceTree = "<group>"; };
+		OBJ_99 /* TransactionsTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTransferTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_107 /* Frameworks */ = {
+		OBJ_148 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_108 /* Lisk.framework in Frameworks */,
-				OBJ_109 /* Ed25519.framework in Frameworks */,
-				OBJ_110 /* CEd25519.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_142 /* Frameworks */ = {
+		OBJ_159 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_143 /* Ed25519.framework in Frameworks */,
-				OBJ_144 /* CEd25519.framework in Frameworks */,
+				OBJ_160 /* CEd25519.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_156 /* Frameworks */ = {
+		OBJ_216 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_157 /* CEd25519.framework in Frameworks */,
+				OBJ_217 /* Ed25519.framework in Frameworks */,
+				OBJ_218 /* CEd25519.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_173 /* Frameworks */ = {
+		OBJ_254 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				OBJ_255 /* Lisk.framework in Frameworks */,
+				OBJ_256 /* Ed25519.framework in Frameworks */,
+				OBJ_257 /* CEd25519.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		381C95D72003E4360002FBC4 /* Responses */ = {
+		OBJ_100 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				381C95DA2003E6060002FBC4 /* DelegateCountResponse.swift */,
-				381C95D82003E44E0002FBC4 /* DelegateResponse.swift */,
-				381C95E02003EADC0002FBC4 /* DelegateVotersResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		381C95E22003EC300002FBC4 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				381C95E32003EC460002FBC4 /* DelegatesCountTests.swift */,
-				381C95E52003ECE70002FBC4 /* DelegatesGetTests.swift */,
-				381C95E92003EE440002FBC4 /* DelegatesListTests.swift */,
-				381C95E72003EDB70002FBC4 /* DelegatesVotesTests.swift */,
-			);
-			path = Delegates;
-			sourceTree = "<group>";
-		};
-		381C95EB2003F4430002FBC4 /* Peers */ = {
-			isa = PBXGroup;
-			children = (
-				381C95EE2003F4940002FBC4 /* Models */,
-				381C95F12003F5C10002FBC4 /* Responses */,
-				381C95EC2003F4580002FBC4 /* Peers.swift */,
-			);
-			path = Peers;
-			sourceTree = "<group>";
-		};
-		381C95EE2003F4940002FBC4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				381C95EF2003F4A10002FBC4 /* PeerModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		381C95F12003F5C10002FBC4 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				381C95F22003F5CF0002FBC4 /* PeerResponse.swift */,
-				381C95F42003F6090002FBC4 /* PeerVersionResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		381C95F62003FA700002FBC4 /* Peers */ = {
-			isa = PBXGroup;
-			children = (
-				381C95F92003FACE0002FBC4 /* PeersGetTests.swift */,
-				381C95FB2003FC0D0002FBC4 /* PeersListTests.swift */,
-				381C95F72003FA860002FBC4 /* PeersVersionTests.swift */,
-			);
-			path = Peers;
-			sourceTree = "<group>";
-		};
-		385C827E201AF4FD00012D71 /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				385C827F201AF52000012D71 /* MnemonicPassphraseTests.swift */,
+				OBJ_101 /* MnemonicPassphraseTests.swift */,
+				OBJ_102 /* SignMessageTests.swift */,
+				3896F03520AB421300069A45 /* WebTokenTests.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
 		};
-		3874AB991FFC82260008C527 /* Transactions */ = {
+		OBJ_105 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				38C55B9120067F7A00C0CCA4 /* Asset */,
-				3874AB9F1FFC830E0008C527 /* Models */,
-				3874AB9C1FFC82B20008C527 /* Responses */,
-				3874AB9A1FFC82490008C527 /* Transactions.swift */,
-				3883A8C220029BE500460A9B /* LocalTransaction.swift */,
+				OBJ_106 /* Ed25519 1.1.0 */,
 			);
-			path = Transactions;
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		3874AB9C1FFC82B20008C527 /* Responses */ = {
+		OBJ_106 /* Ed25519 1.1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				3874AB9D1FFC82C50008C527 /* TransactionResponse.swift */,
-				3883A8C92003BED900460A9B /* TransactionBroadcastResponse.swift */,
+				OBJ_107 /* CEd25519 */,
+				OBJ_121 /* Ed25519 */,
+				OBJ_127 /* Package.swift */,
 			);
-			path = Responses;
-			sourceTree = "<group>";
+			name = "Ed25519 1.1.0";
+			sourceTree = SOURCE_ROOT;
 		};
-		3874AB9F1FFC830E0008C527 /* Models */ = {
+		OBJ_107 /* CEd25519 */ = {
 			isa = PBXGroup;
 			children = (
-				3874ABA01FFC831B0008C527 /* TransactionModel.swift */,
+				OBJ_108 /* add_scalar.c */,
+				OBJ_109 /* fe.c */,
+				OBJ_110 /* ge.c */,
+				OBJ_111 /* key_exchange.c */,
+				OBJ_112 /* keypair.c */,
+				OBJ_113 /* sc.c */,
+				OBJ_114 /* seed.c */,
+				OBJ_115 /* sha512.c */,
+				OBJ_116 /* sign.c */,
+				OBJ_117 /* verify.c */,
+				OBJ_118 /* include */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		3874ABA21FFC8E550008C527 /* Transactions */ = {
-			isa = PBXGroup;
-			children = (
-				3874ABA31FFC8E6C0008C527 /* TransactionsGetTests.swift */,
-				3874ABA51FFC8EEE0008C527 /* TransactionsListTest.swift */,
-				3883A8BD2002929800460A9B /* TransactionsSigningTest.swift */,
-				3883A8C72002DC4E00460A9B /* TransactionsTransferTests.swift */,
-			);
-			path = Transactions;
-			sourceTree = "<group>";
-		};
-		38B8E21C2006722C0067BA8E /* Signatures */ = {
-			isa = PBXGroup;
-			children = (
-				38B8E21F2006725C0067BA8E /* Responses */,
-				38B8E21D2006723B0067BA8E /* Signatures.swift */,
-			);
-			path = Signatures;
-			sourceTree = "<group>";
-		};
-		38B8E21F2006725C0067BA8E /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				38B8E220200672730067BA8E /* SignatureFeeResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		38C55B9120067F7A00C0CCA4 /* Asset */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Asset;
-			sourceTree = "<group>";
-		};
-		38C55B94200684EE00C0CCA4 /* Signatures */ = {
-			isa = PBXGroup;
-			children = (
-				38C55B952006850400C0CCA4 /* SignaturesFeeTests.swift */,
-				38C55B972006854000C0CCA4 /* SignaturesRegisterTests.swift */,
-			);
-			path = Signatures;
-			sourceTree = "<group>";
-		};
-		38C66D7920051FA7007B2FA1 /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				38C66D7C20051FE1007B2FA1 /* Models */,
-				38C66D7D20051FE6007B2FA1 /* Responses */,
-				38C66D7A20051FB8007B2FA1 /* Blocks.swift */,
-			);
-			path = Blocks;
-			sourceTree = "<group>";
-		};
-		38C66D7C20051FE1007B2FA1 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				38C66D7E20051FF8007B2FA1 /* BlockModel.swift */,
-				38C66D90200527C7007B2FA1 /* FeesModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		38C66D7D20051FE6007B2FA1 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				38C66D82200523F2007B2FA1 /* BlockResponse.swift */,
-				38C66D98200528B2007B2FA1 /* BlockStatusResponse.swift */,
-				38C66D8C20052777007B2FA1 /* BlockFeeResponse.swift */,
-				38C66D8E20052794007B2FA1 /* BlockFeesResponse.swift */,
-				38C66D9620052865007B2FA1 /* BlockHeightResponse.swift */,
-				38C66D9C20052927007B2FA1 /* BlockMilestoneResponse.swift */,
-				38C66D9A200528FC007B2FA1 /* BlockNethashResponse.swift */,
-				38C66D922005281D007B2FA1 /* BlockRewardResponse.swift */,
-				38C66D942005283E007B2FA1 /* BlockSupplyResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		38C66D9E20053D25007B2FA1 /* Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				38C66DA120053DEE007B2FA1 /* BlocksGetTests.swift */,
-				38C66DA320053F55007B2FA1 /* BlocksListTests.swift */,
-				38C66D9F20053D35007B2FA1 /* BlocksMiscTests.swift */,
-			);
-			path = Blocks;
-			sourceTree = "<group>";
+			name = CEd25519;
+			path = ".build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519";
+			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_11 /* Models */ = {
 			isa = PBXGroup;
@@ -508,240 +342,388 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		OBJ_13 /* Responses */ = {
+		OBJ_118 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* AccountResponse.swift */,
-				OBJ_15 /* AccountBalanceResponse.swift */,
-				OBJ_17 /* AccountPublicKeyResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		OBJ_18 /* Delegates */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_20 /* Models */,
-				381C95D72003E4360002FBC4 /* Responses */,
-				OBJ_19 /* Delegates.swift */,
-			);
-			path = Delegates;
-			sourceTree = "<group>";
-		};
-		OBJ_20 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* DelegateModel.swift */,
-				381C95DE2003EAA40002FBC4 /* VoterModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		OBJ_22 /* Loader */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_24 /* Responses */,
-				OBJ_23 /* Loader.swift */,
-			);
-			path = Loader;
-			sourceTree = "<group>";
-		};
-		OBJ_24 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_25 /* LoaderStatusPingResponse.swift */,
-				OBJ_26 /* LoaderStatusResponse.swift */,
-				OBJ_27 /* LoaderStatusSyncResponse.swift */,
-			);
-			path = Responses;
-			sourceTree = "<group>";
-		};
-		OBJ_29 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_30 /* APIClient.swift */,
-				38C66D8020052032007B2FA1 /* APIModel.swift */,
-				OBJ_31 /* APINethash.swift */,
-				OBJ_32 /* APINode.swift */,
-				OBJ_33 /* APIOptions.swift */,
-				OBJ_34 /* APIResponse.swift */,
-				OBJ_35 /* APIResponseError.swift */,
-				381C95DC2003E6D50002FBC4 /* APIService.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		OBJ_36 /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				3883A8BF20029A4000460A9B /* BytePacker.swift */,
-				OBJ_37 /* Crypto.swift */,
-				385C827B201AF2B000012D71 /* MnemonicPassphrase.swift */,
-				3809038A2013AB9D00E80537 /* Random.swift */,
-				OBJ_38 /* SHA256.swift */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		OBJ_39 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_40 /* API */,
-				385C827E201AF4FD00012D71 /* Crypto */,
-				OBJ_51 /* LiskTestCase.swift */,
-			);
-			path = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_40 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_41 /* Accounts */,
-				38C66D9E20053D25007B2FA1 /* Blocks */,
-				381C95E22003EC300002FBC4 /* Delegates */,
-				OBJ_47 /* Loader */,
-				381C95F62003FA700002FBC4 /* Peers */,
-				38C55B94200684EE00C0CCA4 /* Signatures */,
-				3874ABA21FFC8E550008C527 /* Transactions */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		OBJ_41 /* Accounts */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_42 /* AccountsAccountTests.swift */,
-				OBJ_43 /* AccountsBalanceTests.swift */,
-				OBJ_45 /* AccountsOpenTests.swift */,
-				OBJ_46 /* AccountsPublicKeyTests.swift */,
-			);
-			path = Accounts;
-			sourceTree = "<group>";
-		};
-		OBJ_47 /* Loader */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_48 /* LoaderStatusPingTests.swift */,
-				OBJ_49 /* LoaderStatusSyncTests.swift */,
-				OBJ_50 /* LoaderStatusTests.swift */,
-			);
-			path = Loader;
-			sourceTree = "<group>";
-		};
-		OBJ_5 = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_39 /* Tests */,
-				OBJ_53 /* Dependencies */,
-				OBJ_76 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		OBJ_53 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_54 /* Ed25519 0.2.0 */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_54 /* Ed25519 0.2.0 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_55 /* CEd25519 */,
-				OBJ_69 /* Ed25519 */,
-				OBJ_75 /* Package.swift */,
-			);
-			name = "Ed25519 0.2.0";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_55 /* CEd25519 */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_56 /* add_scalar.c */,
-				OBJ_57 /* fe.c */,
-				OBJ_58 /* ge.c */,
-				OBJ_59 /* key_exchange.c */,
-				OBJ_60 /* keypair.c */,
-				OBJ_61 /* sc.c */,
-				OBJ_62 /* seed.c */,
-				OBJ_63 /* sha512.c */,
-				OBJ_64 /* sign.c */,
-				OBJ_65 /* verify.c */,
-				OBJ_66 /* include */,
-			);
-			name = CEd25519;
-			path = ".build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_66 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_67 /* ed25519.h */,
-				OBJ_68 /* module.modulemap */,
+				OBJ_119 /* ed25519.h */,
+				OBJ_120 /* module.modulemap */,
 			);
 			path = include;
 			sourceTree = "<group>";
 		};
-		OBJ_69 /* Ed25519 */ = {
+		OBJ_121 /* Ed25519 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_70 /* Error.swift */,
-				OBJ_71 /* KeyPair.swift */,
-				OBJ_72 /* PrivateKey.swift */,
-				OBJ_73 /* PublicKey.swift */,
-				OBJ_74 /* Seed.swift */,
+				OBJ_122 /* Error.swift */,
+				OBJ_123 /* KeyPair.swift */,
+				OBJ_124 /* PrivateKey.swift */,
+				OBJ_125 /* PublicKey.swift */,
+				OBJ_126 /* Seed.swift */,
 			);
 			name = Ed25519;
-			path = ".build/checkouts/ed25519.git-6274347002403739230/Sources/Ed25519";
+			path = ".build/checkouts/ed25519.git--1962158432852652388/Sources/Ed25519";
 			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_128 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Ed25519::Ed25519::Product" /* Ed25519.framework */,
+				"Ed25519::CEd25519::Product" /* CEd25519.framework */,
+				"Lisk::Lisk::Product" /* Lisk.framework */,
+				"Lisk::LiskTests::Product" /* LiskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_13 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* AccountsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Blocks.swift */,
+				OBJ_17 /* Models */,
+				OBJ_19 /* Responses */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		OBJ_17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* BlockModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* BlocksResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Dapps */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* Dapps.swift */,
+				OBJ_23 /* Models */,
+				OBJ_25 /* Responses */,
+			);
+			path = Dapps;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_24 /* DappModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* DappsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* Delegates.swift */,
+				OBJ_29 /* Models */,
+				OBJ_31 /* Responses */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		OBJ_29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_30 /* DelegateModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_31 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* DelegatesResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_33 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* Models */,
+				OBJ_37 /* Node.swift */,
+				OBJ_38 /* Responses */,
+			);
+			path = Node;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* NodeConstantsModel.swift */,
+				OBJ_36 /* NodeStatusModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_38 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* NodeConstantsResponse.swift */,
+				OBJ_40 /* NodeStatusResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_41 /* Peers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* Models */,
+				OBJ_44 /* Peers.swift */,
+				OBJ_45 /* Responses */,
+			);
+			path = Peers;
+			sourceTree = "<group>";
+		};
+		OBJ_42 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* PeerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_45 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_46 /* PeersResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_47 /* Signatures */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* Models */,
+				OBJ_50 /* Responses */,
+				OBJ_52 /* Signatures.swift */,
+			);
+			path = Signatures;
+			sourceTree = "<group>";
+		};
+		OBJ_48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_49 /* SignatureModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_78 /* Tests */,
+				OBJ_104 /* docs */,
+				OBJ_105 /* Dependencies */,
+				OBJ_128 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_50 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_51 /* SignatureBroadcastResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_53 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_54 /* LocalTransaction.swift */,
+				OBJ_55 /* Models */,
+				OBJ_57 /* Responses */,
+				OBJ_60 /* Transactions.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		OBJ_55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_56 /* TransactionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_57 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_58 /* TransactionBroadcastResponse.swift */,
+				OBJ_59 /* TransactionsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		OBJ_62 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_63 /* APIClient.swift */,
+				OBJ_64 /* APIError.swift */,
+				OBJ_65 /* APIModel.swift */,
+				OBJ_66 /* APINethash.swift */,
+				OBJ_67 /* APINode.swift */,
+				OBJ_68 /* APIOptions.swift */,
+				OBJ_69 /* APIRequest.swift */,
+				OBJ_70 /* APIResponse.swift */,
+				OBJ_71 /* APIService.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_28 /* Constants.swift */,
 				OBJ_8 /* API */,
-				OBJ_29 /* Core */,
-				OBJ_36 /* Crypto */,
+				OBJ_61 /* Constants.swift */,
+				OBJ_62 /* Core */,
+				OBJ_72 /* Crypto */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_76 /* Products */ = {
+		OBJ_72 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
-				"Lisk::LiskTests::Product" /* LiskTests.xctest */,
-				"Lisk::Lisk::Product" /* Lisk.framework */,
-				"Ed25519::Ed25519::Product" /* Ed25519.framework */,
-				"Ed25519::CEd25519::Product" /* CEd25519.framework */,
+				OBJ_73 /* BytePacker.swift */,
+				OBJ_74 /* Crypto.swift */,
+				OBJ_75 /* MnemonicPassphrase.swift */,
+				OBJ_76 /* Random.swift */,
+				OBJ_77 /* SHA256.swift */,
+				3896F03320AB3B9900069A45 /* WebToken.swift */,
 			);
-			name = Products;
-			sourceTree = BUILT_PRODUCTS_DIR;
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		OBJ_78 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_79 /* API */,
+				OBJ_100 /* Crypto */,
+				OBJ_103 /* LiskTestCase.swift */,
+			);
+			path = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_79 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_80 /* Accounts */,
+				OBJ_84 /* Blocks */,
+				OBJ_87 /* Delegates */,
+				OBJ_90 /* Peers */,
+				OBJ_93 /* Signatures */,
+				OBJ_95 /* Transactions */,
+			);
+			path = API;
+			sourceTree = "<group>";
 		};
 		OBJ_8 /* API */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Accounts */,
-				38C66D7920051FA7007B2FA1 /* Blocks */,
-				OBJ_18 /* Delegates */,
-				OBJ_22 /* Loader */,
-				381C95EB2003F4430002FBC4 /* Peers */,
-				38B8E21C2006722C0067BA8E /* Signatures */,
-				3874AB991FFC82260008C527 /* Transactions */,
+				OBJ_15 /* Blocks */,
+				OBJ_21 /* Dapps */,
+				OBJ_27 /* Delegates */,
+				OBJ_33 /* Node */,
+				OBJ_41 /* Peers */,
+				OBJ_47 /* Signatures */,
+				OBJ_53 /* Transactions */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		OBJ_80 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_81 /* AccountsAccountTests.swift */,
+				OBJ_82 /* AccountsOpenTests.swift */,
+				OBJ_83 /* AccountsPublicKeyTests.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		OBJ_84 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_85 /* BlocksGetTests.swift */,
+				OBJ_86 /* BlocksListTests.swift */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		OBJ_87 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_88 /* DelegatesGetTests.swift */,
+				OBJ_89 /* DelegatesListTests.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		OBJ_9 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_10 /* Accounts.swift */,
 				OBJ_11 /* Models */,
 				OBJ_13 /* Responses */,
-				OBJ_10 /* Accounts.swift */,
 			);
 			path = Accounts;
+			sourceTree = "<group>";
+		};
+		OBJ_90 /* Peers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_91 /* PeersGetTests.swift */,
+				OBJ_92 /* PeersListTests.swift */,
+			);
+			path = Peers;
+			sourceTree = "<group>";
+		};
+		OBJ_93 /* Signatures */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_94 /* SignaturesRegisterTests.swift */,
+			);
+			path = Signatures;
+			sourceTree = "<group>";
+		};
+		OBJ_95 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_96 /* TransactionsGetTests.swift */,
+				OBJ_97 /* TransactionsListTest.swift */,
+				OBJ_98 /* TransactionsSigningTest.swift */,
+				OBJ_99 /* TransactionsTransferTests.swift */,
+			);
+			path = Transactions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -749,10 +731,10 @@
 /* Begin PBXNativeTarget section */
 		"Ed25519::CEd25519" /* CEd25519 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_159 /* Build configuration list for PBXNativeTarget "CEd25519" */;
+			buildConfigurationList = OBJ_134 /* Build configuration list for PBXNativeTarget "CEd25519" */;
 			buildPhases = (
-				OBJ_162 /* Sources */,
-				OBJ_173 /* Frameworks */,
+				OBJ_137 /* Sources */,
+				OBJ_148 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -765,15 +747,15 @@
 		};
 		"Ed25519::Ed25519" /* Ed25519 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_147 /* Build configuration list for PBXNativeTarget "Ed25519" */;
+			buildConfigurationList = OBJ_150 /* Build configuration list for PBXNativeTarget "Ed25519" */;
 			buildPhases = (
-				OBJ_150 /* Sources */,
-				OBJ_156 /* Frameworks */,
+				OBJ_153 /* Sources */,
+				OBJ_159 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_158 /* PBXTargetDependency */,
+				OBJ_161 /* PBXTargetDependency */,
 			);
 			name = Ed25519;
 			productName = Ed25519;
@@ -782,9 +764,9 @@
 		};
 		"Ed25519::SwiftPMPackageDescription" /* Ed25519PackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_88 /* Build configuration list for PBXNativeTarget "Ed25519PackageDescription" */;
+			buildConfigurationList = OBJ_163 /* Build configuration list for PBXNativeTarget "Ed25519PackageDescription" */;
 			buildPhases = (
-				OBJ_91 /* Sources */,
+				OBJ_166 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -796,16 +778,16 @@
 		};
 		"Lisk::Lisk" /* Lisk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_117 /* Build configuration list for PBXNativeTarget "Lisk" */;
+			buildConfigurationList = OBJ_169 /* Build configuration list for PBXNativeTarget "Lisk" */;
 			buildPhases = (
-				OBJ_120 /* Sources */,
-				OBJ_142 /* Frameworks */,
+				OBJ_172 /* Sources */,
+				OBJ_216 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_145 /* PBXTargetDependency */,
-				OBJ_146 /* PBXTargetDependency */,
+				OBJ_219 /* PBXTargetDependency */,
+				OBJ_220 /* PBXTargetDependency */,
 			);
 			name = Lisk;
 			productName = Lisk;
@@ -814,17 +796,17 @@
 		};
 		"Lisk::LiskTests" /* LiskTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "LiskTests" */;
+			buildConfigurationList = OBJ_233 /* Build configuration list for PBXNativeTarget "LiskTests" */;
 			buildPhases = (
-				OBJ_97 /* Sources */,
-				OBJ_107 /* Frameworks */,
+				OBJ_236 /* Sources */,
+				OBJ_254 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_111 /* PBXTargetDependency */,
-				OBJ_113 /* PBXTargetDependency */,
-				OBJ_115 /* PBXTargetDependency */,
+				OBJ_258 /* PBXTargetDependency */,
+				OBJ_259 /* PBXTargetDependency */,
+				OBJ_260 /* PBXTargetDependency */,
 			);
 			name = LiskTests;
 			productName = LiskTests;
@@ -833,9 +815,9 @@
 		};
 		"Lisk::SwiftPMPackageDescription" /* LiskPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_82 /* Build configuration list for PBXNativeTarget "LiskPackageDescription" */;
+			buildConfigurationList = OBJ_222 /* Build configuration list for PBXNativeTarget "LiskPackageDescription" */;
 			buildPhases = (
-				OBJ_85 /* Sources */,
+				OBJ_225 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -860,201 +842,238 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5;
-			productRefGroup = OBJ_76 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_128 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"Lisk::SwiftPMPackageDescription" /* LiskPackageDescription */,
-				"Ed25519::SwiftPMPackageDescription" /* Ed25519PackageDescription */,
-				"Lisk::LiskTests" /* LiskTests */,
-				"Lisk::Lisk" /* Lisk */,
-				"Ed25519::Ed25519" /* Ed25519 */,
 				"Ed25519::CEd25519" /* CEd25519 */,
+				"Ed25519::Ed25519" /* Ed25519 */,
+				"Ed25519::SwiftPMPackageDescription" /* Ed25519PackageDescription */,
+				"Lisk::Lisk" /* Lisk */,
+				"Lisk::SwiftPMPackageDescription" /* LiskPackageDescription */,
 				"Lisk::LiskPackageTests::ProductTarget" /* LiskPackageTests */,
+				"Lisk::LiskTests" /* LiskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_120 /* Sources */ = {
+		OBJ_137 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				3874ABA11FFC831B0008C527 /* TransactionModel.swift in Sources */,
-				38C66D7F20051FF8007B2FA1 /* BlockModel.swift in Sources */,
-				OBJ_121 /* Accounts.swift in Sources */,
-				38C66D8F20052794007B2FA1 /* BlockFeesResponse.swift in Sources */,
-				38C66D7B20051FB8007B2FA1 /* Blocks.swift in Sources */,
-				381C95ED2003F4580002FBC4 /* Peers.swift in Sources */,
-				OBJ_122 /* AccountModel.swift in Sources */,
-				OBJ_123 /* AccountResponse.swift in Sources */,
-				OBJ_124 /* AccountBalanceResponse.swift in Sources */,
-				OBJ_126 /* AccountPublicKeyResponse.swift in Sources */,
-				OBJ_127 /* Delegates.swift in Sources */,
-				38C66D952005283E007B2FA1 /* BlockSupplyResponse.swift in Sources */,
-				OBJ_128 /* DelegateModel.swift in Sources */,
-				38C66D932005281D007B2FA1 /* BlockRewardResponse.swift in Sources */,
-				OBJ_129 /* Loader.swift in Sources */,
-				385C827C201AF2B000012D71 /* MnemonicPassphrase.swift in Sources */,
-				381C95F02003F4A10002FBC4 /* PeerModel.swift in Sources */,
-				3883A8C120029A9700460A9B /* BytePacker.swift in Sources */,
-				38C66D99200528B2007B2FA1 /* BlockStatusResponse.swift in Sources */,
-				38C66D91200527C7007B2FA1 /* FeesModel.swift in Sources */,
-				OBJ_130 /* LoaderStatusPingResponse.swift in Sources */,
-				3809038C2013AC1B00E80537 /* Random.swift in Sources */,
-				381C95DB2003E6060002FBC4 /* DelegateCountResponse.swift in Sources */,
-				OBJ_131 /* LoaderStatusResponse.swift in Sources */,
-				OBJ_132 /* LoaderStatusSyncResponse.swift in Sources */,
-				381C95F52003F6090002FBC4 /* PeerVersionResponse.swift in Sources */,
-				381C95F32003F5CF0002FBC4 /* PeerResponse.swift in Sources */,
-				38C66D9720052865007B2FA1 /* BlockHeightResponse.swift in Sources */,
-				OBJ_133 /* Constants.swift in Sources */,
-				381C95DD2003E6D50002FBC4 /* APIService.swift in Sources */,
-				38C66D8D20052777007B2FA1 /* BlockFeeResponse.swift in Sources */,
-				OBJ_134 /* APIClient.swift in Sources */,
-				OBJ_135 /* APINethash.swift in Sources */,
-				3883A8CA2003BED900460A9B /* TransactionBroadcastResponse.swift in Sources */,
-				OBJ_136 /* APINode.swift in Sources */,
-				38B8E222200672780067BA8E /* SignatureFeeResponse.swift in Sources */,
-				381C95DF2003EAA40002FBC4 /* VoterModel.swift in Sources */,
-				38C66D8120052032007B2FA1 /* APIModel.swift in Sources */,
-				38C66D9D20052927007B2FA1 /* BlockMilestoneResponse.swift in Sources */,
-				3874AB9B1FFC82490008C527 /* Transactions.swift in Sources */,
-				3883A8C320029BE500460A9B /* LocalTransaction.swift in Sources */,
-				381C95E12003EADC0002FBC4 /* DelegateVotersResponse.swift in Sources */,
-				38B8E2232006728A0067BA8E /* Signatures.swift in Sources */,
-				OBJ_137 /* APIOptions.swift in Sources */,
-				381C95D92003E44E0002FBC4 /* DelegateResponse.swift in Sources */,
-				OBJ_138 /* APIResponse.swift in Sources */,
-				38C66D9B200528FC007B2FA1 /* BlockNethashResponse.swift in Sources */,
-				OBJ_139 /* APIResponseError.swift in Sources */,
-				38C66D83200523F2007B2FA1 /* BlockResponse.swift in Sources */,
-				OBJ_140 /* Crypto.swift in Sources */,
-				OBJ_141 /* SHA256.swift in Sources */,
-				3874AB9E1FFC82C50008C527 /* TransactionResponse.swift in Sources */,
+				OBJ_138 /* add_scalar.c in Sources */,
+				OBJ_139 /* fe.c in Sources */,
+				OBJ_140 /* ge.c in Sources */,
+				OBJ_141 /* key_exchange.c in Sources */,
+				OBJ_142 /* keypair.c in Sources */,
+				OBJ_143 /* sc.c in Sources */,
+				OBJ_144 /* seed.c in Sources */,
+				OBJ_145 /* sha512.c in Sources */,
+				OBJ_146 /* sign.c in Sources */,
+				OBJ_147 /* verify.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_150 /* Sources */ = {
+		OBJ_153 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_151 /* Error.swift in Sources */,
-				OBJ_152 /* KeyPair.swift in Sources */,
-				OBJ_153 /* PrivateKey.swift in Sources */,
-				OBJ_154 /* PublicKey.swift in Sources */,
-				OBJ_155 /* Seed.swift in Sources */,
+				OBJ_154 /* Error.swift in Sources */,
+				OBJ_155 /* KeyPair.swift in Sources */,
+				OBJ_156 /* PrivateKey.swift in Sources */,
+				OBJ_157 /* PublicKey.swift in Sources */,
+				OBJ_158 /* Seed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_162 /* Sources */ = {
+		OBJ_166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_163 /* add_scalar.c in Sources */,
-				OBJ_164 /* fe.c in Sources */,
-				OBJ_165 /* ge.c in Sources */,
-				OBJ_166 /* key_exchange.c in Sources */,
-				OBJ_167 /* keypair.c in Sources */,
-				OBJ_168 /* sc.c in Sources */,
-				OBJ_169 /* seed.c in Sources */,
-				OBJ_170 /* sha512.c in Sources */,
-				OBJ_171 /* sign.c in Sources */,
-				OBJ_172 /* verify.c in Sources */,
+				OBJ_167 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_85 /* Sources */ = {
+		OBJ_172 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_86 /* Package.swift in Sources */,
+				OBJ_173 /* Accounts.swift in Sources */,
+				OBJ_174 /* AccountModel.swift in Sources */,
+				OBJ_175 /* AccountsResponse.swift in Sources */,
+				OBJ_176 /* Blocks.swift in Sources */,
+				OBJ_177 /* BlockModel.swift in Sources */,
+				OBJ_178 /* BlocksResponse.swift in Sources */,
+				OBJ_179 /* Dapps.swift in Sources */,
+				OBJ_180 /* DappModel.swift in Sources */,
+				OBJ_181 /* DappsResponse.swift in Sources */,
+				OBJ_182 /* Delegates.swift in Sources */,
+				OBJ_183 /* DelegateModel.swift in Sources */,
+				OBJ_184 /* DelegatesResponse.swift in Sources */,
+				OBJ_185 /* NodeConstantsModel.swift in Sources */,
+				OBJ_186 /* NodeStatusModel.swift in Sources */,
+				OBJ_187 /* Node.swift in Sources */,
+				OBJ_188 /* NodeConstantsResponse.swift in Sources */,
+				OBJ_189 /* NodeStatusResponse.swift in Sources */,
+				OBJ_190 /* PeerModel.swift in Sources */,
+				OBJ_191 /* Peers.swift in Sources */,
+				OBJ_192 /* PeersResponse.swift in Sources */,
+				OBJ_193 /* SignatureModel.swift in Sources */,
+				OBJ_194 /* SignatureBroadcastResponse.swift in Sources */,
+				OBJ_195 /* Signatures.swift in Sources */,
+				OBJ_196 /* LocalTransaction.swift in Sources */,
+				OBJ_197 /* TransactionModel.swift in Sources */,
+				OBJ_198 /* TransactionBroadcastResponse.swift in Sources */,
+				OBJ_199 /* TransactionsResponse.swift in Sources */,
+				OBJ_200 /* Transactions.swift in Sources */,
+				OBJ_201 /* Constants.swift in Sources */,
+				OBJ_202 /* APIClient.swift in Sources */,
+				OBJ_203 /* APIError.swift in Sources */,
+				OBJ_204 /* APIModel.swift in Sources */,
+				3896F03420AB3B9900069A45 /* WebToken.swift in Sources */,
+				OBJ_205 /* APINethash.swift in Sources */,
+				OBJ_206 /* APINode.swift in Sources */,
+				OBJ_207 /* APIOptions.swift in Sources */,
+				OBJ_208 /* APIRequest.swift in Sources */,
+				OBJ_209 /* APIResponse.swift in Sources */,
+				OBJ_210 /* APIService.swift in Sources */,
+				OBJ_211 /* BytePacker.swift in Sources */,
+				OBJ_212 /* Crypto.swift in Sources */,
+				OBJ_213 /* MnemonicPassphrase.swift in Sources */,
+				OBJ_214 /* Random.swift in Sources */,
+				OBJ_215 /* SHA256.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_91 /* Sources */ = {
+		OBJ_225 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_92 /* Package.swift in Sources */,
+				OBJ_226 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_97 /* Sources */ = {
+		OBJ_236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_98 /* AccountsAccountTests.swift in Sources */,
-				OBJ_99 /* AccountsBalanceTests.swift in Sources */,
-				3874ABA41FFC8E6C0008C527 /* TransactionsGetTests.swift in Sources */,
-				38C66DA420053F55007B2FA1 /* BlocksListTests.swift in Sources */,
-				385C8280201AF52000012D71 /* MnemonicPassphraseTests.swift in Sources */,
-				381C95FA2003FACE0002FBC4 /* PeersGetTests.swift in Sources */,
-				381C95FE2003FC710002FBC4 /* PeersListTests.swift in Sources */,
-				3883A8C62002D8AC00460A9B /* TransactionsSigningTest.swift in Sources */,
-				381C95EA2003EE440002FBC4 /* DelegatesListTests.swift in Sources */,
-				OBJ_101 /* AccountsOpenTests.swift in Sources */,
-				381C95E82003EDB70002FBC4 /* DelegatesVotesTests.swift in Sources */,
-				OBJ_102 /* AccountsPublicKeyTests.swift in Sources */,
-				3883A8C82002DC4E00460A9B /* TransactionsTransferTests.swift in Sources */,
-				OBJ_103 /* LoaderStatusPingTests.swift in Sources */,
-				OBJ_104 /* LoaderStatusSyncTests.swift in Sources */,
-				38C66DA220053DEE007B2FA1 /* BlocksGetTests.swift in Sources */,
-				38C55B962006850400C0CCA4 /* SignaturesFeeTests.swift in Sources */,
-				381C95E42003EC460002FBC4 /* DelegatesCountTests.swift in Sources */,
-				OBJ_105 /* LoaderStatusTests.swift in Sources */,
-				3874ABA61FFC8EEE0008C527 /* TransactionsListTest.swift in Sources */,
-				OBJ_106 /* LiskTestCase.swift in Sources */,
-				38C66DA020053D35007B2FA1 /* BlocksMiscTests.swift in Sources */,
-				38C55B982006854000C0CCA4 /* SignaturesRegisterTests.swift in Sources */,
-				381C95F82003FA860002FBC4 /* PeersVersionTests.swift in Sources */,
-				381C95E62003ECE70002FBC4 /* DelegatesGetTests.swift in Sources */,
+				OBJ_237 /* AccountsAccountTests.swift in Sources */,
+				OBJ_238 /* AccountsOpenTests.swift in Sources */,
+				3896F03620AB421300069A45 /* WebTokenTests.swift in Sources */,
+				OBJ_239 /* AccountsPublicKeyTests.swift in Sources */,
+				OBJ_240 /* BlocksGetTests.swift in Sources */,
+				OBJ_241 /* BlocksListTests.swift in Sources */,
+				OBJ_242 /* DelegatesGetTests.swift in Sources */,
+				OBJ_243 /* DelegatesListTests.swift in Sources */,
+				OBJ_244 /* PeersGetTests.swift in Sources */,
+				OBJ_245 /* PeersListTests.swift in Sources */,
+				OBJ_246 /* SignaturesRegisterTests.swift in Sources */,
+				OBJ_247 /* TransactionsGetTests.swift in Sources */,
+				OBJ_248 /* TransactionsListTest.swift in Sources */,
+				OBJ_249 /* TransactionsSigningTest.swift in Sources */,
+				OBJ_250 /* TransactionsTransferTests.swift in Sources */,
+				OBJ_251 /* MnemonicPassphraseTests.swift in Sources */,
+				OBJ_252 /* SignMessageTests.swift in Sources */,
+				OBJ_253 /* LiskTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_111 /* PBXTargetDependency */ = {
+		OBJ_161 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "Lisk::Lisk" /* Lisk */;
-			targetProxy = 38434E5B1FFADA1400AA3540 /* PBXContainerItemProxy */;
+			target = "Ed25519::CEd25519" /* CEd25519 */;
+			targetProxy = 3896F02C20AB2BF800069A45 /* PBXContainerItemProxy */;
 		};
-		OBJ_113 /* PBXTargetDependency */ = {
+		OBJ_219 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Ed25519::Ed25519" /* Ed25519 */;
-			targetProxy = 38434E5C1FFADA1400AA3540 /* PBXContainerItemProxy */;
+			targetProxy = 3896F02D20AB2BF800069A45 /* PBXContainerItemProxy */;
 		};
-		OBJ_115 /* PBXTargetDependency */ = {
+		OBJ_220 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Ed25519::CEd25519" /* CEd25519 */;
-			targetProxy = 38434E5D1FFADA1400AA3540 /* PBXContainerItemProxy */;
+			targetProxy = 3896F02E20AB2BF800069A45 /* PBXContainerItemProxy */;
 		};
-		OBJ_145 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::Ed25519" /* Ed25519 */;
-			targetProxy = 38434E581FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_146 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::CEd25519" /* CEd25519 */;
-			targetProxy = 38434E5A1FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_158 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Ed25519::CEd25519" /* CEd25519 */;
-			targetProxy = 38434E591FFADA1400AA3540 /* PBXContainerItemProxy */;
-		};
-		OBJ_178 /* PBXTargetDependency */ = {
+		OBJ_231 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Lisk::LiskTests" /* LiskTests */;
-			targetProxy = 38434E5E1FFADA1500AA3540 /* PBXContainerItemProxy */;
+			targetProxy = 3896F03220AB2BF800069A45 /* PBXContainerItemProxy */;
+		};
+		OBJ_258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Lisk::Lisk" /* Lisk */;
+			targetProxy = 3896F02F20AB2BF800069A45 /* PBXContainerItemProxy */;
+		};
+		OBJ_259 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Ed25519::Ed25519" /* Ed25519 */;
+			targetProxy = 3896F03020AB2BF800069A45 /* PBXContainerItemProxy */;
+		};
+		OBJ_260 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Ed25519::CEd25519" /* CEd25519 */;
+			targetProxy = 3896F03120AB2BF800069A45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_118 /* Debug */ = {
+		OBJ_135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
+				);
+				INFOPLIST_FILE = Lisk.xcodeproj/CEd25519_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CEd25519;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CEd25519;
+			};
+			name = Debug;
+		};
+		OBJ_136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = NO;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
+				);
+				INFOPLIST_FILE = Lisk.xcodeproj/CEd25519_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CEd25519;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CEd25519;
+			};
+			name = Release;
+		};
+		OBJ_151 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1064,11 +1083,84 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
+					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+				);
+				INFOPLIST_FILE = Lisk.xcodeproj/Ed25519_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Ed25519;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Ed25519;
+			};
+			name = Debug;
+		};
+		OBJ_152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
+					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+				);
+				INFOPLIST_FILE = Lisk.xcodeproj/Ed25519_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
+				PRODUCT_BUNDLE_IDENTIFIER = Ed25519;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Ed25519;
+			};
+			name = Release;
+		};
+		OBJ_164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_170 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
 					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
 				);
 				INFOPLIST_FILE = Lisk.xcodeproj/Lisk_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = Lisk;
@@ -1080,7 +1172,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_119 /* Release */ = {
+		OBJ_171 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1090,11 +1182,12 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
 					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
 				);
 				INFOPLIST_FILE = Lisk.xcodeproj/Lisk_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = Lisk;
@@ -1106,117 +1199,79 @@
 			};
 			name = Release;
 		};
-		OBJ_148 /* Debug */ = {
+		OBJ_223 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/Ed25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Ed25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Ed25519;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		OBJ_149 /* Release */ = {
+		OBJ_224 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/Ed25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				PRODUCT_BUNDLE_IDENTIFIER = Ed25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = Ed25519;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		OBJ_160 /* Debug */ = {
+		OBJ_229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/CEd25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = CEd25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = CEd25519;
 			};
 			name = Debug;
 		};
-		OBJ_161 /* Release */ = {
+		OBJ_230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEFINES_MODULE = NO;
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/CEd25519_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = CEd25519;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				TARGET_NAME = CEd25519;
 			};
 			name = Release;
 		};
-		OBJ_176 /* Debug */ = {
+		OBJ_234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
+					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+				);
+				INFOPLIST_FILE = Lisk.xcodeproj/LiskTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = LiskTests;
 			};
 			name = Debug;
 		};
-		OBJ_177 /* Release */ = {
+		OBJ_235 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/ed25519.git--1962158432852652388/Sources/CEd25519/include",
+					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
+				);
+				INFOPLIST_FILE = Lisk.xcodeproj/LiskTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = LiskTests;
 			};
 			name = Release;
 		};
@@ -1262,124 +1317,44 @@
 			};
 			name = Release;
 		};
-		OBJ_83 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		OBJ_84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/LiskTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = LiskTests;
-			};
-			name = Debug;
-		};
-		OBJ_96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/ed25519.git-6274347002403739230/Sources/CEd25519/include",
-					"$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519",
-				);
-				INFOPLIST_FILE = Lisk.xcodeproj/LiskTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited) -Xcc -fmodule-map-file=$(SRCROOT)/Lisk.xcodeproj/GeneratedModuleMap/CEd25519/module.modulemap";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = LiskTests;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_117 /* Build configuration list for PBXNativeTarget "Lisk" */ = {
+		OBJ_134 /* Build configuration list for PBXNativeTarget "CEd25519" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_118 /* Debug */,
-				OBJ_119 /* Release */,
+				OBJ_135 /* Debug */,
+				OBJ_136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_147 /* Build configuration list for PBXNativeTarget "Ed25519" */ = {
+		OBJ_150 /* Build configuration list for PBXNativeTarget "Ed25519" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_148 /* Debug */,
-				OBJ_149 /* Release */,
+				OBJ_151 /* Debug */,
+				OBJ_152 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_159 /* Build configuration list for PBXNativeTarget "CEd25519" */ = {
+		OBJ_163 /* Build configuration list for PBXNativeTarget "Ed25519PackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_160 /* Debug */,
-				OBJ_161 /* Release */,
+				OBJ_164 /* Debug */,
+				OBJ_165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_175 /* Build configuration list for PBXAggregateTarget "LiskPackageTests" */ = {
+		OBJ_169 /* Build configuration list for PBXNativeTarget "Lisk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_176 /* Debug */,
-				OBJ_177 /* Release */,
+				OBJ_170 /* Debug */,
+				OBJ_171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		OBJ_2 /* Build configuration list for PBXProject "Lisk" */ = {
 			isa = XCConfigurationList;
@@ -1388,34 +1363,34 @@
 				OBJ_4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_82 /* Build configuration list for PBXNativeTarget "LiskPackageDescription" */ = {
+		OBJ_222 /* Build configuration list for PBXNativeTarget "LiskPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_83 /* Debug */,
-				OBJ_84 /* Release */,
+				OBJ_223 /* Debug */,
+				OBJ_224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_88 /* Build configuration list for PBXNativeTarget "Ed25519PackageDescription" */ = {
+		OBJ_228 /* Build configuration list for PBXAggregateTarget "LiskPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_89 /* Debug */,
-				OBJ_90 /* Release */,
+				OBJ_229 /* Debug */,
+				OBJ_230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		OBJ_94 /* Build configuration list for PBXNativeTarget "LiskTests" */ = {
+		OBJ_233 /* Build configuration list for PBXNativeTarget "LiskTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_95 /* Debug */,
-				OBJ_96 /* Release */,
+				OBJ_234 /* Debug */,
+				OBJ_235 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

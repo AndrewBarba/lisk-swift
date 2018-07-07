@@ -13,14 +13,12 @@ class DelegatesListsTests: LiskTestCase {
     func testMainnetList() {
         let delegates = Delegates(client: mainNetClient)
         let response = tryRequest { delegates.delegates(limit: 5, completionHandler: $0) }
-        XCTAssert(response.success)
-        XCTAssertEqual(response.delegates.count, 5)
+        XCTAssertEqual(response.data.count, 5)
     }
 
     func testMainnetSearch() {
         let delegates = Delegates(client: mainNetClient)
-        let response = tryRequest { delegates.search(query: "andr", completionHandler: $0) }
-        XCTAssert(response.success)
-        XCTAssertGreaterThan(response.delegates.count, 0)
+        let response = tryRequest { delegates.delegates(search: "andr", completionHandler: $0) }
+        XCTAssertGreaterThanOrEqual(response.data.count, 1)
     }
 }

@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.1
 
 import PackageDescription
 
@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "Lisk", targets: ["Lisk"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vzsg/ed25519.git", from: "0.2.0")
+        .package(url: "https://github.com/AndrewBarba/ed25519.git", from: "1.1.0")
     ],
     targets: [
         .target(

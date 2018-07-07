@@ -19,20 +19,30 @@ extension Peers {
 
         public let ip: String
 
-        public let port: UInt64
+        public let httpPort: Int?
+
+        public let wsPort: Int?
+
+        public let os: String?
+
+        public let version: String?
 
         public let state: State
 
-        public let os: String
+        public let height: Int?
 
-        public let version: String
+        public let broadhash: String?
 
-        public let broadhash: String
+        public let nonce: String?
 
-        public let height: UInt64
+        // MARK: - Hashable
 
-        public let updated: Double
+        public static func == (lhs: PeerModel, rhs: PeerModel) -> Bool {
+            return lhs.ip == rhs.ip
+        }
 
-        public let nonce: String
+        public var hashValue: Int {
+            return ip.hashValue
+        }
     }
 }
